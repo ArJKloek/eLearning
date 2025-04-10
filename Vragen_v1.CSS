@@ -1,0 +1,98 @@
+.my-custom-widget .draggable {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 0.1em solid #d3d3d3;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.my-custom-widget .Reactor,
+.my-custom-widget .Graph {
+  float: left;
+  display: inline-block;
+}
+
+.my-custom-widget .step {
+  display: inline-block;
+  height: 1.5em;
+  font-size: 1em;
+  width: 3em;
+}
+
+.my-custom-widget .mydivheader {
+  padding: 0.5em;
+  cursor: n-resize;
+  background-color: #2196F3;
+  font-weight: bold;
+  overflow: hidden;
+  color: #fff;
+}
+
+.my-custom-widget .mydivheader:hover {
+  background-color: #1f8adf;
+}
+
+.my-custom-widget .checkin {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.my-custom-widget .checkin:hover {
+  background-color: #3e8e41;
+}
+
+.my-custom-widget .hint {
+  background-color: #2196f3;
+  float: left;
+}
+
+.my-custom-widget .hint:hover {
+  background-color: #1f8adf;
+}
+
+.my-custom-widget .accordionantwoord,
+.my-custom-widget .deelhint {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  width: 50%;
+  font-size: 1em;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.my-custom-widget .accordionantwoord:hover,
+.my-custom-widget .deelhint:hover {
+  background-color: #3e8e41;
+}
+
+.my-custom-widget .accordionantwoord:after,
+.my-custom-widget .deelhint:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 0.5em;
+}
+
+.my-custom-widget .active:after {
+  content: "\2212";
+}
+
+.my-custom-widget .panel {
+  padding: 0 2em;
+  display: none;
+  overflow: hidden;
+}
