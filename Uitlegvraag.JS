@@ -71,7 +71,15 @@ if (document.getElementById(ID).style.display === "block") {
 	var draggableElements = document.getElementById("drag"+thenum);
 		//alert(draggableElements);
 //for(var i = 0; i < draggableElements.length; i++){
-   dragElement(draggableElements);
+	if (draggableElement.offsetHeight > 0) {
+    		dragElement(draggableElement);
+	} else {
+    		setTimeout(function() {
+        		dragElement(draggableElement);
+    		}, 200);
+	}
+	
+	//dragElement(draggableElements);
  // return ID;
 
 	//}
