@@ -1,0 +1,40 @@
+.antwoord {
+    background-color: white; 
+    border: 2px solid transparent;
+    color: white; /* Hide text initially */
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12pt;
+    margin: 2px 2px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Color types */
+  .green {
+    border-color: #4CAF50;
+  }
+  .green:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .purple {
+    border-color: #703A96;
+  }
+  .purple:hover {
+    background-color: #703A96;
+    color: white;
+  }
+  
+  .babyblue {
+    border-color: #1971B9;
+  }
+  .babyblue:hover {
+    background-color: #1971B9;
+    color: white;
+  }
+  
