@@ -1,0 +1,19 @@
+.checkin {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 0.25em 0.25em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100px;
+}
+.checkin:hover {
+  background-color: #3e8e41;
+}
+.checkin:disabled {
+  background-color: #3e8e41;
+  cursor: not-allowed;
+
+}
