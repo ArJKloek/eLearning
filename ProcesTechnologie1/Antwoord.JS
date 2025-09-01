@@ -38,16 +38,18 @@ function checkv2(ant){
   }
 }
 
-function wrong(ID){
-document.getElementById(ID).style.visibility = "visible"
-document.getElementById(ID).className = "glyphicon glyphicon-remove"
-document.getElementById(ID).style.color = "red"
+function setMark(ID, ok){
+  const el = document.getElementById(ID);
+  if (!el) return;
+  el.style.visibility = "visible";
+  el.style.color = ok ? "green" : "red";
+  el.style.fontStyle = "normal";
+  el.textContent = ok ? "✔" : "✖";
+  el.className = "";
 }
-function correct(ID){
-document.getElementById(ID).style.visibility = "visible"
-document.getElementById(ID).className = "glyphicon glyphicon-ok"
-document.getElementById(ID).style.color = "green"
-}
+
+function wrong(ID){ setMark(ID, false); }
+function correct(ID){ setMark(ID, true); }
 
 function antwoordzien(ID){
 
