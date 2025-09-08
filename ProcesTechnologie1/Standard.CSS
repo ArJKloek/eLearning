@@ -103,6 +103,16 @@
   transition: 0.4s;
 }
 
+.mark {
+  display: inline-block;     /* gives it a box even when empty */
+  width: 1.4em;              /* reserve space for ✔ / ✖ */
+  text-align: center;
+  font-size: 14pt;
+  line-height: 1;
+  font-style: normal;        /* <i> without italics */
+  margin-right: .3em;
+}
+
 .deelhint:hover {
   background-color: #1f8adf;
 }
