@@ -62,7 +62,25 @@ function checkv2(answers) {
     const ok = nearlyEqual(val, Number(key), 0.01, 1e-12);
     setMark(markId, ok);
     input.style.borderColor = ok ? 'green' : 'crimson';
+  // inside checkv2, when empty:
+  
+  
+  if (!raw) {
+  const icon = document.getElementById(markId);
+  if (icon) {
+    icon.style.visibility = 'hidden'; // hidden preserves the width we set
+    icon.textContent = '';            // no symbol
   }
+  input.style.borderColor = '';
+  continue;
+}
+
+  
+  
+  
+  }
+
+
 }
 
 function antwoordzien(ID){
