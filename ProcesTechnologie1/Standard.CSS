@@ -105,7 +105,7 @@
 
 .mark {
   display: inline-block;     /* gives it a box even when empty */
-  width: 1.4em;              /* reserve space for ✔ / ✖ */
+  width: 1.1em;              /* reserve space for ✔ / ✖ */
   text-align: center;
   font-size: 14pt;
   line-height: 1;
