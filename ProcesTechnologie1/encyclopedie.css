@@ -1,0 +1,86 @@
+:root{
+  --sidebar-width:280px;
+  --gap:20px;
+  --accent:#1e6feb;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Segoe UI, Roboto, Arial, sans-serif;color:#222}
+
+.container{display:flex;gap:var(--gap);padding:18px}
+
+.sidebar{width:var(--sidebar-width);min-width:180px;align-self:flex-start;display:flex;flex-direction:column}
+.sidebar h1{font-size:1.25rem;margin:0 0 12px}
+#search{width:100%;padding:8px;border-radius:6px;border:1px solid #ddd;margin-bottom:12px}
+.index-group{margin-bottom:14px;background:#fff;border:1px solid #f0f0f0;padding:8px;border-radius:8px}
+.index{overflow:auto;max-height:calc(100vh - 200px);padding-right:6px}
+.index-group{display:flex;flex-direction:column}
+.index ul{list-style:none;padding:0;margin:0}
+.index a{display:block;padding:8px 10px;border-radius:6px;color:inherit;text-decoration:none}
+.index a:hover{background:#f3f8ff}
+.index a.active{background:var(--accent);color:white}
+.index .muted{color:var(--muted);font-size:.95rem}
+
+.content{flex:1;max-width:900px;overflow:auto;padding:6px 12px}
+.entry{padding:18px 6px;border-bottom:1px solid #eee}
+.entry h2{margin-top:0}
+
+/* Color box styles for highlighted text blocks */
+.colorbox{padding:14px 16px;border-radius:10px;margin-bottom:14px;background:#f7f9ff;border:1px solid rgba(30,111,235,0.08);color:#0b1a2b}
+.colorbox h2{margin-top:0}
+.colorbox p{margin:0}
+
+/* Variants */
+.colorbox--blue{background:linear-gradient(180deg,#f3f7ff 0%, #eef4ff 100%);border-left:5px solid var(--accent)}
+.colorbox--green{background:linear-gradient(180deg,#f5fff5 0%, #ecfff0 100%);border-left:5px solid #28a745}
+.colorbox--yellow{background:linear-gradient(180deg,#fffaf0 0%, #fff4e0 100%);border-left:5px solid #ffb020}
+.colorbox--red{background:linear-gradient(180deg,#fff5f5 0%, #ffecec 100%);border-left:5px solid #e55353}
+.colorbox--grey{background:linear-gradient(180deg,#f5f5f5 0%, #ececec 100%);border-left:5px solid #aaa}
+
+/* Small accessible highlight animation when focused */
+.colorbox:focus{outline:3px solid rgba(30,111,235,0.12)}
+
+@media (max-width:860px){
+  .container{flex-direction:column}
+  .sidebar{width:100%}
+}
+
+/* Make the sidebar follow the viewport on larger screens */
+@media (min-width:861px){
+  .sidebar{
+    position:sticky;
+    top:18px; /* matches container padding */
+    max-height:calc(100vh - 36px); /* leave space for top/bottom */
+    overflow:auto; /* allow scrolling within sidebar if content is tall */
+    z-index:10;
+  }
+}
+
+/* Disable sticky behaviour on small screens to allow natural flow */
+@media (max-width:860px){
+  .sidebar{position:static;max-height:none;overflow:visible}
+}
+
+/* smooth scrolling */
+html{scroll-behavior:smooth}
+
+/* Table visuals: show clear cell borders and spacing for readability */
+table{
+  border-collapse:collapse; /* single border between cells */
+  width:100%;
+  margin-top:0.5rem;
+}
+table th, table td{
+  border:1px solid #000; /* black lines around cells */
+  padding:8px 10px;
+  vertical-align:top;
+}
+table th{
+  background:#f2f2f2;
+  text-align:left;
+}
+
+/* If a table appears inside a colorbox, slightly soften the border color */
+.colorbox table th, .colorbox table td{
+  border-color:rgba(0,0,0,0.85);
+}
