@@ -40,6 +40,14 @@ html,body{height:100%;margin:0;font-family:Segoe UI, Roboto, Arial, sans-serif;c
 /* Small accessible highlight animation when focused */
 .colorbox:focus{outline:3px solid rgba(30,111,235,0.12)}
 
+/* Clearfix: ensure floated images inside colorboxes or entries don't overlap following content */
+.colorbox::after,
+.entry::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media (max-width:860px){
   .container{flex-direction:column}
   .sidebar{width:100%}
@@ -83,4 +91,15 @@ table th{
 /* If a table appears inside a colorbox, slightly soften the border color */
 .colorbox table th, .colorbox table td{
   border-color:rgba(0,0,0,0.85);
+}
+
+/* Graph images: allow per-image percentage width via CSS variable
+   Usage: <img class="Graph" src="..." style="--graph-width:50%" alt="..."> */
+.Graph{
+  float:left;                         /* keep text wrapping behavior */
+  width:var(--graph-width,40%);      /* default to 40% if not set */
+  max-width:var(--graph-max-width,319px); /* per-image override via --graph-max-width */
+  height:auto;                       /* preserve aspect ratio */
+  margin:0 12px 12px 0;
+  display:block;
 }
