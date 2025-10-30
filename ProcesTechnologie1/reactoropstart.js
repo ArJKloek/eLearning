@@ -75,10 +75,18 @@ function ensureLatexOverlay(texString){
     overlay = document.createElement('div');
     overlay.id = 'latexOverlay';
     overlay.style.position = 'absolute';
-    overlay.style.top = '6px';
-    overlay.style.right = '6px';
+    // Position top-center over the canvas wrapper
+    overlay.style.top = '8px';
+    overlay.style.left = '50%';
+    overlay.style.transform = 'translateX(-50%)';
+    overlay.style.right = '';
     overlay.style.pointerEvents = 'none';
     overlay.style.whiteSpace = 'nowrap';
+    overlay.style.zIndex = '2';
+    // Optional: improve readability over graphics
+    // overlay.style.background = 'rgba(255,255,255,0.75)';
+    // overlay.style.padding = '2px 6px';
+    // overlay.style.borderRadius = '4px';
     parent.appendChild(overlay);
   }
 
