@@ -116,7 +116,7 @@ ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
 // Update LaTeX overlay to show the reaction in the upper-right using mhchem
 // Using template literal (backticks) to avoid escaping backslashes
 //ensureLatexOverlay(`\\large \\color{#1f77b4}{\\ce{CO}} + \\color{#ff7f0e}{\\ce{2H2}} \\ce{->} \\color{#2ca02c}{\\ce{CH3OH}}`);
-ensureLatexOverlay(`\\ce{\\color{RoyalBlue}{CO} + \\color{orange}{2H2} -> \\color{green}{CH3OH}}`);
+//ensureLatexOverlay(`\\ce{\\color{RoyalBlue}{CO} + \\color{orange}{2H2} -> \\color{green}{CH3OH}}`);
 //ctx.canvas.width  = window.innerWidth*0.75;
 //ctx.canvas.height = (ctx.canvas.width/480)*200;
 //var plot = document.getElementById("GraphID");
