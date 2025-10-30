@@ -48,6 +48,50 @@ reactor(parseInt(cy),parseFloat(startCO),parseFloat(startH2),parseFloat(convi),p
 
 
 
+function ensureLatexOverlay(texString){
+  var canvas = document.getElementById('myCanvas');
+  if (!canvas) return;
+
+  // Wrap the canvas in a relatively positioned container if not already
+  var parent = canvas.parentElement;
+  if (!parent || parent.id !== 'canvasWrap'){
+    var wrap = document.createElement('div');
+    wrap.id = 'canvasWrap';
+    wrap.style.position = 'relative';
+    wrap.style.display = 'inline-block';
+    // Insert wrapper before canvas and move canvas inside
+    if (canvas.parentNode){
+      canvas.parentNode.insertBefore(wrap, canvas);
+      wrap.appendChild(canvas);
+      parent = wrap;
+    } else {
+      return;
+    }
+  }
+
+  // Ensure overlay exists
+  var overlay = document.getElementById('latexOverlay');
+  if (!overlay){
+    overlay = document.createElement('div');
+    overlay.id = 'latexOverlay';
+    overlay.style.position = 'absolute';
+    overlay.style.top = '6px';
+    overlay.style.right = '6px';
+    overlay.style.pointerEvents = 'none';
+    overlay.style.whiteSpace = 'nowrap';
+    parent.appendChild(overlay);
+  }
+
+  // Render with KaTeX when available; graceful fallback otherwise
+  if (texString){
+    if (window.katex && window.katex.render){
+      window.katex.render(texString, overlay, { throwOnError: false });
+    } else {
+      overlay.innerHTML = 'CO + 2H<sub>2</sub> → CH<sub>3</sub>OH';
+    }
+  }
+}
+
 function reactor(cyc,CO_st,H2_s,Con,SP,CHG,Ax_on){
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
@@ -61,6 +105,10 @@ else{
 }
 ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
 
+// Update LaTeX overlay to show the reaction in the upper-right using mhchem
+// Using template literal (backticks) to avoid escaping backslashes
+//ensureLatexOverlay(`\\large \\color{#1f77b4}{\\ce{CO}} + \\color{#ff7f0e}{\\ce{2H2}} \\ce{->} \\color{#2ca02c}{\\ce{CH3OH}}`);
+ensureLatexOverlay(`\\ce{\\color{RoyalBlue}{CO} + \\color{orange}{2H2} -> \\color{green}{CH3OH}}`);
 //ctx.canvas.width  = window.innerWidth*0.75;
 //ctx.canvas.height = (ctx.canvas.width/480)*200;
 //var plot = document.getElementById("GraphID");
