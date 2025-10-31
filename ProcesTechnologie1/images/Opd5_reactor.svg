@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="244.64668mm"
+   height="80.433334mm"
+   viewBox="0 0 244.64668 80.433334"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1">
+    <rect
+       x="294.57462"
+       y="-105.13757"
+       width="233.00758"
+       height="259.52878"
+       id="rect5" />
+  </defs>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-14.236154,-140.49375)">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,-44.714583,134.14375)"
+       id="g24">
+      <rect
+         x="334.5"
+         y="212.5"
+         width="82"
+         height="87"
+         stroke="#000000"
+         stroke-width="2.66667"
+         stroke-miterlimit="8"
+         fill="#ffffff"
+         id="rect1-1" />
+      <text
+         font-family="'Lato SemiBold', 'Lato SemiBold_MSFontService', sans-serif"
+         font-weight="600"
+         font-size="43px"
+         transform="translate(360.754,272)"
+         id="text1">C</text>
+      <rect
+         x="554.5"
+         y="212.5"
+         width="197"
+         height="87"
+         stroke="#000000"
+         stroke-width="2.66667"
+         stroke-miterlimit="8"
+         fill="#ffffff"
+         id="rect2" />
+      <text
+         font-family="'Lato Medium', 'Lato Medium_MSFontService', sans-serif"
+         font-weight="500"
+         font-size="27px"
+         transform="translate(598.546,250)"
+         id="text2">Synthese</text>
+      <text
+         font-family="'Lato Medium', 'Lato Medium_MSFontService', sans-serif"
+         font-weight="500"
+         font-size="27px"
+         transform="translate(610.133,282)"
+         id="text3">reactor</text>
+      <rect
+         x="881.5"
+         y="212.5"
+         width="82"
+         height="87"
+         stroke="#000000"
+         stroke-width="2.66667"
+         stroke-miterlimit="8"
+         fill="#ffffff"
+         id="rect3" />
+      <text
+         font-family="'Lato SemiBold', 'Lato SemiBold_MSFontService', sans-serif"
+         font-weight="600"
+         font-size="43px"
+         transform="translate(910.384,272)"
+         id="text4">S</text>
+      <path
+         d="m 416,255.167 h 126.159 v 1.666 H 416 Z m 124.826,-5.834 13.333,6.667 -13.333,6.667 z"
+         id="path4" />
+      <path
+         d="m 751,255.167 h 118.039 v 1.666 H 751 Z m 116.706,-5.834 13.333,6.667 -13.333,6.667 z"
+         id="path5" />
+      <path
+         d="m 223,255.167 h 98.909 v 1.666 H 223 Z m 97.575,-5.834 13.334,6.667 -13.334,6.667 z"
+         id="path6" />
+      <path
+         d="M 0.833333,-4.64109e-7 0.833432,176.51 H -0.833235 L -0.833333,4.64109e-7 Z M 6.66676,175.176 1.04987e-4,188.51 -6.66657,175.176 Z"
+         transform="matrix(1,0,0,-1,922,212.51)"
+         id="path7" />
+      <path
+         d="M 0,-0.833333 H 547.964 V 77.3793 h -1.667 V 0 l 0.834,0.833333 H 0 Z M 553.797,76.046 547.131,89.3793 540.464,76.046 Z"
+         transform="matrix(-1,0,0,1,922.131,123)"
+         id="path8" />
+      <path
+         d="m 963,255.167 h 146.63 v 1.666 H 963 Z m 145.3,-5.834 13.33,6.667 -13.33,6.667 z"
+         id="path9" />
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         transform="translate(428.898,288)"
+         id="text9">Voeding</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         id="text10"
+         x="222.595"
+         y="290">1 CO</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         id="text11"
+         x="222.595"
+         y="322">3 H</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="18px"
+         id="text12"
+         x="265.26199"
+         y="328">2</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         id="text13"
+         x="222.595"
+         y="211">Verse</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         id="text14"
+         x="222.595"
+         y="243">voeding</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         transform="translate(565.589,157)"
+         id="text15">Recycle</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-style="italic"
+         font-weight="400"
+         font-size="27px"
+         id="text16"
+         x="678.422"
+         y="157">R</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         transform="translate(487.079,108)"
+         id="text17">0.664 CO en</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="700"
+         font-size="27px"
+         id="text18"
+         x="663.91199"
+         y="108">4.2793</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         id="text19"
+         x="775.41199"
+         y="108">H</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="18px"
+         id="text20"
+         x="795.74597"
+         y="114">2</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         transform="translate(939.611,69)"
+         id="text21">Spui</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         transform="translate(974.886,292)"
+         id="text22">0.830 CH</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="18px"
+         id="text23"
+         x="1098.22"
+         y="298">3</text>
+      <text
+         font-family="Lato, Lato_MSFontService, sans-serif"
+         font-weight="400"
+         font-size="27px"
+         id="text24"
+         x="1108.55"
+         y="292">OH</text>
+      <text
+         xml:space="preserve"
+         transform="translate(222.80594,24)"
+         id="text5"
+         style="white-space:pre;shape-inside:url(#rect5);fill:none;stroke-width:5" />
+    </g>
+  </g>
+</svg>
