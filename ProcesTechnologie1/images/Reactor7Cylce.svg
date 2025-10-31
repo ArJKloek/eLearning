@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Gegenereerd door Microsoft Visio, SVG Export Reactor7Cylce.svg Pagina-1 -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
-		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="4.99642in" height="2.07364in"
-		viewBox="0 0 359.742 149.302" xml:space="preserve" color-interpolation-filters="sRGB" class="st13">
-	<v:documentProperties v:langID="1033" v:metric="true" v:viewMarkup="false"/>
 
-	<style type="text/css">
+<svg
+   width="4.9149051in"
+   height="1.976347in"
+   viewBox="0 0 353.87294 142.2969"
+   xml:space="preserve"
+   color-interpolation-filters="sRGB"
+   class="st13"
+   version="1.1"
+   id="svg35"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/">
+	<v:documentProperties
+   v:langID="1033"
+   v:metric="true"
+   v:viewMarkup="false" />
+
+	<style
+   type="text/css"
+   id="style1">
 	<![CDATA[
 		.st1 {fill:none;stroke:#000000;stroke-width:1.25}
 		.st2 {fill:#000000;font-family:Lato;font-size:0.75em}
@@ -24,178 +39,717 @@
 	]]>
 	</style>
 
-	<defs id="Markers">
-		<g id="lend4">
-			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
-		</g>
-		<marker id="mrkr4-13" class="st7" v:arrowType="4" v:arrowSize="2" v:setback="12.08" refX="-12.08" orient="auto"
-				markerUnits="strokeWidth" overflow="visible">
-			<use xlink:href="#lend4" transform="scale(-6.04,-6.04) "/>
-		</marker>
-	</defs>
-	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
-		<title>Pagina-1</title>
-		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
-				v:shadowOffsetY="-8.50394"/>
-		<v:layer v:name="Connector" v:index="0"/>
-		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(135.546,-42.7697)">
-			<title>Rectangle</title>
-			<desc>Synthese Reactor</desc>
+	<defs
+   id="Markers"><g
+     id="lend4">
+			<path
+   d="M 2,1 0,0 2,-1 v 2"
+   style="stroke:none"
+   id="path1" />
+		</g><marker
+     id="mrkr4-13"
+     class="st7"
+     v:arrowType="4"
+     v:arrowSize="2"
+     v:setback="12.08"
+     refX="-12.08"
+     orient="auto"
+     markerUnits="strokeWidth"
+     overflow="visible">
+			<use
+   xlink:href="#lend4"
+   transform="scale(-6.04)"
+   id="use1" />
+		</marker></defs>
+	<g
+   v:mID="0"
+   v:index="1"
+   v:groupContext="foregroundPage"
+   id="g35"
+   transform="translate(-5.6190701,-6.7548002)">
+		<title
+   id="title1">Pagina-1</title>
+		<v:pageProperties
+   v:drawingScale="0.0393701"
+   v:pageScale="0.0393701"
+   v:drawingUnits="24"
+   v:shadowOffsetX="8.50394"
+   v:shadowOffsetY="-8.50394" />
+		<v:layer
+   v:name="Connector"
+   v:index="0" />
+		<g
+   id="shape2-1"
+   v:mID="2"
+   v:groupContext="shape"
+   transform="translate(135.546,-42.7697)">
+			<title
+   id="title2">Rectangle</title>
+			<desc
+   id="desc2">Synthese Reactor</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud
+   v:nameU="visVersion"
+   v:val="VT0(15):26" />
 			</v:userDefs>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="31.6474" cy="134.584" width="63.3" height="29.4355"/>
-			<rect x="0" y="119.867" width="63.2949" height="29.4355" class="st1"/>
-			<text x="13.61" y="131.88" class="st2" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>Synthese <tspan
-						x="16.01" dy="1.2em" class="st3">Reactor</tspan></text>		</g>
-		<g id="shape3-5" v:mID="3" v:groupContext="shape" transform="translate(244.196,-42.7697)">
-			<title>Square</title>
-			<desc>S</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="31.6474"
+   cy="134.584"
+   width="63.3"
+   height="29.4355" />
+			<rect
+   x="0"
+   y="119.867"
+   width="63.294899"
+   height="29.435499"
+   class="st1"
+   id="rect2" />
+			<text
+   x="13.61"
+   y="131.88"
+   class="st2"
+   v:langID="1043"
+   id="text2"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Synthese <tspan
+   x="16.01"
+   dy="1.2em"
+   class="st3"
+   id="tspan2">Reactor</tspan></text>		</g>
+		<g
+   id="shape3-5"
+   v:mID="3"
+   v:groupContext="shape"
+   transform="translate(244.196,-42.7697)">
+			<title
+   id="title3">Square</title>
+			<desc
+   id="desc3">S</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud
+   v:nameU="visVersion"
+   v:val="VT0(15):26" />
 			</v:userDefs>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="14.7178" cy="134.584" width="29.44" height="29.4355"/>
-			<rect x="0" y="119.867" width="29.4355" height="29.4355" class="st4"/>
-			<text x="11.54" y="138.18" class="st5" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>S</text>		</g>
-		<g id="shape4-8" v:mID="4" v:groupContext="shape" v:layerMember="0" transform="translate(198.841,-50.4008)">
-			<title>Dynamic connector</title>
-			<path d="M0 142.22 L39.31 142.22" class="st6"/>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="14.7178"
+   cy="134.584"
+   width="29.44"
+   height="29.4355" />
+			<rect
+   x="0"
+   y="119.867"
+   width="29.435499"
+   height="29.435499"
+   class="st4"
+   id="rect3" />
+			<text
+   x="11.54"
+   y="138.17999"
+   class="st5"
+   v:langID="1043"
+   id="text3"><v:paragraph
+   v:horizAlign="1" /><v:tabList />S</text>		</g>
+		<g
+   id="shape4-8"
+   v:mID="4"
+   v:groupContext="shape"
+   v:layerMember="0"
+   transform="translate(198.841,-50.4008)">
+			<title
+   id="title4">Dynamic connector</title>
+			<path
+   d="M 0,142.22 H 39.31"
+   class="st6"
+   id="path4" />
 		</g>
-		<g id="shape5-14" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(273.631,-50.4008)">
-			<title>Dynamic connector.5</title>
-			<path d="M0 142.22 L55.9 142.22" class="st6"/>
+		<g
+   id="shape5-14"
+   v:mID="5"
+   v:groupContext="shape"
+   v:layerMember="0"
+   transform="translate(273.631,-50.4008)">
+			<title
+   id="title5">Dynamic connector.5</title>
+			<path
+   d="M 0,142.22 H 55.9"
+   class="st6"
+   id="path5" />
 		</g>
-		<g id="shape6-19" v:mID="6" v:groupContext="shape" v:layerMember="0" transform="translate(251.827,-72.2052)">
-			<title>Dynamic connector.6</title>
-			<path d="M7.09 149.3 L7.09 85" class="st6"/>
+		<g
+   id="shape6-19"
+   v:mID="6"
+   v:groupContext="shape"
+   v:layerMember="0"
+   transform="translate(251.827,-72.2052)">
+			<title
+   id="title6">Dynamic connector.6</title>
+			<path
+   d="M 7.09,149.3 V 85"
+   class="st6"
+   id="path6" />
 		</g>
-		<g id="shape7-24" v:mID="7" v:groupContext="shape" transform="translate(53.2635,-42.7697)">
-			<title>Square.7</title>
-			<desc>C</desc>
+		<g
+   id="shape7-24"
+   v:mID="7"
+   v:groupContext="shape"
+   transform="translate(53.2635,-42.7697)">
+			<title
+   id="title7">Square.7</title>
+			<desc
+   id="desc7">C</desc>
 			<v:userDefs>
-				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud
+   v:nameU="visVersion"
+   v:val="VT0(15):26" />
 			</v:userDefs>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="14.7178" cy="134.584" width="29.44" height="29.4355"/>
-			<rect x="0" y="119.867" width="29.4355" height="29.4355" class="st4"/>
-			<text x="10.61" y="138.18" class="st5" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>C</text>		</g>
-		<g id="shape8-27" v:mID="8" v:groupContext="shape" v:layerMember="0" transform="translate(82.699,-50.4008)">
-			<title>Dynamic connector.8</title>
-			<path d="M0 142.22 L46.81 142.22" class="st6"/>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="14.7178"
+   cy="134.584"
+   width="29.44"
+   height="29.4355" />
+			<rect
+   x="0"
+   y="119.867"
+   width="29.435499"
+   height="29.435499"
+   class="st4"
+   id="rect7" />
+			<text
+   x="10.61"
+   y="138.17999"
+   class="st5"
+   v:langID="1043"
+   id="text7"><v:paragraph
+   v:horizAlign="1" /><v:tabList />C</text>		</g>
+		<g
+   id="shape8-27"
+   v:mID="8"
+   v:groupContext="shape"
+   v:layerMember="0"
+   transform="translate(82.699,-50.4008)">
+			<title
+   id="title8">Dynamic connector.8</title>
+			<path
+   d="M 0,142.22 H 46.81"
+   class="st6"
+   id="path8" />
 		</g>
-		<g id="shape9-32" v:mID="9" v:groupContext="shape" v:layerMember="0" transform="translate(258.913,-103.577)">
-			<title>Dynamic connector.9</title>
-			<path d="M0 149.3 L-190.93 149.3 L-190.93 174.63" class="st6"/>
+		<g
+   id="shape9-32"
+   v:mID="9"
+   v:groupContext="shape"
+   v:layerMember="0"
+   transform="translate(258.913,-103.577)">
+			<title
+   id="title9">Dynamic connector.9</title>
+			<path
+   d="m 0,149.3 h -190.93 v 25.33"
+   class="st6"
+   id="path9" />
 		</g>
-		<g id="shape10-37" v:mID="10" v:groupContext="shape" v:layerMember="0" transform="translate(6.75293,-50.4008)">
-			<title>Dynamic connector.10</title>
-			<path d="M0 142.22 L40.47 142.22" class="st6"/>
+		<g
+   id="shape10-37"
+   v:mID="10"
+   v:groupContext="shape"
+   v:layerMember="0"
+   transform="translate(6.75293,-50.4008)">
+			<title
+   id="title10">Dynamic connector.10</title>
+			<path
+   d="M 0,142.22 H 40.47"
+   class="st6"
+   id="path10" />
 		</g>
-		<g id="shape11-42" v:mID="11" v:groupContext="shape" transform="translate(116.17,-86.4429)">
-			<title>Blad.11</title>
-			<desc>Recycle R</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="39.9843" cy="141.952" width="79.97" height="14.7008"/>
-			<rect x="0" y="134.601" width="79.9685" height="14.7008" class="st8"/>
-			<text x="21.17" y="144.65" class="st2" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>Recycle <tspan
-						class="st9">R</tspan></text>		</g>
-		<g id="shape12-46" v:mID="12" v:groupContext="shape" transform="translate(102.455,-105.132)">
-			<title>Blad.12</title>
-			<desc>0.6656 CO en 4.5072 H2</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="55.0467" cy="141.952" width="110.1" height="14.7008"/>
-			<rect x="0" y="134.601" width="110.093" height="14.7008" class="st8"/>
-			<text x="6.87" y="144.65" class="st10" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>0.6656 CO en <tspan
-						class="st11">4.5072</tspan> H<tspan dy="-0.284em" class="st12" v:baseFontSize="9">2</tspan></text>		</g>
-		<g id="shape13-51" v:mID="13" v:groupContext="shape" transform="translate(258.36,-38.2539)">
-			<title>Blad.13</title>
-			<desc>0.832 CH3OH</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="50.5659" cy="141.952" width="101.14" height="14.7008"/>
-			<rect x="0" y="134.601" width="101.132" height="14.7008" class="st8"/>
-			<text x="23.13" y="144.65" class="st10" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>0.832 CH<tspan
-						dy="-0.284em" class="st12" v:baseFontSize="9">3</tspan><tspan dy="0.185em" class="st3">OH</tspan></text>		</g>
-		<g id="shape14-56" v:mID="14" v:groupContext="shape" transform="translate(223.887,-123.293)">
-			<title>Blad.14</title>
-			<desc>Spui</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="50.5659" cy="141.952" width="101.14" height="14.7008"/>
-			<rect x="0" y="134.601" width="101.132" height="14.7008" class="st8"/>
-			<text x="42.04" y="144.65" class="st2" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>Spui</text>		</g>
-		<g id="shape15-59" v:mID="15" v:groupContext="shape" transform="translate(5.61907,-63.7658)">
-			<title>Blad.15</title>
-			<desc>Verse voeding</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="26.1992" cy="141.952" width="52.4" height="14.7008"/>
-			<rect x="0" y="134.601" width="52.3984" height="14.7008" class="st8"/>
-			<text x="4" y="139.25" class="st2" v:langID="1043"><v:paragraph/><v:tabList/>Verse <tspan x="4" dy="1.2em" class="st3">voeding</tspan></text>		</g>
-		<g id="shape16-63" v:mID="16" v:groupContext="shape" transform="translate(82.1971,-57.5044)">
-			<title>Blad.16</title>
-			<desc>in SR</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="26.1992" cy="141.952" width="52.4" height="14.7008"/>
-			<rect x="0" y="134.601" width="52.3984" height="14.7008" class="st8"/>
-			<text x="4" y="144.65" class="st2" v:langID="1043"><v:paragraph/><v:tabList/>in SR</text>		</g>
-		<g id="shape17-66" v:mID="17" v:groupContext="shape" transform="translate(5.61907,-35.4193)">
-			<title>Blad.17</title>
-			<desc>1 CO 3 H2</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="20.4697" cy="141.952" width="40.94" height="14.7008"/>
-			<rect x="0" y="134.601" width="40.9393" height="14.7008" class="st8"/>
-			<text x="4" y="139.25" class="st2" v:langID="1043"><v:paragraph/><v:tabList/>1 CO    3 <tspan x="4" dy="1.2em"
-						class="st3">H</tspan><tspan dy="-0.284em" class="st12" v:baseFontSize="9">2</tspan></text>		</g>
-		<g id="shape1000-71" v:mID="1000" v:groupContext="shape" transform="translate(199.792,-57.5044)">
-			<title>Blad.1000</title>
-			<desc>uit SR</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="26.1992" cy="141.952" width="52.4" height="14.7008"/>
-			<rect x="0" y="134.601" width="52.3984" height="14.7008" class="st8"/>
-			<text x="4" y="144.65" class="st2" v:langID="1043"><v:paragraph/><v:tabList/>uit SR</text>		</g>
-		<g id="shape1001-74" v:mID="1001" v:groupContext="shape" transform="translate(82.9236,-27.5074)">
-			<title>Blad.1001</title>
-			<desc>1.664 CO 7.274 H2</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="26.1992" cy="134.584" width="52.4" height="29.4355"/>
-			<rect x="0" y="119.867" width="52.3984" height="29.4355" class="st8"/>
-			<text x="4" y="131.88" class="st10" v:langID="1043"><v:paragraph/><v:tabList/>1.664 CO    <tspan x="4" dy="1.2em"
-						class="st3">7.274 H</tspan><tspan dy="-0.284em" class="st12" v:baseFontSize="9">2</tspan></text>		</g>
-		<g id="shape1002-79" v:mID="1002" v:groupContext="shape" transform="translate(135.546,-0.25)">
-			<title>Blad.1002</title>
-			<desc>- 0.832 CO - 1.664 H2 + 0.832 CH3OH</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="37.367" cy="128.042" width="74.74" height="42.5197"/>
-			<rect x="0" y="106.782" width="74.7341" height="42.5197" class="st8"/>
-			<text x="4" y="119.94" class="st10" v:langID="1043"><v:paragraph/><v:tabList/>- 0.832 CO <v:lf/><tspan x="4" dy="1.2em"
-						class="st3">-</tspan> 1.664 H<tspan dy="-0.284em" class="st12" v:baseFontSize="9">2<v:newlineChar/></tspan><tspan
-						x="4" dy="1.385em" class="st3">+ 0.832 CH</tspan><tspan dy="-0.284em" class="st12" v:baseFontSize="9">3</tspan><tspan
-						dy="0.185em" class="st3">OH</tspan></text>		</g>
-		<g id="shape1003-87" v:mID="1003" v:groupContext="shape" transform="translate(196.441,-16.6611)">
-			<title>Blad.1003</title>
-			<desc>0.832 CO 5.634 H2 0.832 CH3OH</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="37.367" cy="128.042" width="74.74" height="42.5197"/>
-			<rect x="0" y="106.782" width="74.7341" height="42.5197" class="st8"/>
-			<text x="4" y="119.94" class="st10" v:langID="1043"><v:paragraph/><v:tabList/>0.832 CO <v:lf/><tspan x="4" dy="1.2em"
-						class="st3">5.634 H</tspan><tspan dy="-0.284em" class="st12" v:baseFontSize="9">2<v:newlineChar/></tspan><tspan
-						x="4" dy="1.385em" class="st3">0.832 CH</tspan><tspan dy="-0.284em" class="st12" v:baseFontSize="9">3</tspan><tspan
-						dy="0.185em" class="st3">OH</tspan></text>		</g>
-		<g id="shape1004-95" v:mID="1004" v:groupContext="shape" transform="translate(259.362,-72.2357)">
-			<title>Blad.1004</title>
-			<desc>0.832 CO 5.634 H2</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="26.1992" cy="134.584" width="52.4" height="29.4355"/>
-			<rect x="0" y="119.867" width="52.3984" height="29.4355" class="st8"/>
-			<text x="4" y="131.88" class="st10" v:langID="1043"><v:paragraph/><v:tabList/>0.832 CO    <tspan x="4" dy="1.2em"
-						class="st3">5.634 H</tspan><tspan dy="-0.284em" class="st12" v:baseFontSize="9">2</tspan></text>		</g>
-		<g id="shape1005-100" v:mID="1005" v:groupContext="shape" transform="translate(284.874,-109.712)">
-			<title>Blad.1005</title>
-			<desc>0.1664 CO 1.1268 H2</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="26.1992" cy="134.584" width="52.4" height="29.4355"/>
-			<rect x="0" y="119.867" width="52.3984" height="29.4355" class="st8"/>
-			<text x="4" y="131.88" class="st10" v:langID="1043"><v:paragraph/><v:tabList/>0.1664 CO    <tspan x="4" dy="1.2em"
-						class="st3">1.1268 H</tspan><tspan dy="-0.284em" class="st12" v:baseFontSize="9">2</tspan></text>		</g>
+		<g
+   id="shape11-42"
+   v:mID="11"
+   v:groupContext="shape"
+   transform="translate(116.17,-86.4429)">
+			<title
+   id="title11">Blad.11</title>
+			<desc
+   id="desc11">Recycle R</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="39.9843"
+   cy="141.952"
+   width="79.97"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="79.968498"
+   height="14.7008"
+   class="st8"
+   id="rect11" />
+			<text
+   x="21.17"
+   y="144.64999"
+   class="st2"
+   v:langID="1043"
+   id="text11"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Recycle <tspan
+   class="st9"
+   id="tspan11">R</tspan></text>		</g>
+		<g
+   id="shape12-46"
+   v:mID="12"
+   v:groupContext="shape"
+   transform="translate(102.455,-105.132)">
+			<title
+   id="title12">Blad.12</title>
+			<desc
+   id="desc12">0.6656 CO en 4.5072 H2</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="55.0467"
+   cy="141.952"
+   width="110.1"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="110.093"
+   height="14.7008"
+   class="st8"
+   id="rect12" />
+			<text
+   x="6.8699999"
+   y="144.64999"
+   class="st10"
+   v:langID="1043"
+   id="text13"><v:paragraph
+   v:horizAlign="1" /><v:tabList />0.6656 CO en <tspan
+   class="st11"
+   id="tspan12">4.5072</tspan> H<tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan13">2</tspan></text>		</g>
+		<g
+   id="shape13-51"
+   v:mID="13"
+   v:groupContext="shape"
+   transform="translate(258.36,-38.2539)">
+			<title
+   id="title13">Blad.13</title>
+			<desc
+   id="desc13">0.832 CH3OH</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="50.5659"
+   cy="141.952"
+   width="101.14"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="101.132"
+   height="14.7008"
+   class="st8"
+   id="rect13" />
+			<text
+   x="23.129999"
+   y="144.64999"
+   class="st10"
+   v:langID="1043"
+   id="text15"><v:paragraph
+   v:horizAlign="1" /><v:tabList />0.832 CH<tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan14">3</tspan><tspan
+   dy="0.185em"
+   class="st3"
+   id="tspan15">OH</tspan></text>		</g>
+		<g
+   id="shape14-56"
+   v:mID="14"
+   v:groupContext="shape"
+   transform="translate(223.887,-123.293)">
+			<title
+   id="title15">Blad.14</title>
+			<desc
+   id="desc15">Spui</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="50.5659"
+   cy="141.952"
+   width="101.14"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="101.132"
+   height="14.7008"
+   class="st8"
+   id="rect15" />
+			<text
+   x="42.040001"
+   y="144.64999"
+   class="st2"
+   v:langID="1043"
+   id="text16"><v:paragraph
+   v:horizAlign="1" /><v:tabList />Spui</text>		</g>
+		<g
+   id="shape15-59"
+   v:mID="15"
+   v:groupContext="shape"
+   transform="translate(5.61907,-63.7658)">
+			<title
+   id="title16">Blad.15</title>
+			<desc
+   id="desc16">Verse voeding</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="26.1992"
+   cy="141.952"
+   width="52.4"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="52.398399"
+   height="14.7008"
+   class="st8"
+   id="rect16" />
+			<text
+   x="4"
+   y="139.25"
+   class="st2"
+   v:langID="1043"
+   id="text17"><v:paragraph /><v:tabList />Verse <tspan
+   x="4"
+   dy="1.2em"
+   class="st3"
+   id="tspan16">voeding</tspan></text>		</g>
+		<g
+   id="shape16-63"
+   v:mID="16"
+   v:groupContext="shape"
+   transform="translate(82.1971,-57.5044)">
+			<title
+   id="title17">Blad.16</title>
+			<desc
+   id="desc17">in SR</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="26.1992"
+   cy="141.952"
+   width="52.4"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="52.398399"
+   height="14.7008"
+   class="st8"
+   id="rect17" />
+			<text
+   x="4"
+   y="144.64999"
+   class="st2"
+   v:langID="1043"
+   id="text18"><v:paragraph /><v:tabList />in SR</text>		</g>
+		<g
+   id="shape17-66"
+   v:mID="17"
+   v:groupContext="shape"
+   transform="translate(5.61907,-35.4193)">
+			<title
+   id="title18">Blad.17</title>
+			<desc
+   id="desc18">1 CO 3 H2</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="20.4697"
+   cy="141.952"
+   width="40.94"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="40.939301"
+   height="14.7008"
+   class="st8"
+   id="rect18" />
+			<text
+   x="4"
+   y="139.25"
+   class="st2"
+   v:langID="1043"
+   id="text19"><v:paragraph /><v:tabList />1 CO    3 <tspan
+   x="4"
+   dy="1.2em"
+   class="st3"
+   id="tspan18">H</tspan><tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan19">2</tspan></text>		</g>
+		<g
+   id="shape1000-71"
+   v:mID="1000"
+   v:groupContext="shape"
+   transform="translate(199.792,-57.5044)">
+			<title
+   id="title19">Blad.1000</title>
+			<desc
+   id="desc19">uit SR</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="26.1992"
+   cy="141.952"
+   width="52.4"
+   height="14.7008" />
+			<rect
+   x="0"
+   y="134.601"
+   width="52.398399"
+   height="14.7008"
+   class="st8"
+   id="rect19" />
+			<text
+   x="4"
+   y="144.64999"
+   class="st2"
+   v:langID="1043"
+   id="text20"><v:paragraph /><v:tabList />uit SR</text>		</g>
+		<g
+   id="shape1001-74"
+   v:mID="1001"
+   v:groupContext="shape"
+   transform="translate(82.9236,-27.5074)">
+			<title
+   id="title20">Blad.1001</title>
+			<desc
+   id="desc20">1.664 CO 7.274 H2</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="26.1992"
+   cy="134.584"
+   width="52.4"
+   height="29.4355" />
+			<rect
+   x="0"
+   y="119.867"
+   width="52.398399"
+   height="29.435499"
+   class="st8"
+   id="rect20" />
+			<text
+   x="4"
+   y="131.88"
+   class="st10"
+   v:langID="1043"
+   id="text21"><v:paragraph /><v:tabList />1.664 CO    <tspan
+   x="4"
+   dy="1.2em"
+   class="st3"
+   id="tspan20">7.274 H</tspan><tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan21">2</tspan></text>		</g>
+		<g
+   id="shape1002-79"
+   v:mID="1002"
+   v:groupContext="shape"
+   transform="translate(135.546,-0.25)">
+			<title
+   id="title21">Blad.1002</title>
+			<desc
+   id="desc21">- 0.832 CO - 1.664 H2 + 0.832 CH3OH</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="37.367"
+   cy="128.042"
+   width="74.74"
+   height="42.5197" />
+			<rect
+   x="0"
+   y="106.782"
+   width="74.7341"
+   height="42.519699"
+   class="st8"
+   id="rect21" />
+			<text
+   x="4"
+   y="119.94"
+   class="st10"
+   v:langID="1043"
+   id="text26"><v:paragraph /><v:tabList />- 0.832 CO <v:lf /><tspan
+   x="4"
+   dy="1.2em"
+   class="st3"
+   id="tspan22">-</tspan> 1.664 H<tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan23">2<v:newlineChar /></tspan><tspan
+   x="4"
+   dy="1.385em"
+   class="st3"
+   id="tspan24">+ 0.832 CH</tspan><tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan25">3</tspan><tspan
+   dy="0.185em"
+   class="st3"
+   id="tspan26">OH</tspan></text>		</g>
+		<g
+   id="shape1003-87"
+   v:mID="1003"
+   v:groupContext="shape"
+   transform="translate(196.441,-16.6611)">
+			<title
+   id="title26">Blad.1003</title>
+			<desc
+   id="desc26">0.832 CO 5.634 H2 0.832 CH3OH</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="37.367"
+   cy="128.042"
+   width="74.74"
+   height="42.5197" />
+			<rect
+   x="0"
+   y="106.782"
+   width="74.7341"
+   height="42.519699"
+   class="st8"
+   id="rect26" />
+			<text
+   x="4"
+   y="119.94"
+   class="st10"
+   v:langID="1043"
+   id="text31"><v:paragraph /><v:tabList />0.832 CO <v:lf /><tspan
+   x="4"
+   dy="1.2em"
+   class="st3"
+   id="tspan27">5.634 H</tspan><tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan28">2<v:newlineChar /></tspan><tspan
+   x="4"
+   dy="1.385em"
+   class="st3"
+   id="tspan29">0.832 CH</tspan><tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan30">3</tspan><tspan
+   dy="0.185em"
+   class="st3"
+   id="tspan31">OH</tspan></text>		</g>
+		<g
+   id="shape1004-95"
+   v:mID="1004"
+   v:groupContext="shape"
+   transform="translate(259.362,-72.2357)">
+			<title
+   id="title31">Blad.1004</title>
+			<desc
+   id="desc31">0.832 CO 5.634 H2</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="26.1992"
+   cy="134.584"
+   width="52.4"
+   height="29.4355" />
+			<rect
+   x="0"
+   y="119.867"
+   width="52.398399"
+   height="29.435499"
+   class="st8"
+   id="rect31" />
+			<text
+   x="4"
+   y="131.88"
+   class="st10"
+   v:langID="1043"
+   id="text33"><v:paragraph /><v:tabList />0.832 CO    <tspan
+   x="4"
+   dy="1.2em"
+   class="st3"
+   id="tspan32">5.634 H</tspan><tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan33">2</tspan></text>		</g>
+		<g
+   id="shape1005-100"
+   v:mID="1005"
+   v:groupContext="shape"
+   transform="translate(284.874,-109.712)">
+			<title
+   id="title33">Blad.1005</title>
+			<desc
+   id="desc33">0.1664 CO 1.1268 H2</desc>
+			<v:textBlock
+   v:margins="rect(4,4,4,4)"
+   v:tabSpace="42.5197" />
+			<v:textRect
+   cx="26.1992"
+   cy="134.584"
+   width="52.4"
+   height="29.4355" />
+			<rect
+   x="0"
+   y="119.867"
+   width="52.398399"
+   height="29.435499"
+   class="st8"
+   id="rect33" />
+			<text
+   x="4"
+   y="131.88"
+   class="st10"
+   v:langID="1043"
+   id="text35"><v:paragraph /><v:tabList />0.1664 CO    <tspan
+   x="4"
+   dy="1.2em"
+   class="st3"
+   id="tspan34">1.1268 H</tspan><tspan
+   dy="-0.28400001em"
+   class="st12"
+   v:baseFontSize="9"
+   id="tspan35">2</tspan></text>		</g>
 	</g>
 </svg>
