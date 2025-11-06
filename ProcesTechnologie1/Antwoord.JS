@@ -1,51 +1,53 @@
 function checkv2(ant){
   var x = [];
-  for (let i = 0; i < ant.length; i++) {   // <-- make i block-scoped
+  for (i = 0; i < ant.length; i++) {
     x[i] = document.getElementById("antw"+i).value;
+      if (x[i] == ""){
+	        document.getElementById("vrg"+i).style.visibility = "hidden";
+        }
+      else{
+          if(isNaN(x[i])){
 
-    if (x[i] === "") {
-      document.getElementById("vrg"+i).style.visibility = "hidden";
-      continue;
-    }
+              if (x[i].toLowerCase() === ant[i]){
+                  correct("vrg"+i)
+              }
+              else{
+                  wrong("vrg"+i)
+              }
+          }
+          else{
+            if (Math.sign(x[i]) == -1){
+              if (x[i] <= ant[i]-ant[i]*0.01 && x[i] >= ant[i]+ant[i]*0.01){
+                correct("vrg"+i)
+              }
+              else{
+                wrong("vrg"+i)
+              }
+            }
+           else{
 
-    // Try numeric parse (accept comma and scientific notation)
-    const raw = String(x[i]).trim().replace(',', '.');
-    const num = /^[+-]?\d+(?:\.\d+)?(?:e[+-]?\d+)?$/i.test(raw) ? Number(raw) : NaN;
-
-    // If key is text OR input isn't a number -> do text compare (case-insensitive)
-    if (typeof ant[i] === "string" || isNaN(num)) {
-      if (raw.toLowerCase() === String(ant[i]).toLowerCase()) {
-        correct("vrg"+i);
-      } else {
-        wrong("vrg"+i);
+            if (x[i] >= ant[i]-ant[i]*0.01 && x[i] <= ant[i]+ant[i]*0.01){
+              correct("vrg"+i)
+            }
+            else{
+              wrong("vrg"+i)
+            }
+           }
+          }
       }
-      continue;
-    }
-
-    // Numeric compare with 1% tolerance (works for + and -)
-    const key = Number(ant[i]);
-    const within = Math.abs(num - key) <= Math.max(1e-12, 0.01 * Math.abs(key));
-    if (within) {
-      correct("vrg"+i);
-    } else {
-      wrong("vrg"+i);
-    }
   }
 }
 
-
-function setMark(ID, ok){
-  const el = document.getElementById(ID);
-  if (!el) return;
-  el.style.visibility = "visible";
-  el.style.color = ok ? "green" : "red";
-  el.style.fontStyle = "normal";
-  el.textContent = ok ? "✔" : "✖";
-  el.className = "";
+function wrong(ID){
+document.getElementById(ID).style.visibility = "visible"
+document.getElementById(ID).className = "glyphicon glyphicon-remove"
+document.getElementById(ID).style.color = "red"
 }
-
-function wrong(ID){ setMark(ID, false); }
-function correct(ID){ setMark(ID, true); }
+function correct(ID){
+document.getElementById(ID).style.visibility = "visible"
+document.getElementById(ID).className = "glyphicon glyphicon-ok"
+document.getElementById(ID).style.color = "green"
+}
 
 function antwoordzien(ID){
 
