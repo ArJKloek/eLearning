@@ -1,61 +1,76 @@
 <!DOCTYPE html>
 <html><head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Massabalansen.CSS">
-    
-    <!-- KaTeX -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
-        onload="renderMathInElement(document.body,{
-            delimiters:[
-                {left:'\\(',right:'\\)',display:false},
-                {left:'$$',right:'$$',display:true},
-                {left:'\\[',right:'\\]',display:true}
-            ],
-            fleqn:true,
-            globalGroup:true,
-            trust:true
-        });"></script>
-    
-    <style>
-		:root { --body-text-color: #494c4e; }
-		body {
-			color: var(--body-text-color);
-			font-family: 'Lato', sans-serif;
-			font-size: 0.95rem;
-			font-weight: normal;
-			letter-spacing: 0.01rem;
-			line-height: 1.4rem;
-			margin: 0;
-			padding: 0.4rem 0.75rem !important;
-		}
-		table {
-			font-family: 'Lato', sans-serif;
-			font-size: inherit;
-		}
-		.katex-display {
-			text-align: left !important;
-		}
-		.katex {
-			font-family: 'Lato', sans-serif !important;
-			font-size: 1em;
-			user-select: text !important;
-			-webkit-user-select: text !important;
-		}
-		.katex * {
-			user-select: text !important;
-			-webkit-user-select: text !important;
-		}
-	</style>
-	<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css">
-</head>
-<body>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Massabalansen.CSS">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess
+    });"></script>
+ <style>
+                :root { --body-text-color: #494c4e; }
+                body {
+                color: var(--body-text-color);
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            font-weight: normal;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            margin: 0;
+            padding: 0.4rem 0.75rem !important;
+        }
+        table {
+            font-family: 'Lato', sans-serif;
+            font-size: inherit;
+        }
+        .katex-display {
+            text-align: left !important;
+        }
+        .katex {
+            font-family: 'Lato', sans-serif !important;
+            font-size: 1em;
+        }
+        /* Container for side-by-side layout */
+        .side-by-side {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 1em 0;
+        }
+        .side-by-side img {
+            flex-shrink: 0;
+        }
+        .side-by-side .latex-table {
+            flex-grow: 1;
+        }
+        /* Compact table styling */
+        .side-by-side .latex-table .katex-display {
+            margin: 0 !important;
+            font-size: 1em;
+        }
+        .side-by-side .latex-table .katex {
+            font-size: 1em;
+        }
+        li {
+            margin-top: 1em;
+        }
+        </style>
+            <link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
 <!-- Set global KaTeX array row spacing for aligned/array environments -->
-<span style="display:none">\(\gdef\arraystretch{1.6}\)</span>
-<!-- Macro: red cancel stroke -->
-<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
+<!-- Macro: red cancel stroke, body text color via HTML color -->
+<span style="display:none">\( \gdef\rcancel#1{\color{red}\cancel{#1}} \)</span>
 </head><body><p></p>
 <p><span style="font-size: medium;">Een vereenvoudigde weergave van het processchema voor \(\ce{SO3}\) (grondstof voor de productie van zwavelzuur) is te zien in onderstaande figuur. Zwavel wordt verbrand in aanwezigheid van 100 % overmaat lucht in de verbrandingsoven. Voor de reactie:</span></p>
 $$\ce{S + O2 -> SO2}$$
@@ -71,13 +86,13 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">a.</span></td>
 <td style="text-align: right; font-size: medium;">31.2 kmol S/h</td>
 <td><span style="font-size: medium;">&nbsp;≡&nbsp;</span></td>
-<td><span style="font-size: medium;">31.2 kmol \(\ce{O2}/\text{h}\)</span></td>
+<td><span style="font-size: medium;">31.2 kmol \(\ce{O2}/h\)</span></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td style="text-align: right; font-size: medium;">\(\text{L bevat}\ 2\times 31.2\)</td>
+<td style="text-align: right; font-size: medium;">\(L\ bevat 2 \times 31.2\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp; </span></td>
-<td><span style="font-size: medium;">62.4 kmol \(\ce{O2}/\text{h}\) (100% overmaat)</span></td>
+<td><span style="font-size: medium;">62.4 kmol \(\ce{O2}/h\) (100% overmaat)</span></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -87,15 +102,15 @@ $$\ce{S + O2 -> SO2}$$
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td style="text-align: right; font-size: medium;">\(\text{L}=\text{L}_\ce{O2} + \text{L}_\ce{N2}\)</td>
+<td style="text-align: right; font-size: medium;">\(L = L_\ce{O2} + L_\ce{N2}\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">62.4 + 234.7 = <button type="button" class="vraagantwoord green">297.1</button> kmol&nbsp;lucht/h</span></td>
+<td><span style="font-size: medium;">62.4 + 234.7 = <button type="button" class="vraagantwoord green">297.1</button> kmol lucht/h</span></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td style="text-align: right; font-size: medium;">N.B. \(\text{L}_\ce{N2} = \text{T}_\ce{N2}\)</td>
+<td style="text-align: right; font-size: medium;">N.B. \(L_\ce{N2} = T_\ce{N2}\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(\text{P}_\ce{N2} =\) <button type="button" class="vraagantwoord green">234.7</button> kmol/h (zie b en c)</span></td>
+<td><span style="font-size: medium;">\(P_\ce{N2} =\) <button type="button" class="vraagantwoord green">234.7</button> kmol/h (zie b en c)</span></td>
 </tr>
 </tbody>
 </table>
@@ -104,13 +119,7 @@ $$\ce{S + O2 -> SO2}$$
 <tbody>
 <tr>
 <td><span style="font-size: medium;">b.</span></td>
-<td colspan="4"><span style="font-size: medium;">CM molbalansen&nbsp;over de oven:</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="8"><span style="font-size: medium;">CM molbalansen over de oven:</span></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -130,13 +139,13 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">\(\ce{O2}\)</span></td>
 <td style="text-align: right; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{L}_\ce{O2}\)</td>
+<td style="text-align: left; font-size: medium;">\(L_\ce{O2}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{T}_\ce{O2}\)</td>
+<td style="text-align: left; font-size: medium;">\(T_\ce{O2}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{X} \cdot \text{F}_\text{S}\)</td>
+<td style="text-align: left; font-size: medium;">\(X \cdot F_S\)</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -145,38 +154,17 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">62.4</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{T}_\ce{O2}\)</td>
+<td style="text-align: left; font-size: medium;">\(T_\ce{O2}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">\(0.90 \times 31.2\)</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\text{T}_\ce{O2} =\)<button type="button" class="vraagantwoord green">34.32</button> kmol/h</span></td>
+<td colspan="10">&nbsp;</td>
+<td><span style="font-size: medium;">\(T_\ce{O2} =\)<button type="button" class="vraagantwoord green">34.32</button> kmol/h</span></td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
+<tr><td colspan="11">&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td><span style="font-size: medium;">\(\ce{SO2}\)</span></td>
@@ -184,9 +172,9 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{T}_{\ce{SO2}}\)</td>
+<td style="text-align: left; font-size: medium;">\(T_{\ce{SO2}}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{X} \cdot \text{F}_\text{S}\)</td>
+<td style="text-align: left; font-size: medium;">\(X \cdot F_S\)</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 </tr>
@@ -197,28 +185,20 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{T}_{\ce{SO2}}\)</td>
+<td style="text-align: left; font-size: medium;">\(T_{\ce{SO2}}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">\(0.90 \times 31.2\)</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\text{T}_{\ce{SO2}} =\) <button type="button" class="vraagantwoord green">28.08</button> kmol/h</span></td>
+<td colspan="10">&nbsp;</td>
+<td><span style="font-size: medium;">\(T_{\ce{SO2}} =\) <button type="button" class="vraagantwoord green">28.08</button> kmol/h</span></td>
 </tr>
+<tr><td colspan="11">&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
+<td><span style="font-size: medium;">\(N_{2}\)</span></td>
 <td style="text-align: right;">&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -227,20 +207,7 @@ $$\ce{S + O2 -> SO2}$$
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\text{N}_{2}\)</span></td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\text{T}_{\ce{N2}} =\) <button type="button" class="vraagantwoord green">234.7</button> kmol/h</span></td>
+<td><span style="font-size: medium;">\(T_{\ce{N2}} =\) <button type="button" class="vraagantwoord green">234.7</button> kmol/h</span></td>
 </tr>
 </tbody>
 </table>
@@ -267,16 +234,16 @@ $$\ce{S + O2 -> SO2}$$
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\text{SO}_2\)</span></td>
+<td><span style="font-size: medium;">\(\ce{SO2}\)</span></td>
 <td style="text-align: right;"><span style="font-size: medium;">0</span></td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{T}_{\ce{SO2}}\)</td>
+<td style="text-align: left; font-size: medium;">\(T_{\ce{SO2}}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{P}_{\ce{SO2}}\)</td>
+<td style="text-align: left; font-size: medium;">\(P_{\ce{SO2}}\)</td>
 <td><span style="font-size: medium;">&nbsp;+&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{X}\prime \cdot \text{T}_{\ce{SO2}}\)</td>
+<td style="text-align: left; font-size: medium;">\(X\prime \cdot T_{\ce{SO2}}\)</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -286,7 +253,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">28.08</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{P}_{\ce{SO2}}\)</td>
+<td style="text-align: left; font-size: medium;">\(P_{\ce{SO2}}\)</td>
 <td><span style="font-size: medium;">&nbsp;+&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
@@ -304,23 +271,10 @@ $$\ce{S + O2 -> SO2}$$
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\text{P}_\ce{SO2} =\)<button type="button" class="vraagantwoord green">1.40</button> kmol/h</span></td>
+<td><span style="font-size: medium;">\(P_{\ce{SO2}} =\)<button type="button" class="vraagantwoord green">1.40</button> kmol/h</span></td>
 <td>&nbsp;</td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
+<tr><td colspan="11">&nbsp;</td></tr>
 <tr>
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">\(\ce{O2}\)</span></td>
@@ -328,7 +282,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">34.32</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{P}_{\ce{O2}}\)</td>
+<td style="text-align: left; font-size: medium;">\(P_{\ce{O2}}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
@@ -346,23 +300,10 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">\(\text{P}_{\ce{O2}}=\)<button type="button" class="vraagantwoord green">20.98</button> kmol/h</span></td>
+<td><span style="font-size: medium;">\(P_{\ce{O2}}=\)<button type="button" class="vraagantwoord green">20.98</button> kmol/h</span></td>
 <td>&nbsp;</td>
 </tr>
-<tr>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td>&nbsp;</td>
-</tr>
+<tr><td colspan="11">&nbsp;</td></tr>
 <tr>
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">\(\ce{SO3}\)</span></td>
@@ -370,7 +311,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(\text{P}_{\ce{SO3}}\)</td>
+<td style="text-align: left; font-size: medium;">\(P_{\ce{SO3}}\)</td>
 <td><span style="font-size: medium;">&nbsp;+&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">\(0.95 \times 28.08\)</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
@@ -388,7 +329,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">\(\text{P}_{\ce{SO3}} = \)</span><button type="button" class="vraagantwoord green">26.68</button> kmol/h</td>
+<td><span style="font-size: medium;">\(P_{\ce{SO3}} = \)</span><button type="button" class="vraagantwoord green">26.68</button> kmol/h</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -402,7 +343,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">&nbsp;</span></td>
 <td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">\(\text{P}_\ce{N2} =\) <button type="button" class="vraagantwoord green">234.7</button> kmol/h</span>&nbsp;<hr></td>
+<td><span style="font-size: medium;">\(P_{\ce{N2}} =\) <button type="button" class="vraagantwoord green">234.7</button> kmol/h</span>&nbsp;<hr></td>
 <td><span style="font-size: medium;"><span style="font-size: medium;">+</span></span></td>
 </tr>
 <tr>
@@ -416,15 +357,15 @@ $$\ce{S + O2 -> SO2}$$
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\text{P}_{\ce{tot}} = \)</span><button type="button" class="vraagantwoord green">283.8</button> kmol/h</span></td>
+<td><span style="font-size: medium;">\(P_{\ce{tot}} = \)</span><button type="button" class="vraagantwoord green">283.8</button> kmol/h</span></td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td style="text-align: right; font-size: medium;">Molfracties \(\text{y}_\text{i}\)</td>
+<td style="text-align: right; font-size: medium;">Molfracties \(y_i\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(\text{P}_\text{i}/\text{P}_\text{tot}\)</span></td>
+<td><span style="font-size: medium;">\(P_i/P_{\ce{tot}}\)</span></td>
 <td>&nbsp;</td>
 <td style="text-align: right; font-size: medium;">\(\ce{SO2}\)</td>
 <td><span style="font-size: medium;">:</span></td>
@@ -476,4 +417,4 @@ $$\ce{S + O2 -> SO2}$$
 <td>&nbsp;</td>
 </tr>
 </tbody>
-</table></body></html>
+</table>
