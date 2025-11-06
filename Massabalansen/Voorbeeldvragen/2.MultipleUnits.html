@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Massabalansen.CSS">
+    
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body,{
+            delimiters:[
+                {left:'\\(',right:'\\)',display:false},
+                {left:'$$',right:'$$',display:true},
+                {left:'\\[',right:'\\]',display:true}
+            ],
+            fleqn:true,
+            globalGroup:true,
+            trust:true
+        });"></script>
+    
+    <style>
+		:root { --body-text-color: #494c4e; }
+		body {
+			color: var(--body-text-color);
+			font-family: 'Lato', sans-serif;
+			font-size: 0.95rem;
+			font-weight: normal;
+			letter-spacing: 0.01rem;
+			line-height: 1.4rem;
+			margin: 0;
+			padding: 0.4rem 0.75rem !important;
+		}
+		table {
+			font-family: 'Lato', sans-serif;
+			font-size: inherit;
+		}
+		.katex-display {
+			text-align: left !important;
+		}
+		.katex {
+			font-family: 'Lato', sans-serif !important;
+			font-size: 1em;
+			user-select: text !important;
+			-webkit-user-select: text !important;
+		}
+		.katex * {
+			user-select: text !important;
+			-webkit-user-select: text !important;
+		}
+	</style>
+	<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css">
+</head>
+<body>
+<!-- Set global KaTeX array row spacing for aligned/array environments -->
+<span style="display:none">\(\gdef\arraystretch{1.6}\)</span>
+<!-- Macro: red cancel stroke -->
+<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+<p><span style="font-size: medium;">Men wil per uur 10 ton droog kustzand dat 1% NaCl bevat (voedingsstroom F), wassen met zoutvrij water. De waswaterstroom is 20 ton/h. Het zand komt uit de wasser als een modderbrij, die 50 % vloeistof op droge zandbasis bevat. We nemen aan dat de uitgaande vloeistofstromen hetzelfde zoutgehalte hebben. </span></p>
+<p><span style="font-size: medium;">Hoeveel procent zout bevat het gedroogde eindproduct?</span></p>
+<p><span style="font-size: medium;">Analyse:</span></p>
+<p><span style="font-size: medium;">Eerst maken we altijd een blokschema met alle data erin. Dit is voor het beter begrijpen van de stromingen.</span></p>
+<p><span style="font-size: medium;"><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Voorbeelvraag2_MB.svg" width="586" height="300"></span></p>
+<p></p>
+<p><span style="font-size: medium;"><em>Basisformules</em>: totaalbalans, componentbalansen</span><br><span style="font-size: medium;"></span></p>
+<p><span style="font-size: medium;"><em>Oplossingsplan</em>:</span><br><span style="font-size: medium;"></span></p>
+<p><span style="font-size: medium;">De onbekende \(\text{x}_\text{D}\) komt voor in de NaCl balans over het gehele systeem. Daar hebben we ook \(\text{x}_\text{A}\), \(\text{A}\) en \(\text{D}\) als onbekenden. We kunnen met het geheel als systeem echter maar drie vergelijkingen opstellen. We moeten dus ook nog een balans over een deelsysteem opstellen. Als we daarbij de droger als subsysteem nemen, introduceren we weer een onbekende, \(\text{C}\). Er blijft dus over om de wasser als subsysteem te nemen.</span><br><span style="font-size: medium;"></span></p>
+<p><span style="font-size: medium;"><em>Uitwerking</em>:&nbsp;&nbsp;</span></p>
+<table border="0" style="width: 689px; height: 656px;">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: medium;">Systeem: Overall Systeem</span></td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">&nbsp; &nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">Zoutbalans:</span></td>
+<td style="text-align: right; font-size: medium;">\(\text{x}_\text{F,NaCl}\cdot\text{F}\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\text{x}_\text{A}\cdot\text{A}+\text{x}_\text{D}\cdot\text{D}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right; font-size: medium;">\(0.01\cdot 10^{4}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\text{x}_\text{A}\cdot\text{A}+\text{x}_\text{D}\cdot\text{D}\)</span></td>
+<td><span style="font-size: medium;">(a)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">Zandbalans:</span></td>
+<td style="text-align: right; font-size: medium;">\(\text{x}_{\text{F,Z}}\cdot \text{F}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\text{x}_{\text{D,Z}}\cdot \text{D}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right; font-size: medium;">\(0.99·10^{4}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\((1-\text{x}_{\text{D}})\cdot \text{D}\)</span></td>
+<td><span style="font-size: medium;">(b)</span></td>
+</tr>
+<tr>
+<td colspan="2"><span style="font-size: medium;">Systeem: de wasser&nbsp;&nbsp;</span></td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">Zandbalans</span></td>
+<td style="text-align: right; font-size: medium;">\(\text{x}_{\text{F,Z}}\cdot \text{F}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\text{x}_{\text{B,Z}}\cdot \text{B}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right; font-size: medium;">\(0.99 \cdot 10^{4}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\((2/3)\cdot \text{B}\)</span></td>
+<td><span style="font-size: medium;">(c)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">Totaalbalans:</span></td>
+<td style="text-align: right; font-size: medium;">\(\text{F} + \text{W}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\text{A} + \text{B}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right; font-size: medium;">\(10^{4}+ 2\cdot10^{4}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\text{A} + \text{B}\)</span></td>
+<td><span style="font-size: medium;">(d)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">Zoutbalans:</span></td>
+<td style="text-align: right; font-size: medium;">\(0.01 \cdot 10^{4}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\text{x}_{\text{A}}\cdot \text{A}+\text{x}_{\text{A}}\cdot(1/3)\cdot \text{B}\)</span></td>
+<td><span style="font-size: medium;">(e)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">vergelijking (c) levert direct:</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">B</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;"><button type="button" class="vraagantwoord green">14850</button>kg/h</span></td>
+<td><span style="font-size: medium;">B invullen in (d)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;"> vergelijking (d) levert dan: </span></td>
+<td style="text-align: right;"><span style="font-size: medium;">A</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;"><button type="button" class="vraagantwoord green">15150</button>kg/h</span></td>
+<td><span style="font-size: medium;">A invullen in (e)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">vergelijking (e) levert dan:</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">\(\text{x}_{\text{A}}\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;"><button type="button" class="vraagantwoord green">0.00497</button></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td colspan="4"><span style="font-size: medium;">A en \(\text{x}_{\text{A}}\) invullen in zoutbalans&nbsp;(a) levert op:</span><span style="font-size: medium;"></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right; font-size: medium;">\(0.01 \cdot 10^{4}\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(0.00497\cdot 15150 + \text{x}_\text{D}\cdot \text{D}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">100</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(75.295 + \text{x}_\text{D}\cdot \text{D}\)</span></td>
+<td><span style="font-size: medium;">D = <button type="button" class="vraagantwoord green">24.705</button>\(/\text{x}_\text{D}\)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">D invullen in (b) geeft:</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">\(0.99 \cdot 10^{4}\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\((1-\text{x}_\text{D})\dfrac{24.705}{\text{x}_\text{D}}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="text-align: right;">9900</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\((1-\text{x}_\text{D})\dfrac{24.705}{\text{x}_\text{D}}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="text-align: right;">\(9900\cdot\text{x}_\text{D}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(24.705(1-\text{x}_\text{D})\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="text-align: right; font-size: medium;">\(9900\cdot\text{x}_\text{D}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(24.705-24.705\text{x}_\text{D}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="text-align: right; font-size: medium;">\(\text{x}_\text{D}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(\dfrac{24.705}{9924.705}\)</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td colspan="3"><span style="font-size: medium;">\(\text{x}_\text{D}\)&nbsp;= <button type="button" class="vraagantwoord green">0.00248</button>=&nbsp; <button type="button" class="vraagantwoord green">0.248</button> % zout in D</span></td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</body></html>
