@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html><head>
+				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Standard.CSS">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+	<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true}],fleqn:true,globalGroup:true,trust:true});"></script>
+ <style>
+				:root { --body-text-color: #494c4e; }
+				body {
+				color: var(--body-text-color);
+			font-family: 'Lato', sans-serif;
+			font-size: 0.95rem;
+			font-weight: normal;
+			letter-spacing: 0.01rem;
+			line-height: 1.4rem;
+			margin: 0;
+			padding: 0.4rem 0.75rem !important;
+		}
+		table {
+			font-family: 'Lato', sans-serif;
+			font-size: inherit;
+		}
+		.katex-display {
+			text-align: left !important;
+		}
+		.katex {
+			font-family: 'Lato', sans-serif !important;
+			font-size: 1em;
+		}
+
+				</style>
+			<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+<!-- Set global KaTeX array row spacing for aligned/array environments -->
+<span style="display:none">\(\gdef\arraystretch{1.6}\)</span>
+<!-- Macro: red cancel stroke, body text color via HTML color -->
+<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+			</head><body><p></p>
+<p></p>
+<p></p>
+<p><span style="font-size: medium;"><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Destillation.png" width="200" height="316" style="float: left; border: 1px solid black; margin-left: 5px; margin-right: 5px;"></span><span style="font-size: medium;">Bij destillatie worden componenten gescheiden op basis van een verschil in vluchtigheid. </span><br><span style="font-size: medium;">Hier wordt uitgegaan van het binaire (2 componenten) systeem methanol en water. </span><br><span style="font-size: medium;">In een destillatie kolom worden de componenten in de voeding (F, feed) gescheiden in twee product stromen: </span><br><span style="font-size: medium;">de topstroom (T, ook wel overhead stroom) en de bodemstroom (B). Zie destillatie</span></p>
+<p><span style="font-size: medium;">De voeding F bestaat uit 10 t/h water en 50 t/h methanol (1 t/h = 1000 kg/h).</span></p>
+<p><span style="font-size: medium;">Bij dit bedrijf dient methanol te worden geproduceerd met een gehalte aan water van 1 gewichtsprocent (wt.%). Dus de massa fractie van water in methanol is 0.01 (-) = specificatie.</span></p>
+<p><span style="font-size: medium;">De recovery van methanol in de geconcentreerde methanol productstroom is 99% t.o.v de hoeveelheid methanol in de voeding. </span></p>
+<p><span style="font-size: medium;">Bij deze opgave (massa balans over een systeem) is het handiger om in massa eenheden (gewichts-fracties, kg/s) te rekenen dan in molstromen (mol fracties) omdat in dit systeem geen chemische omzetting plaats vindt. &nbsp;Er geldt massa in = &nbsp;massa uit . Dit geldt voor de totale stromen als voor de afzonderlijke componenten.</span></p>
+<p></p>
+<p><span style="font-size: medium;">Additionele gegeven:</span></p>
+<p><span style="font-size: medium;">M<sub>water</sub>&nbsp;= 18 g/mol&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T<sub>kpt</sub>&nbsp;= 100°C (1 atm)</span></p>
+<p><span style="font-size: medium;">M<sub>methanol</sub>&nbsp;= 32 g/mol&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;T<sub>kpt</sub>&nbsp;= 65°C (1 atm)</span></p>
+<p></p>
+<p><span style="font-size: medium;">Vragen:</span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;">a.&nbsp; Bereken hoeveel 50 t/h methanol in kg/s en Mton per jaar is?&nbsp; </span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;">b.&nbsp; Reken de voeding F om in gewichtsprocenten (wt.%) , in &nbsp;kmol/s en in mol procenten (mol.%) voor methanol en water.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;">c.&nbsp; Welke stroom is rijker aan methanol, de top (overhead) stroom of de bodem stroom van de destillatiekolom en waarom?</span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;">d.&nbsp; Bereken van deze stroom de verschillende massastromen van methanol en water in t/h.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;">e.&nbsp; Bereken van de andere stroom de gewichtsprocenten van water en methanol </span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;">f.&nbsp; De reflux stroom (L) is de vloeistof stroom die terug naar de kolom wordt teruggevoerd en deze is ca.&nbsp; 40 t/h. <br>&nbsp; &nbsp; Hoeveel koelenergie is er nodig (in kW) om de totale dampstroom die naar de condenser stroomt te condenseren <br>&nbsp; &nbsp; indien de verdampingswarmte (ΔH<sub>vap</sub>)van deze stroom 1000 kJ/kg is. <br></span></p>
+<p><span style="font-size: medium;">Antwoorden:</span></p>
+<p><span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> kg/s </span> <br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> Mton/jaar </span></p>
+<p><span style="font-size: medium;">b.</span><br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> wt% Water </span> <br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> wt% Methanol </span> <br><i id="vrg4" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw4" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> kmol/s Water </span> <br><i id="vrg5" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw5" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> kmol/s Methanol </span> <br><i id="vrg6" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw6" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> mol% Water </span> <br><i id="vrg7" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw7" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> mol% Methanol </span></p>
+<p><span style="font-size: medium;">c.</span><br><i id="vrg8" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw8" style="width: 70pt; font-size: 14pt;" type="text">
+<option value="">...</option>
+<option value="top">Top</option>
+<option value="bottom">Bottom</option>
+</select><span style="font-size: medium;"><span style="font-size: medium;"> Methanol rijke stroom</span></span></p>
+<p><span style="font-size: medium;">d.</span><br><i id="vrg9" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw9" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> t/h Water </span> <br><i id="vrg10" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw10" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">t/h Methanol </span></p>
+<p><span style="font-size: medium;">e.</span><br><i id="vrg11" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw11" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> wt% Water </span> <br><i id="vrg12" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw12" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> wt% methanol</span></p>
+<p><span style="font-size: medium;">f.</span><br><i id="vrg13" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw13" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> kW </span></p>
+<p><br><button type="button" class="checkin checkin" onclick="checkv2([13.89,0.435,16.67,83.33,0.154,0.434,26.23,73.77,'top',0.5,49.5,95,5,25000])">Check</button> (Je kunt wetenschappelijke notatie zoals 3·10-4 invullen als 3e-4)<br><br><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
+<div id="deelhint1" class="panel">
+<p><span style="font-size: medium;">giga = 10<sup>9</sup>, mega = 10<sup>6</sup>, kilo = 10<sup>3</sup>, hoeveel is een ton in kg?&nbsp;</span></p>
+<p><span style="font-size: medium;">Hoeveel secondes in een jaar? 60 sec per min, 60 min per uur, 24 uur per dag, ~365 dagen per jaar.</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord</button></p>
+<div id="panel1" class="panel">
+<div id="drag1" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep naar beneden om meer te zien</p>
+</div>
+<div id="txt1"></div>
+</div>
+<span style="font-size: medium;">50 ton/uur,&nbsp; → kg/s,</span> <br><span style="font-size: medium;">1 ton = 1000 kg&nbsp;→&nbsp;&nbsp; 50000 kg/uur</span> <span style="font-size: medium;">1 uur = 3600 s&nbsp; &nbsp;→&nbsp;&nbsp; 50000/3600 = 13.88 kg/s</span> <br><span style="font-size: medium;"><br>50 ton/uur,&nbsp; → Mt/y, </span> <br><span style="font-size: medium;">50 ton = 50·10<sup>-6</sup>&nbsp;Mton/uur,&nbsp;</span> <span style="font-size: medium;">1 uur = 1/24*365 jaar = 1/8760 jaar</span> <span style="font-size: medium;">→</span> <span style="font-size: medium;">50·10<sup>-6</sup>&nbsp;/ (1/8760) =&nbsp; 50·10<sup>-6</sup>&nbsp;× 8760 = 0.438 Mton/y</span></div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Hint</button></p>
+<div id="deelhint2" class="panel">
+<p><span style="font-size: medium;">Het molgewicht&nbsp;in g/mol is hetzelfde als kg/kmol<br></span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel2.id)">b. Antwoord</button></p>
+<div id="panel2" class="panel">
+<div id="drag2" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep naar beneden om meer te zien</p>
+</div>
+<div id="txt2"></div>
+</div>
+<span style="font-size: medium;">   
+$$
+\begin{aligned}
+\text{Feed}(\text{F}) &= \text{Methanol}(\ce{CH3OH}) + \text{Water}(\ce{H2O})\\
+\text{F} &= 50 + 10 = 60\,\text{t/h} \\
+\text{wt.\%}\ \ce{H2O} &= \dfrac{10}{60}\times 100\% = 16.7 \\
+\text{wt.\%}\ \ce{CH3OH} &= \dfrac{50}{60}\times 100\% = 83.3\\
+50\,\text{t/h} &= 50000/3600 = 13.889\,\text{kg/s}\ \ce{CH3OH}\\
+10\,\text{t/h} &= 10000/3600 = 2.778\,\text{kg/s}\ \ce{H2O}\\
+\text{F} &=16.67\ \text{kg/s},\quad \text{M}_\text{w}=\dfrac{\text{g}}{\text{mol}}=\dfrac{\text{kg}}{\text{kmol}},\ \dfrac{1}{\text{M}_\text{w}}=\dfrac{\text{kmol}}{\text{kg}}\\
+\ce{CH3OH}\rightarrow \ \text{M}_\text{w} &= 32\ \dfrac{\text{kg}}{\text{kmol}}=\dfrac{13.889}{32}\frac{{\rcancel{\text{kg}}}\ \text{kmol}}{\text{s}\ \rcancel{\text{kg}}}= 0.434\ \text{kmol/s}\\
+\ce{H2O}\rightarrow \ \text{M}_\text{w} &= 18\ \dfrac{\text{kg}}{\text{kmol}}=\dfrac{2.778}{18}\frac{{\rcancel{\text{kg}}}\ \text{kmol}}{\text{s}\ \rcancel{\text{kg}}}= 0.154\ \text{kmol/s}\\
+\text{F}(\text{kmol/s})&=0.434+0.154=0.588\ \text{kmol/s}\\
+\text{mol.\%}\ \ce{CH3OH}&=\frac{0.434}{0.588}\times 100\% =73.8\ \text{mol.\%}\\
+\text{mol.\%}\ \ce{H2O}&=\frac{0.154}{0.588}\times 100\% =26.2\ \text{mol.\%}\\
+\end{aligned}
+$$
+</span>
+</div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">c. Hint</button></p>
+<div id="deelhint3" class="panel">
+<p><span style="font-size: medium;">Denk aan je kookpunten!&nbsp;<br></span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel3.id)">c. Antwoord</button></p>
+<div id="panel3" class="panel">
+<div id="drag3" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep naar beneden om meer te zien</p>
+</div>
+<div id="txt3"></div>
+</div>
+<span style="font-size: medium;">De top (overhead) stroom is rijker aan methanol, omdat methanol vluchtiger is dan water.</span> <span style="font-size: medium;">&nbsp;</span> <span style="font-size: medium;"> </span></div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint4.id)">d. Hint</button></p>
+<div id="deelhint4" class="panel">
+<p><span style="font-size: medium;">Wat is de samenstelling van de topstroom! Er is een specificatie gegeven van 1 wt% water&nbsp;in het methanol.|<br></span><span style="font-size: medium;">Verder weten we ook de recovery van de methanol uit de feed!&nbsp;</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel4.id)">d. Antwoord</button></p>
+<div id="panel4" class="panel">
+<div id="drag4" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep naar beneden om meer te zien</p>
+</div>
+<div id="txt4"></div>
+</div>
+<span style="font-size: medium;">Topstroom samenstelling is bekend uit de specificatie: <br>Water is 1 wt.% en dus is methanol 100-1 = 99 wt.%. </span> <span style="font-size: medium;"><br>De hoeveelheid methanol in deze stroom is te bepalen uit de zgn. recovery. <br>Deze recovery is 99% van de ingaande methanol = 99% van 50 t/h = 49.5 t/h. </span> <br><span style="font-size: medium;"> 49.5 t/h komt overeen met 99 wt.% à 100 wt.% = 50 t/h. Water is daarom 0.5 t/h in de topstroom.</span></div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint5.id)">e. Hint</button></p>
+<div id="deelhint5" class="panel">
+<p><span style="font-size: medium;">IN = UIT. <br>Je weet wat er ingaat en je weet wat er boven uit gaat. Wat moet er nog dan beneden uitkomen?</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel5.id)">e. Antwoord</button></p>
+<div id="panel5" class="panel">
+<div id="drag5" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep naar beneden om meer te zien</p>
+</div>
+<div id="txt5"></div>
+</div>
+<span style="font-size: medium;">
+$$
+\begin{aligned}
+\text{IN} &= \text{UIT} \\
+\text{Feed}_{\ce{CH3OH}} &= \text{Top}_{\ce{CH3OH}} + \text{Bodem}_{\ce{CH3OH}} \\
+\text{Bodem}_{\ce{CH3OH}} &= \text{Feed}_{\ce{CH3OH}} - \text{Top}_{\ce{CH3OH}} = 50 - 49.5 = 0.5\ \text{t/h Methanol} \\
+\text{Idem voor water,}& \\
+\text{Bodem}_{\ce{H2O}} &= \text{Feed}_{\ce{H2O}} - \text{Top}_{\ce{H2O}} = 10 - 0.5 = 9.5\ \text{t/h Water} \\
+\end{aligned}
+$$
+</span>
+</div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint6.id)">f. Hint</button></p>
+<div id="deelhint6" class="panel">
+<p><span style="font-size: medium;">IN = UIT&nbsp;<br>Je weet wat er uit de top gaat en je weet grootte&nbsp;van&nbsp;de reflux. <br>Hoeveel t/h&nbsp;moet er dan de koeler inkomen?</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel6.id)">f. Antwoord</button></p>
+<div id="panel6" class="panel">
+<div id="drag6" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep naar beneden om meer te zien</p>
+</div>
+<div id="txt6"></div>
+</div>
+<p><span style="font-size: medium;">De top stroom is berekend op 50 t/h. De reflux stroom terug naar de destillatie kolom is 40 t/h de totale hoeveelheid dampstroom (gasstroom) die in de condenser wordt gecondenseerd bij stationaire toestand (steady state) = 50 +40 = 90 t/h.</span></p>
+<p><span style="font-size: medium;">Dit komt overeen met 25 kg /s. De verdampingswarmte van deze stroom is 1000 kJ/kg om deze stroom te condenseren (vloeibaar te maken) kost 25 kg/s x 1000 kJ/kg = 25000 kJ/s = 25000 kW aan koelenergie</span>.</p>
+</div>
+<p>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Antwoord2.JS"></script>
+</p></body></html>

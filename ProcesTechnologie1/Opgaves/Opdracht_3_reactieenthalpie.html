@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html><head>
+				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Standard.CSS">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess,
+      errorCallback: function(msg, err) {
+        console.error('KaTeX error:', msg, err);
+      },
+      throwOnError: false
+    });"></script>
+ <style>
+				:root { --body-text-color: #494c4e; }
+				body {
+				color: var(--body-text-color);
+			font-family: 'Lato', sans-serif;
+			font-size: 0.95rem;
+			font-weight: normal;
+			letter-spacing: 0.01rem;
+			line-height: 1.4rem;
+			margin: 0;
+			padding: 0.4rem 0.75rem !important;
+		}
+		table {
+			font-family: 'Lato', sans-serif;
+			font-size: inherit;
+		}
+		.katex-display {
+			text-align: left !important;
+		}
+		.katex {
+			font-family: 'Lato', sans-serif !important;
+			font-size: 1em;
+		}
+		/* Container for side-by-side layout */
+		.side-by-side {
+			display: flex;
+			align-items: flex-start;
+			gap: 20px;
+			margin: 1em 0;
+		}
+		.side-by-side img {
+			flex-shrink: 0;
+		}
+		.side-by-side .latex-table {
+			flex-grow: 1;
+		}
+		/* Compact table styling */
+		.side-by-side .latex-table .katex-display {
+			margin: 0 !important;
+			font-size: 1em;
+		}
+		.side-by-side .latex-table .katex {
+			font-size: 1em;
+		}
+		li {
+			margin-top: 1em;
+		}
+		</style>
+			<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+<!-- Set global KaTeX array row spacing for aligned/array environments -->
+<span style="display:none">\(\gdef\arraystretch{1.8}\)</span>
+<!-- Macro: red cancel stroke, body text color via HTML color -->
+<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+</head><body>
+<ul style="list-style-type: lower-alpha;">
+<li><span style="font-size: medium;">Geef in een diagram weer de reactie-enthalpie voor de omzetting van \(\ce{CH4}\) met stoom tot CO en \(\ce{H2}\) (in de reformer) en leid uit het diagram de reactie-enthalpie af.</span>
+<br><span style="font-size: medium;"><br>Gegeven:
+	<ul>
+	<li style="margin-top: 0;">de vormingsenthalpie \(\Delta H_f\) van \(\ce{CH4}\) bedraagt \(-76\) kJ/mol</li>
+	<li style="margin-top: 0;">de vormingsenthalpie van \(\ce{CO}\) bedraagt \(-111\) kJ/mol</li>
+	<li style="margin-top: 0;">de vormingsenthalpie van \(\ce{H2O}\) (vloeistof!) bedraagt \(-286\) kJ/mol</li>
+	<li style="margin-top: 0;">de verdampingsenthalpie van water \(\Delta H_v = + 44\) kJ/mol.</li>
+</ul>
+	<li>  
+	<span style="font-size: medium;">De reformer wordt bedreven bij een temperatuur van 1130 K (voorwerpen met deze temperatuur zijn roodgloeiend).
+	<br>Bij 1130 K bedraagt de evenwichtsconstante Kp 6.3 (een ingenieur werkt niet met gasconcentraties maar met deeldrukken, ook wel partiaaldrukken genoemd, zie §1.3.2). \(K_{p}\) is hier gebaseerd op partiaaldrukken in mega-Pascal (MPa).
+	<br>De reformer-reactie is zeer snel en daarom is de afwijking van evenwicht zo klein dat deze te verwaarlozen is. De doelstelling van een chemisch technoloog is dan ook zo weinig mogelijk van het kostbare methaan over te houden in het evenwichtsmengsel. Een partiaaldruk voor methaan van slechts 0.002 MPa is acceptabel.
+	<br><br>1. Formuleer de evenwichtsvoorwaarde in termen van partiaaldrukken en bereken de totaal druk in het evenwichtsmengsel (dat de reformer verlaat).
+	<br>Gegeven: \(P_{\ce{H2}}\) = \(3P_{CO}\) en \(P_{\ce{H2O}}\) = 1.2 MPa.
+	<br>(Extra opdracht: probeer deze som ook eens waarbij \(P_{\ce{H2O}}\) niet gegeven is en er een totaal druk heerst van 1.8 MPa, bereken nu \(P_{\ce{H2O}}\))
+	<br><br>2. Bereken ook de \(F_{\ce{H2O}}\) stroom (in kmol/s) die de reformer verlaat, indien de CO stroom dan 1 kmol/s bedraagt.</span></li>
+</ul>
+<p><span style="font-size: medium;">Antwoorden:</span></p>
+<p><span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">kJ/mol \(\Delta H_{reactie}\)</span></p>
+<p><span style="font-size: medium;">b.1.</span><br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">MPa \(P_{tot}\)</span><br><span style="font-size: medium;"></span><br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">MPa \(P_{H_{2}O}\) (extra opdracht)</span></p>
+<p><span style="font-size: medium;">b.2.</span><br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">kmol/s \(F_{H_{2}O}\)</span></p>
+<p><br><button type="button" class="checkin checkin" onclick="checkv2([207,1.817,1.186,7.8])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3 \cdot 10^{-4}\) invullen als 3e-4)<br><br><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
+<div id="deelhint1" class="panel">
+<p><span style="font-size: medium;"> Kijk bij paragraph 1.3 voor hoe dit moet.</span></p>
+<p><span style="font-size: medium;"> Het water dat hier hier wordt gegeven is een vloeistof deze moet eerst naar stoom gebracht worden!</span></p>
+<p><span style="font-size: medium;"> \(\Delta H_{vap}=+44\ kJ/mol;\ \ce{H2O(l) -> H2O(g)} \)</span></p>
+<p><span style="font-size: medium;">\(\Delta H_{f}\ \ce{H2O(g)} = -286 + 44 = -242\ kJ/mol \)</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord</button></p>
+<div id="panel1" class="panel">
+<div id="drag1" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt1"></div>
+</div>
+<p><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Vraag3a2.svg" width="414" height="276"></p>
+<p>Alternatief</p>
+$$
+\begin{aligned}
+&\ce{H2O(l)->H2O(g)};\ \Delta H_{vap}=+44\,kJ/mol\\
+&\Delta H_{vap}\ \ce{H2O(g)}=-286 +44=-242\ kJ/mol\\
+&\ce{CH4(g) + H2O(g)<-->CO(g) + 3H2(g)}\\[-1em]
+&-76\quad \quad -242\quad\quad -111 \quad\ \quad 0\\
+&\Delta H_{reactie}=\sum \Delta H_{f(producten)}-\sum \Delta H_{f(reagentia)}\\
+&\Delta H_{reactie}=(-111)-(-76+(-242))\\ 
+&\Delta H_{reactie}=(-111)-318\\ 
+&\Delta H_{reactie}=+207\ kJ/mol
+\end{aligned}
+$$
+</div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b.1 Hint</button></p>
+<div id="deelhint2" class="panel">
+<p><span style="font-size: medium;">Kijk goed naar wat er gegeven is. Hier staat dus dat de partiaal druk van H<sub>2</sub> gezien kan worden als 3 maal de partiaal druk van CO</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel2.id)">b.1 Antwoord</button></p>
+<div id="panel2" class="panel">
+<div id="drag2" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt2"></div>
+</div>
+<span style="font-size: medium;">
+$$
+\renewcommand{\arraystretch}{2.0}
+\begin{aligned}
+\ce{CH4(g) + H2O(g) &<--> CO(g) + 3H2(g)}\\
+Door\ overmaat\ \ce{H2O(g)}\ &verschuift\ het\ evenwicht\ geheel\ rechts\\
+P_{\ce{CH4}}=0.002\,MPa,\ &P_{\ce{H2O}}=1.2\,MPa,\ P_{\ce{H2}}=3\cdot P_{\ce{CO}}\ en\ K_p=6.3 \\
+Er\ geldt:\ \dfrac{P_{\ce{CO}}\times P_{\ce{H2}}^3}{P_{\ce{CH4}}\times P_{\ce{H2O}}}&=K_p(=6.3)\ (MPa)^2\\
+\dfrac{P_{\ce{CO}}\times (3P_{\ce{CO}})^3}{0.002\times 1.2}&=6.3\\
+\dfrac{27P_{\ce{CO}}^4}{0.002\times 1.2}&=6.3\\ 
+0.01512 &= 27P_{\ce{CO}}^4\\ 
+0.00056 &= P_{\ce{CO}}^4\\ 
+P_{\ce{CO}}&=\sqrt[4]{0.00056}\\ 
+P_{\ce{CO}}&=0.1538\ MPa \\ 
+P_{tot} &= P_{\ce{CH4}} + P_{\ce{H2O}} + P_{\ce{CO}} + P_{\ce{H2}} \\
+P_{tot} &=0.002 + 1.2 + 0.1538 + 3 \times 0.1538 = 1.817\ MPa\\
+\end{aligned}
+$$
+</span>
+<br><br><strong>Extra opdracht</strong> 
+<span style="font-size: medium;">
+
+$$
+\begin{aligned}
+\text{P}_\ce{CH4}=0.002\,\text{MPa},\ &\text{P}_{\text{tot}}=1.8\,\text{MPa},\ \text{P}_\ce{H2}=3\cdot\text{P}_\ce{CO}\ \text{en}\ \text{K}_\text{p}=6.3 \\
+\text{Er geldt:}\quad \dfrac{\ce{P_{CO}}\times \ce{P_{\ce{H2}}^3}}{\ce{P_{\ce{CH4}}}\times \ce{P_{\ce{H2O}}}}&=\text{K}_\text{p}(=6.3)\ \text{(MPa)}^2\\
+\dfrac{\ce{P_{CO}}\times (3\ce{P_{CO}})^3}{0.002\times 1.2}&=6.3\\
+\text{P}_{\text{tot}} &=\text{P}_{\text{CO}} + \text{P}_\ce{H2} + \text{P}_\ce{H2O} + \text{P}_\ce{CH4} = 1.8\,\text{MPa} \\
+1.8 &= \ce{P_{CO}} + 3\ce{P_{CO}} + \ce{P_{\ce{H2O}}} + (0.002 \approx 0) \\
+\text{Dus:}\quad \ce{P_{\ce{H2O}}} &= 1.8 - 4\ce{P_{CO}} \\
+\dfrac{27\ce{P_{CO}^4}}{0.002\times (1.8-4\text{P}_{\text{CO}})}&=6.3\\ 
+\dfrac{13500\ce{P_{CO}^4}}{1.8-4\ce{P_{CO}}}&=\dfrac{6.3}{1} \\
+(1.8-4\ce{P_{CO}}) \times 6.3 &= 13500\ce{P_{CO}^4} \\
+-13500\ce{P_{CO}^4} - 25.2\ce{P_{CO}} + 11.34 &= 0\quad (\text{Iteratie})\\
+\ce{P_{CO}}&=0.1534\,\text{MPa}\\
+\ce{P_{\ce{H2}}}&=0.4602\,\text{MPa}\\
+\ce{P_{\ce{H2O}}}&=1.8-4\times 0.1534 \\
+&=1.186\,\text{MPa}\\
+\end{aligned}
+$$
+</span>
+</div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">b.2 Hint</button></p>
+<div id="deelhint3" class="panel">
+<p><span size="3" style="font-size: medium;">Denk aan de Gaswet. \(\text{PV}=\text{nRT}\), wat is hier allemaal constant?</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel3.id)">b.2 Antwoord</button></p>
+<div id="panel3" class="panel">
+<div id="drag3" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt3"></div>
+</div>
+<span style="font-size: medium;">
+$$
+\begin{aligned}
+\text{P}\cdot \text{V} &= \text{n} \cdot \text{R} \cdot \text{T} \quad\quad\quad(\text{T, V})_{\text{constant}}\\
+\text{P}&=\text{n} \quad\quad\quad \text{kmol/s}=\text{n/s}=\text{F}\ (\text{kmol/s})\\
+\frac{\text{P}_1}{\text{P}_2}&=\frac{\text{F}_1}{\text{F}_2} \quad\rightarrow\quad \frac{\text{P}_{\ce{H2O}}}{\text{P}_{\ce{CO}}}=\frac{\text{F}_{\ce{H2O}}}{\text{F}_{\ce{CO}}}
+\quad \rightarrow \quad \frac{\text{F}_{\ce{H2O}}}{\text{F}_{\ce{CO}}}=\frac{\text{P}_{\ce{H2O}}}{\text{P}_{\ce{CO}}}\\
+\frac{\text{F}_{\ce{H2O}}}{\rcancel{\text{F}_{\ce{CO}}}}&=\frac{\text{P}_{\ce{H2O}}}{\text{P}_{\ce{CO}}}\times \rcancel{\text{F}_{\ce{CO}}} \quad
+\rightarrow \text{F}_{\ce{H2O}}=\frac{1.2}{0.1538}\times 1\ \text{kmol/s}=7.8\ \text{kmol/s}
+\end{aligned}
+$$
+</span>
+</div>
+<p>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Antwoord2.JS"></script>
+</p></body></html>
