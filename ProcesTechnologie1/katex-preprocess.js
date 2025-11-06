@@ -1,5 +1,5 @@
 function katexPreProcess(math) {
-  // Skip wrapping text inside \ce{}, \begin{}, and \end{} arguments
+  // Skip wrapping text inside \ce{}, \begin{}, \end{} arguments, and [...]
   // Commands are preserved but their arguments are processed
   var result = '';
   var i = 0;
@@ -36,6 +36,18 @@ function katexPreProcess(math) {
         }
       }
       // For all other commands (including \dfrac), continue processing
+    } else if (math[i] === '[') {
+      // Found opening square bracket - copy everything until closing bracket without processing
+      result += '[';
+      i++;
+      while (i < math.length && math[i] !== ']') {
+        result += math[i];
+        i++;
+      }
+      if (i < math.length && math[i] === ']') {
+        result += ']';
+        i++;
+      }
     } else if (/[A-Za-z]/.test(math[i])) {
       // Found a letter - collect the word
       var wordStart = i;
