@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html><head>
-				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Standard.CSS">
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
     onload="renderMathInElement(document.body,{
       delimiters:[
@@ -15,112 +16,61 @@
       fleqn:true,
       globalGroup:true,
       trust:true,
-      preProcess: function(math) {
-        // Skip wrapping text inside \ce{} only
-        // Process \dfrac{}{} and other commands normally
-        var result = '';
-        var i = 0;
-        while (i < math.length) {
-          if (math[i] === '\\' && i + 1 < math.length) {
-            // Found a command - extract command name
-            var cmdStart = i;
-            i++; // skip backslash
-            var cmdNameStart = i;
-            while (i < math.length && /[a-zA-Z]/.test(math[i])) {
-              i++;
-            }
-            var cmdName = math.substring(cmdNameStart, i);
-            result += math.substring(cmdStart, i);
-            
-            // Only skip processing for \ce{} commands
-            if (cmdName === 'ce') {
-              // Skip whitespace
-              while (i < math.length && /\s/.test(math[i])) {
-                result += math[i];
-                i++;
-              }
-              // Copy the \ce{} content without processing
-              while (i < math.length && math[i] === '{') {
-                var braceCount = 1;
-                result += '{';
-                i++;
-                while (i < math.length && braceCount > 0) {
-                  if (math[i] === '{') braceCount++;
-                  else if (math[i] === '}') braceCount--;
-                  result += math[i];
-                  i++;
-                }
-              }
-            }
-            // For all other commands (including \dfrac), don't skip - continue processing
-          } else if (/[A-Za-z]/.test(math[i])) {
-            // Found a letter - collect the word
-            var wordStart = i;
-            while (i < math.length && /[A-Za-z]/.test(math[i])) {
-              i++;
-            }
-            var word = math.substring(wordStart, i);
-            // Wrap ALL letters in \text{}, including single letters
-            result += '\\text{' + word + '}';
-          } else {
-            // Other character - keep as is
-            result += math[i];
-            i++;
-          }
-        }
-        return result;
-      }
+      preProcess: katexPreProcess
     });"></script>
  <style>
-				:root { --body-text-color: #494c4e; }
-				body {
-				color: var(--body-text-color);
-			font-family: 'Lato', sans-serif;
-			font-size: 0.95rem;
-			font-weight: normal;
-			letter-spacing: 0.01rem;
-			line-height: 1.4rem;
-			margin: 0;
-			padding: 0.4rem 0.75rem !important;
-		}
-		table {
-			font-family: 'Lato', sans-serif;
-			font-size: inherit;
-		}
-		.katex-display {
-			text-align: left !important;
-		}
-		.katex {
-			font-family: 'Lato', sans-serif !important;
-			font-size: 1em;
-		}
-		/* Container for side-by-side layout */
-		.side-by-side {
-			display: flex;
-			align-items: flex-start;
-			gap: 20px;
-			margin: 1em 0;
-		}
-		.side-by-side img {
-			flex-shrink: 0;
-		}
-		.side-by-side .latex-table {
-			flex-grow: 1;
-		}
-		/* Compact table styling */
-		.side-by-side .latex-table .katex-display {
-			margin: 0 !important;
-			font-size: 1em;
-		}
-		.side-by-side .latex-table .katex {
-			font-size: 1em;
-		}
-		</style>
-			<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+                :root { --body-text-color: #494c4e; }
+                body {
+                color: var(--body-text-color);
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            font-weight: normal;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            margin: 0;
+            padding: 0.4rem 0.75rem !important;
+        }
+        table {
+            font-family: 'Lato', sans-serif;
+            font-size: inherit;
+        }
+        .katex-display {
+            text-align: left !important;
+        }
+        .katex {
+            font-family: 'Lato', sans-serif !important;
+            font-size: 1em;
+        }
+        /* Container for side-by-side layout */
+        .side-by-side {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 1em 0;
+        }
+        .side-by-side img {
+            flex-shrink: 0;
+        }
+        .side-by-side .latex-table {
+            flex-grow: 1;
+        }
+        /* Compact table styling */
+        .side-by-side .latex-table .katex-display {
+            margin: 0 !important;
+            font-size: 1em;
+        }
+        .side-by-side .latex-table .katex {
+            font-size: 1em;
+        }
+        li {
+            margin-top: 1em;
+        }
+        </style>
+            <link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
 <!-- Set global KaTeX array row spacing for aligned/array environments -->
-<span style="display:none">\(\gdef\arraystretch{1.6}\)</span>
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
 <!-- Macro: red cancel stroke, body text color via HTML color -->
-<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+<span style="display:none">\( \gdef\rcancel#1{\color{red}\cancel{#1}} \)</span>
 			</head><body>
 <p><span style="font-size: medium;">De voeding van een destillatiekolom bestaat uit twee stromen: een waterige oplossing \(F_1\) (80% HAc en 20% \(H_2O\)) en benzeen (\(F_2\)).<br></span></p>
 <ul style="list-style-type: decimal">
@@ -191,7 +141,7 @@
 <tr>
 <td>&nbsp;</td>
 <td style="text-align: center; font-size: medium;">W</span></td>
-<td style="text-align: right;font-size: medium;">\(x_{F1,W} \cdot F_1\)</td>
+<td style="text-align: right;font-size: medium;">\(x_{F_1,W} \cdot F_1\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td><span style="font-size: medium;">\(x_{D,W} \cdot D\)</span></td>
 <td>&nbsp;</td>
@@ -208,7 +158,7 @@
 <tr>
 <td>&nbsp;</td>
 <td style="text-align: center;"><span style="font-size: medium;">HAc</span></td>
-<td style="text-align: right;font-size: medium;">\(x_{F1,HAc} \cdot F_1\)</td>
+<td style="text-align: right;font-size: medium;">\(x_{F_1,HAc} \cdot F_1\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td><span style="font-size: medium;">\(x_{D,HAc} \cdot D + B\)</span></td>
 <td>&nbsp;</td>
@@ -280,5 +230,5 @@
 </tbody>
 </table>
 <p></p>
-<script type="text/javascript" src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Antwoord2.JS"></script>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord2.JS"></script>
 </div></body></html>
