@@ -70,17 +70,18 @@
 <!-- Set global KaTeX array row spacing for aligned/array environments -->
 <span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
 			</head><body>
-<p><span style="font-size: medium;">De verse voeding van een verdamper bedraagt 18400 kg/uur en bevat 10.0 massa % NaCl, 3.0 % KCl en 87.0 % water. In de verdamper ontwijkt waterdamp, er wordt vast NaCl uit afgevoerd en er wordt een vloeistofstroom T afgetapt. De samenstelling (in massaprocenten) van de vloeistofstroom T:&nbsp; NaCl: 16.8, KCl: 21.6;&nbsp;en water: 61.6.</span></p>
+<p><span style="font-size: medium;">De verse voeding van een verdamper bedraagt 18400 kg/uur en bevat 10.0 massa % NaCl, 3.0 % KCl en 87.0 % water. In de verdamper ontwijkt waterdamp, er wordt vast NaCl uit afgevoerd en er wordt een vloeistofstroom T afgetapt. De samenstelling (in massaprocenten) van de vloeistofstroom T: NaCl: 16.8, KCl: 21.6 en water: 61.6.</span></p>
 <p><span style="font-size: medium;">In een kristallisator wordt vervolgens uit de vloeistofstroom T een deel van de KCl (100% zuiver) afgescheiden. De overblijvende vloeistofstroom bevat o.a. 18.9 % NaCl en wordt als recycle bij de voeding gevoegd. Zie het blokschema:</span></p>
 <p><img src="https://arjkloek.github.io/eLearning/Massabalansen/images/BlokschemaOpgave47.svg" width="413" height="173"></p>
 <p><span style="font-size: medium;">a.&nbsp; Hoe groot is de recycle-stroom in kg/uur?</span></p>
-<p><span style="font-size: medium;">b.&nbsp; Wat is de samenstelling van de recycle-stroom? </span><br><br><span style="font-size: medium;"> Antwoord:</span><br><br><span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">R (kg/h)</span> <br><span style="font-size: medium;">b.</span> <br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">x<sub>R</sub><sub>,KCl</sub> (kg/h)</span> <br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> x<sub>R</sub><sub>,H2O</sub> (kg/h)</span></p>
+<p><span style="font-size: medium;">b.&nbsp; Wat is de samenstelling van de recycle-stroom? </span><br><br><span style="font-size: medium;"> Antwoord:</span><br><br><span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">R (kg/h)</span> <br><span style="font-size: medium;">b.</span> <br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">\(x_{R,KCl}\) (kg/h)</span> <br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> \(x_{R,\ce{H2O}}\) (kg/h)</span></p>
 <p><br>
- 
-<button type="button" class="checkin checkin" onclick="checkv2([4416,0.118,0.693])">Check</button> (Je kunt wetenschappelijke notatie zoals 3·10<sup>-4</sup> invullen als 3e-4)<br><br></p>
+
+<button type="button" class="checkin checkin" onclick="checkv2([4416,0.118,0.693])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3\cdot 10^{-4}\) invullen als 3e-4)<br><br></p>
+
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
-<div id="deelhint1" class="panel"><br>
-<p>Teken het blokschema en vul alle gegevens in die je weet. <br>Begin met het opstellen van een TM over het overall systeem.<br>Bij K<sub>1</sub> gaat er alleen NaCl uit en bij K<sub>2</sub> gaat er alleen puur KCl uit.</p>
+<div id="deelhint1" class="panel">
+<p>Teken het blokschema en vul alle gegevens in die je weet. <br>Begin met het opstellen van een TM over het overall systeem.<br>Bij \(K_1\) gaat er alleen NaCl uit en bij \(K_2\) gaat er alleen puur KCl uit.</p>
 </div>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">Blokschema</button></p>
 <div id="deelhint2" class="panel">
@@ -94,96 +95,71 @@
 </div>
 <div id="txt1"></div>
 </div>
-<p><span style="font-size: medium;">Massabalansen&nbsp;Continueproces&nbsp;(steady&nbsp;state)</span></p>
-<p><span style="font-size: x-small;">*(Als we alleen kijken naar de zouten telt W niet mee)</span></p>
-<table border="0">
+<p><span style="font-size: medium;">Massabalansen Continueproces (steady state)<br>\(^\dagger\)(W(aterdamp) bevat geen zout!)</span></p>
+
+<table>
 <tbody>
 <tr>
-<td><span style="font-size: medium;">Overall Systeem</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">In&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; Uit</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="8"><span style="font-size: medium;">Overall Systeem</span></td>
+</tr>
+<tr></tr>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">In</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="4"><span style="font-size: medium;">Uit</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">TM</span></td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">F&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; K<sub>1</sub> + K<sub>2</sub> + (W)*&nbsp;&nbsp;</span></td>
-<td>&nbsp;(1)</td>
-<td>&nbsp;</td>
+<td colspan="2"><span style="font-size: medium;">TM</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">F</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(K_1+K_2+(W)^\dagger\)</span></td>
+<td>(1)</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td style="text-align: center;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="8">&nbsp;</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
 <td><span style="font-size: medium;">CM</span></td>
-<td><span style="font-size: medium;">&nbsp;&nbsp;NaCl&nbsp;&nbsp;</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">x<sub>F</sub><sub>,</sub><sub>NaCl</sub>·F&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; K<sub>1</sub></span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td><span style="font-size: medium;">NaCl</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">\(x_{F,NaCl}\cdot F\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(K_1\)</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">&nbsp; 0.10 × 18400&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; K<sub>1</sub></span></td>
-<td><span style="font-size: medium;">→&nbsp; &nbsp;</span></td>
-<td><span style="font-size: medium;">K<sub>1</sub> = 1840 kg/h</span></td>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(0.10 \cdot 18400\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(K_1\)</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td style="text-align: center;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(K_1\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">1840 kg/h</span></td>
+</tr>
+
+<tr>
+<td colspan="8">&nbsp;</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">&nbsp;&nbsp;KCl</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">x<sub>F</sub><sub>,KCl</sub>&nbsp;· F&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; K<sub>2</sub></span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="2"><span style="font-size: medium;">KCl</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">\(x_{F,KCl} \cdot F\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(K_2\)</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">0.03 × 18400&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; K<sub>2</sub></span></td>
-<td><span style="font-size: medium;">→</span></td>
-<td><span style="font-size: medium;">K<sub>2</sub> = 552 kg/h</span></td>
+<td colspan="2">&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">\(0.03 \cdot 18400\)</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(K_2\)</span></td>
+</tr>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(K_2\)</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">552 kg/h</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint5.id)">a. R Hint</button></p>
-<div id="deelhint5" class="panel"><br>
-<p>Nu we de K's weten kunnen we kijken&nbsp;naar de systeem balans van de kristallisator. We hebben nu 2 onbekendes. Kunnen we hiervan weer 1 onbekende maken voor de CM balans van de kristallisator?</p>
+<div id="deelhint5" class="panel">
+<p>Nu we de K's weten kunnen we kijken naar de systeem balans van de kristallisator. We hebben nu 2 onbekendes. Kunnen we hiervan weer 1 onbekende maken voor de CM balans van de kristallisator?</p>
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel2.id)">a. R Antwoord</button></p>
 <div id="panel2" class="panel">
@@ -193,103 +169,71 @@
 </div>
 <div id="txt2"></div>
 </div>
-<br>
-<table border="0" style="width: 618px; height: 94px;">
+<table>
 <tbody>
 <tr>
-<td colspan="2"><span style="font-size: medium;">Systeem Kristallisator</span></td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="9"><span style="font-size: medium;">Systeem Kristallisator</span></td>
 </tr>
 <tr>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">TM</span></td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">T&nbsp;&nbsp;</span></td>
-<td><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; K<sub>2</sub> + R</span></td>
-<td><span style="font-size: medium;">&nbsp; (2)</span></td>
+<td colspan="2"><span style="font-size: medium;">TM</span></td>
+<td colspan="2" style="text-align: right;"><span style="font-size: medium;">T</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(K_2 + R\)</span></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td><span style="font-size: medium;">(2)</span></td>
 </tr>
 <tr>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">T&nbsp;&nbsp;</span></td>
-<td><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; 552 + R</span></td>
-<td><span style="font-size: medium;">&nbsp; (2')</span></td>
+<td  colspan="4" style="text-align: right;"><span style="font-size: medium;">T</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">552 + R</span></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td><span style="font-size: medium;">(2')</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;"> CM </span></td>
-<td>NaCl</td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="8"><span style="font-size: medium;">CM NaCl</span></td>
 </tr>
 <tr>
+<td colspan="4" style="text-align: right;font-size: medium;">\(x_{T,NaCl} \cdot T\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(x_{R,NaCl} \cdot R\)</span></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;"> x<sub>T</sub><sub>,</sub><sub>NaCl</sub>·T&nbsp;&nbsp;</span></td>
-<td><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;"> &nbsp;x<sub>R</sub><sub>,</sub><sub>NaCl</sub>·R </span></td>
-<td><span style="font-size: medium;">&nbsp; (3)</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td><span style="font-size: medium;">(3)</span></td>
 </tr>
 <tr>
+<td colspan="4" style="text-align: right;font-size: medium;">0.168T</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">0.189R</span></td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">0.168 T&nbsp;&nbsp;</span></td>
-<td><span style="font-size: medium;">=&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;0.189 R</span></td>
-<td><span style="font-size: medium;">&nbsp; (3')</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td><span style="font-size: medium;">(3')</span></td>
 </tr>
+<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td><span style="font-size: medium;"> (2') invullen in (3') </span></td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="8"><span style="font-size: medium;"> (2') invullen in (3') </span></td>
+</tr>
+<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">0.168(552 + R)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="4"><span style="font-size: medium;">0.189R</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;"> 0.168 ( 552 + R)&nbsp;&nbsp; </span></td>
-<td><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp;0.189 R </span></td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">→</span></td>
-<td><span style="font-size: medium;">&nbsp;R = 4416 kg/h</span></td>
+<td colspan="4" style="text-align: right;font-size: medium;">R</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="4"><span style="font-size: medium;">4416 kg/h</span></td>
 </tr>
+
 </tbody>
 </table>
 <p></p>
 </div>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">b. Hint</button></p>
-<div id="deelhint3" class="panel"><br>
-<p>De enige onbekende is op dit moment nog de KCl die bij R erin gaat. Je weet hoeveel er bij K<sub>2</sub> er uitgaat.<br>Stel een CM over KCl op.</p>
+<div id="deelhint3" class="panel">
+<p>De enige onbekende is op dit moment nog de KCl die bij R erin gaat. Je weet hoeveel er bij \(K_2\) er uitgaat.<br>Stel een CM over KCl op.</p>
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel3.id)">b. Antwoord</button></p>
 <div id="panel3" class="panel">
@@ -299,67 +243,57 @@
 </div>
 <div id="txt3"></div>
 </div>
-<br>
-<table border="0" style="width: 644px; height: 140px;">
+<table>
 <tbody>
 <tr>
-<td colspan="3"><span style="font-size: medium;">Systeem Kristallisator</span><span style="font-size: medium;"></span>&nbsp;</td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
+<td colspan="9"><span style="font-size: medium;">Systeem Kristallisator</span></td>
+</tr>
+<tr><td colspan="9" style="line-height:0.25em;">&nbsp;</td></tr>
+<tr>
+<td colspan="9"><span style="font-size: medium;">R invullen in (2') :</span></td>
+<tr><td colspan="9" style="line-height:0.25em;">&nbsp;</td></tr>
+<tr>
+<td colspan="4" style="text-align: right;"><span style="font-size: medium;">T</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">552 + 4416</span></td>
 </tr>
 <tr>
-<td colspan="3"><span style="font-size: medium;">R invullen in (2') :</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">&nbsp;&nbsp;</span></td>
-<td style="text-align: center;">&nbsp;</td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
+<td colspan="4" style="text-align: right;"><span style="font-size: medium;">T</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">4968 kg/h</span></td>
+</tr>
+
+<tr>
+<td colspan="8"><span style="font-size: medium;">CM KCl</span></td>
 </tr>
 <tr>
-<td colspan="3">&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;"> T&nbsp; </span></td>
-<td><span style="font-size: medium;"> = </span></td>
-<td><span style="font-size: medium;">&nbsp;552 + 4416 = 4968 kg/h </span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="4" style="text-align: right;font-size: medium;">\(x_{T,KCl}\)</td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(x_{R,KCl} · R + K_{2}\)</span></td>
 </tr>
 <tr>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;CM</span></td>
-<td style="text-align: right;">&nbsp; &nbsp; &nbsp;<span style="font-size: medium;">KCl&nbsp;&nbsp;</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">x<sub>T</sub><sub>,KCl&nbsp;&nbsp;&nbsp;</sub></span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;x<sub>R</sub><sub>,KCl</sub>&nbsp;· R + K<sub>2</sub>&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
-<td><span style="font-size: medium;">&nbsp;</span></td>
+<td colspan="4" style="text-align: right;font-size: medium;">\(0.216 \cdot 4968\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(x_{R,KCl} \cdot 4416 + 552\)</span></td>
+</tr>
+<td colspan="4" style="text-align: right;font-size: medium;">\(x_{R,KCl}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">0.118</span></td>
+</tr>
+
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">\(x_{R,W}\)</td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(1 - 0.118 - 0.189\)</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;"> 0.216 × 4968&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp;x<sub>R</sub><sub>,KCl</sub>&nbsp;× 4416 + 552</span></td>
-<td><span style="font-size: medium;">→&nbsp;&nbsp;</span></td>
-<td><span style="font-size: medium;">x<sub>R</sub><sub>,KCl</sub>&nbsp;= 0.118</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">x<sub>R</sub><sub>,W&nbsp;&nbsp;</sub>&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp;1 - 0.118 - 0.189</span></td>
-<td><span style="font-size: medium;">→</span></td>
-<td><span style="font-size: medium;">x<sub>R</sub><sub>,W</sub>&nbsp; &nbsp;= 0.693</span></td>
+<td colspan="4" style="text-align: right;font-size: medium;">\(x_{R,W}\)</td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">0.693</span></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p></p>
 <p>
 <script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
 </p></body></html>
