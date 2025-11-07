@@ -13,14 +13,13 @@
 
 
 .mydivheader {
-//border: 0.5px solid white;
-//content: '\u27F1';
+  /* border: 0.5px solid white; */
+  /* If you want an icon use .mydivheader::before { content: '\27F1'; } */
   padding: 5px;
   cursor: move;
-   background-color: #2196F3;
-    font-weight: bold;
-      overflow: hidden;
-
+  background-color: #2196F3;
+  font-weight: bold;
+  overflow: hidden;
   color: #fff;
  cursor: n-resize;
 }
