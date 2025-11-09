@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html><head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess
+    });"></script>
+ <style>
+                :root { --body-text-color: #494c4e; }
+                body {
+                color: var(--body-text-color);
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            font-weight: normal;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            margin: 0;
+            padding: 0.4rem 0.75rem !important;
+        }
+        table {
+            font-family: 'Lato', sans-serif;
+            font-size: inherit;
+        }
+        .katex-display {
+            text-align: left !important;
+        }
+        .katex {
+            font-family: 'Lato', sans-serif !important;
+            font-size: 1em;
+        }
+        /* Container for side-by-side layout */
+        .side-by-side {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 1em 0;
+        }
+        .side-by-side img {
+            flex-shrink: 0;
+        }
+        .side-by-side .latex-table {
+            flex-grow: 1;
+        }
+        /* Compact table styling */
+        .side-by-side .latex-table .katex-display {
+            margin: 0 !important;
+            font-size: 1em;
+        }
+        .side-by-side .latex-table .katex {
+            font-size: 1em;
+        }
+        li {
+            margin-top: 1em;
+        }
+        </style>
+            <link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+<!-- Set global KaTeX array row spacing for aligned/array environments -->
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
+			</head><body>
+<p><span style="font-size: medium;">In een aardoliebedrijf wordt propaan katalytisch gedehydrogeneerd tot propeen. De conversie-graad is 20%, de selectiviteit is 60%. Naast propeen ontstaat verder nog: waterstof, koolstof, methaan, ethaan en etheen.</span></p>
+<p><span style="font-size: medium;">In een productseparator wordt het propeen afgescheiden en de koolstof verwijderd, waarna een gas overblijft dat de volgende samenstelling heeft:<br>waterstof: 65%; methaan: 5%; ethaan: 20%; etheen: 10%</span></p>
+<p><span style="font-size: medium;">Het niet omgezette propaan wordt teruggevoerd naar de reactor. We gaan uit van 100 kmol /hr propaan (verse) voeding.</span></p>
+<ul style="list-style-type: lower-alpha; font-size: medium; margin-left: 0;
+">
+<li>Bereken hoeveel de terugvoer aan propaan bedraagt.</li>
+<li>Bereken hoeveel propeen er wordt gevormd.</li>
+<li>Bereken hoeveel gasmengsel \(\ce{H2}\) etc. er ontstaat.</li>
+<li>Bereken hoeveel koolstof er wordt afgescheiden</li>
+</ul>
+
+<p><span style="font-size: medium;"> Antwoord:</span><br><br><span style="font-size: medium;"> a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> R (kmol/hr) </span><br><span style="font-size: medium;"> b. </span><br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"> </i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> P (kmol/hr) </span><br><span style="font-size: medium;"> c.</span><br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> W (kmol/hr) </span><br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> \(W_\ce{H2}\) (kmol/hr) </span><br><i id="vrg4" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw4" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> \(W_\ce{CH4}\) (kmol/hr) </span><br><i id="vrg5" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw5" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> \(W_\ce{C2H6}\) (kmol/hr)</span><br><i id="vrg6" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw6" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> \(W_\ce{C2H4}\) (kmol/hr)</span><br><span style="font-size: medium;"> d.</span><br><i id="vrg7" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw7" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> K (kmol/hr)</span><br><span style="font-size: medium;"> </span><br><span style="font-size: medium;"><button type="button" class="checkin checkin" onclick="checkv2([400,60,142,92.3,7.1,28.4,14.2,27.7])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3\cdot 10^{-4}\) invullen als 3e-4)</span><br><br></p>
+<p><span style="font-size: medium;"><button type="button" class="deelhint" onclick="antwoordzien(deelhint0.id)">Blokschema</button></span></p>
+<div id="deelhint0" class="panel"><img src="https://arjkloek.github.io/eLearning/Massabalansen/images/BlokschemaOpgave410.svg" width="600" height="238"> <br><span style="font-size: medium;">...</span></div>
+<p><span style="font-size: medium;"><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint Terugvoer Propaan</button></span></p>
+<div id="deelhint1" class="panel">
+<p><span style="font-size: medium;">Je gaat hier werken met molbalansen. Stel een CM voor de scheider op en daarna voor de reactor.&nbsp;<br>Bij de reactor hebben we weer te maken met productie en omzetting van sommige stoffen.&nbsp;</span></p>
+</div>
+<p><span style="font-size: medium;"> <!--<button type='button' class="deelhint" onclick="antwoordzien(deelhint5.id)" >Blokschema</button>
+<div id="deelhint5" class="panel">
+ <br />
+<p>Lopsem...</p>
+
+</div>--></span></p>
+<p><span style="font-size: medium;"> <button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord Terugvoer Propaan</button></span></p>
+<div id="panel1" class="panel">
+<div id="drag1" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt1"></div>
+</div>
+<br>
+<table border="0" style="width: 414px; height: 71px;">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: medium;">Systeem: Scheider S</span></td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">In&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; Uit (kmol/hr)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">CM</span></td>
+<td><span style="font-size: medium;">C<sub>3</sub>H<sub>8</sub>&nbsp;&nbsp;</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">T<sub>C<sub>3</sub>H<sub>8</sub>&nbsp;&nbsp;</sub></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; R</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">C<sub>3</sub>H<sub>6</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">T<sub>C<sub>3</sub>H<sub>6</sub>&nbsp;&nbsp;</sub></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; P</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">C</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">T<sub>C&nbsp;&nbsp;</sub></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; K</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">H<sub>2</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">T<sub>H<sub>2</sub>&nbsp;&nbsp;</sub></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; W<sub>H<sub>2</sub></sub></span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">CH<sub>4</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">T<sub>CH<sub>4</sub>&nbsp;&nbsp;</sub></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; W<sub>CH<sub>4</sub></sub></span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">C<sub>2</sub>H<sub>6</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">T<sub>C<sub>2</sub>H<sub>6</sub>&nbsp;&nbsp;</sub></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; W<sub>C<sub>2</sub>H<sub>6</sub></sub></span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">C<sub>2</sub>H<sub>4</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">T<sub>C<sub>2</sub>H<sub>4</sub>&nbsp;&nbsp;</sub></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; W<sub>C<sub>2</sub>H<sub>4</sub></sub></span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<table border="0" style="font-family: 'Open Sans', sans-serif; background-color: #ffffff; width: 524px; height: 45px;">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: medium;">Systeem: Reactor</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">0&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; IN&nbsp; - UIT + Prod. - Omz.</span></td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">CM</span></td>
+<td><span style="font-size: medium;">C<sub>3</sub>H<sub>8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">0&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; F<sub>IN</sub> -&nbsp;<span style="color: #000000; font-family: 'Open Sans', sans-serif; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">T</span><sub style="font-family: 'Open Sans', sans-serif; text-shadow: none !important; letter-spacing: normal; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 400; font-style: normal; font-size: 12px; position: relative; line-  vertical-align: baseline; bottom: -0.25em; color: #000000; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial;">C<sub style="font-family: inherit; text-shadow: none !important; letter-spacing: normal !important; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 9px; position: relative; line-  vertical-align: baseline; bottom: -0.25em;">3</sub>H<sub style="font-family: inherit; text-shadow: none !important; letter-spacing: normal !important; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 9px; position: relative; line-  vertical-align: baseline; bottom: -0.25em;">8</sub></sub> &nbsp; &nbsp; + 0&nbsp; - X·F<sub>IN</sub></span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;"> T<sub>C<sub>3</sub>H<sub>8</sub></sub> = R, F<sub>IN</sub>&nbsp;= (F + R) </span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">0&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; (F + R)&nbsp;&nbsp;-&nbsp; R&nbsp; &nbsp;+ 0&nbsp; - X·(F + R) </span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">0&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; (100 + R) - R&nbsp; &nbsp; &nbsp; &nbsp; - 0.20(100 +R) </span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;"> 0.20R&nbsp; </span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 80&nbsp; &nbsp; &nbsp; &nbsp; → R = 400 kmol/h</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</div>
+<p><span style="font-size: medium;"><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Propeen Hint</button></span></p>
+<div id="deelhint2" class="panel"><br>
+<p><span style="font-size: medium;">Je kunt doorgaan met een CM balans Reactor&nbsp;maken maar dan over propeen (C<sub>3</sub>H<sub>6</sub>).</span></p>
+</div>
+<p><span style="font-size: medium;"><button type="button" class="accordionantwoord" onclick="antwoordzien(panel4.id)">b. Propeen Antwoord</button></span></p>
+<div id="panel4" class="panel">
+<div id="drag4" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt4"></div>
+</div>
+<br>
+<table border="0" style="width: 630px; height: 72px;">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: medium;">Systeem: Reactor</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">0&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; UIT&nbsp; &nbsp; -&nbsp; &nbsp; IN&nbsp; &nbsp; &nbsp; &nbsp;+ Prod.&nbsp; &nbsp; &nbsp; &nbsp; -&nbsp; &nbsp;Omz.&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">&nbsp;CM</span></td>
+<td><span style="font-size: medium;"> C<sub>3</sub>H<sub>6</sub>&nbsp; &nbsp;&nbsp;</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">0&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 0&nbsp; &nbsp; &nbsp; &nbsp; -&nbsp; &nbsp;T<sub>C<sub>3</sub>H<sub>6</sub></sub>&nbsp; &nbsp;+ S·X·F<sub>IN</sub>&nbsp; &nbsp; &nbsp; -&nbsp; &nbsp;0</span></td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span size="3" style="font-size: medium;">T<sub>C<sub>3</sub>H<sub>6</sub></sub> = P</span></td>
+<td><span style="font-size: medium;"><sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">0&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -&nbsp; &nbsp;P&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; + 0.60×0.20×(100+400)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">P&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; &nbsp;0.12 × 500 = 60 kmol/h</span></td>
+</tr>
+</tbody>
+</table>
+....</div>
+<p><span style="font-size: medium;"><button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">c. Gasmengsel Hint</button></span></p>
+<div id="deelhint3" class="panel"><br>
+<p><span style="font-size: medium;">We kunnen nu een elementenbalans&nbsp;opstellen voor het totale systeem om de fracties in W te bepalen. Welk element is handig om te kiezen? Welk element is bij elke fractie stroom aanwezig bij W?&nbsp;&nbsp;</span></p>
+</div>
+<p><span style="font-size: medium;"><button type="button" class="accordionantwoord" onclick="antwoordzien(panel5.id)">c. Gasmengsel Antwoord</button></span></p>
+<div id="panel5" class="panel">
+<div id="drag5" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt5"></div>
+</div>
+<br>
+<table border="0">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: medium;">Element molbalans: H</span></td>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">In&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; Uit</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">EM</span>&nbsp;</td>
+<td><span style="font-size: medium;">H</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">F<span style="font-size: small;">(C<sub>3</sub>H<sub>8</sub>)</span>&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; P<span style="font-family: 'Open Sans', sans-serif; text-shadow: none !important; letter-spacing: normal; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 400; font-style: normal; font-size: small; color: #000000; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial;">(C<sub style="font-family: inherit; text-shadow: none !important; letter-spacing: normal !important; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 9.75px; position: relative; line-  vertical-align: baseline; bottom: -0.25em;">3</sub>H<sub style="font-family: inherit; text-shadow: none !important; letter-spacing: normal !important; box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-size: 9.75px; position: relative; line-  vertical-align: baseline; bottom: -0.25em;">6</sub>)&nbsp;</span>+ (65%H<sub>2&nbsp; &nbsp; &nbsp;</sub>+ 5% CH<sub>4</sub>&nbsp;+ 20% C<sub>2</sub>H<sub>6</sub> + 10% C<sub>2</sub>H<sub>4</sub>)·W</span></td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">C<sub>3</sub>H<span style="color: #ff0000;"><strong><sub>8</sub></strong></span><span style="color: #000000;">, C<sub>3</sub>H<span style="color: #0000ff;"><sub><strong>6</strong></sub></span></span></span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td><span style="font-size: medium;">H&nbsp;&nbsp;</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">100 × <span style="color: #ff0000;">8&nbsp;&nbsp;</span></span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 60 × <span style="color: #0000ff;">6</span>&nbsp;+ (2 × 0.65 + 4 × 0.05 + 6 × 0.20 + 4 × 0.10) W</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">800&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 360&nbsp; &nbsp; &nbsp;+ 3.1W&nbsp; &nbsp; →&nbsp; W = 142 kmol/h&nbsp;</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">W<sub>H<sub>2</sub></sub>&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 0.65 × 142 = 92.3 kmol/h&nbsp; &nbsp; etc..</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: medium;">....</span></p>
+<span style="font-size: medium;"> </span></div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint4.id)">d. Koolstof Hint</button></p>
+<div id="deelhint4" class="panel"><br>
+<p><span style="font-size: medium;">De stroom K kan ook bepaald worden doormiddel&nbsp;van een elementenbalans</span><span style="font-size: medium;">. Welk element is nu handig om te kiezen?</span></p>
+</div>
+<p><span style="font-size: medium;"><button type="button" class="accordionantwoord" onclick="antwoordzien(panel6.id)">d. Koolstof Antwoord</button></span></p>
+<div id="panel6" class="panel">
+<div id="drag6" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt6"></div>
+</div>
+<br>
+<table border="0">
+<tbody>
+<tr>
+<td colspan="2"><span style="font-size: medium;">Element molbalans: C</span></td>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">EM</span></td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">In&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; Uit</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">C&nbsp; &nbsp;</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">F&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; P + W + K</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">C</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">3 × 100&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 3 × 60 + (1 × 0.05 + 2 × 0.20 + 2 × 0.10)W + K&nbsp;</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">300 - 180&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 0.65 × 142 + K</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">K&nbsp;&nbsp;</span></td>
+<td><span style="font-size: medium;">=</span></td>
+<td><span style="font-size: medium;">&nbsp; 120 - 92.3 = 27.7 kmol/h</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: medium;">....</span></p>
+<span style="font-size: medium;">
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
+</span></div></body></html>
