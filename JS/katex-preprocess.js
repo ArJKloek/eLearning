@@ -16,7 +16,7 @@ function katexPreProcess(math) {
       result += math.substring(cmdStart, i);
       
       // Skip processing for \ce{}, \begin{}, and \end{} arguments
-      if (cmdName === 'ce' || cmdName === 'begin' || cmdName === 'end') {
+      if (cmdName === 'ce' || cmdName === 'begin' || cmdName === 'end' || cmdName === 'color') {
         // Skip whitespace
         while (i < math.length && /\s/.test(math[i])) {
           result += math[i];
