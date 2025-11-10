@@ -1,49 +1,96 @@
 <!DOCTYPE html>
 <html><head>
-				<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-				<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/fonts/0.5.0/fonts.css/">
-				<style>
-				body {
-			color: #494c4e;
-			font-family: 'Lato', sans-serif;
-			font-size: 0.95rem;
-			font-weight: normal;
-			letter-spacing: 0.01rem;
-			line-height: 1.4rem;
-			margin: 0;
-			padding: 0.4rem 0.75rem !important;
-		}
-		table {
-			font-family: 'Lato', sans-serif;
-			font-size: inherit;
-		}
-				</style>
-			</head><body><p></p>
-<p></p>
-<p></p>
-<p><span style="font-size: medium;">Synthesegas (CO en H<sub><span style="font-size: small;">2</span></sub>) voor de productie van methanol op industriële schaal wordt gemaakt in een reformer door het ‘kraken ‘van methaan in aanwezigheid van stoom bij hoge temperatuur (ca. 1000 K) en druk (ca. 1 MPa):</span></p>
-<p style="margin-left: 60px;"><span style="font-size: medium;">CH<sub><span style="font-size: small;">4</span></sub>(g) + H<sub>2</sub>O(g) → CO(g) + 3H<sub>2</sub>(g)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (1)</span></p>
-<p><span style="font-size: medium;">Als nevenproduct wordt ook CO<span style="font-size: small;"><sub>2</sub></span> gevormd volgens:</span></p>
-<p style="margin-left: 60px;"><span style="font-size: medium;">CH<sub>4</sub>(g) + 2 H<sub>2</sub>O(g) → CO<sub>2</sub>(g) + 4H<sub>2</sub>(g)&nbsp; &nbsp; &nbsp;(2)</span></p>
-<p><span style="font-size: medium;">De voeding naar de reformer bedraagt&nbsp; 8500 kmol CH<sub>4</sub> en 30000 kmol stoom per uur. De&nbsp;productstroom die de reformer verlaat&nbsp; bevat onder meer 6000 kmol CO en 25500 kmol H<sub>2</sub> per uur.</span></p>
-<p><span style="font-size: medium;">Bereken op basis van de reactievergelijkingen (1) en (2) en bovenstaande gegevens de conversie, de selectiviteit en het rendement. Laat zien hoe je aan je antwoorden komt.&nbsp;<br></span></p>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess
+    });"></script>
+ <style>
+                :root { --body-text-color: #494c4e; }
+                body {
+                color: var(--body-text-color);
+            font-family: 'Lato', sans-serif;
+            font-size: 0.95rem;
+            font-weight: normal;
+            letter-spacing: 0.01rem;
+            line-height: 1.4rem;
+            margin: 0;
+            padding: 0.4rem 0.75rem !important;
+        }
+        table {
+            font-family: 'Lato', sans-serif;
+            font-size: inherit;
+        }
+        .katex-display {
+            text-align: left !important;
+        }
+        .katex {
+            font-family: 'Lato', sans-serif !important;
+            font-size: 1em;
+        }
+        /* Container for side-by-side layout */
+        .side-by-side {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 1em 0;
+        }
+        .side-by-side img {
+            flex-shrink: 0;
+        }
+        .side-by-side .latex-table {
+            flex-grow: 1;
+        }
+        /* Compact table styling */
+        .side-by-side .latex-table .katex-display {
+            margin: 0 !important;
+            font-size: 1em;
+        }
+        .side-by-side .latex-table .katex {
+            font-size: 1em;
+        }
+        li {
+            margin-top: 1em;
+        }
+        img {
+            max-width: 75%;
+            height: auto;
+        }
+
+    
+        </style>
+            <link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+<!-- Set global KaTeX array row spacing for aligned/array environments -->
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
+			</head><body>
+
+<p><span style="font-size: medium;">Synthesegas (CO en \(\ce{H2}\)) voor de productie van methanol op industriële schaal wordt gemaakt in een reformer door het ‘kraken ‘van methaan in aanwezigheid van stoom bij hoge temperatuur (ca. 1000 K) en druk (ca. 1 MPa):</span></p>
+<p><span style="font-size: medium;">$$\ce{CH4(g) + H2O(g) -> CO(g) + 3H2(g)} \qquad\qquad (1)$$</span></p>
+<p><span style="font-size: medium;">Als nevenproduct wordt ook \(\ce{CO2}\) gevormd volgens:</span></p>
+<p><span style="font-size: medium;">$$\ce{CH4(g) + 2 H2O(g) → CO2(g) + 4H2(g)} \qquad\quad (2)$$</span></p>
+<p><span style="font-size: medium;">De voeding naar de reformer bedraagt 8500 kmol \(\ce{CH4}\) en 30000 kmol stoom per uur. De productstroom die de reformer verlaat bevat onder meer 6000 kmol \(\ce{CO}\) en 25500 kmol \(\ce{H2}\) per uur.</span></p>
+<p><span style="font-size: medium;">Bereken op basis van de reactievergelijkingen (1) en (2) en bovenstaande gegevens de conversie, de selectiviteit en het rendement. Laat zien hoe je aan je antwoorden komt.<br></span></p>
 <p><span style="font-size: medium;">N.B. Je hoeft hierbij geen molbalansen op te stellen.</span></p>
 <p><span style="font-size: medium;">Antwoord:</span></p>
-<p><br><i id="vrg0" class="glyphicon glyphicon-ok" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> X (%) </span><br><i id="vrg1" class="glyphicon glyphicon-ok" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> S (%) </span><br><i id="vrg2" class="glyphicon glyphicon-ok" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> R (%) </span><br><span style="font-size: medium;"> <!-- d.<br /> --><!-- e.<br /><i id="vrg3" class="glyphicon glyphicon-ok" style="font-size:14pt;color:green;visibility:hidden"></i>  --><!-- <input  id="antw3" style="width: 70pt; font-size: 14pt;"> R<sub>E</sub> (kmol/hr)<br /> --><!-- f.<br /><i id="vrg4" class="glyphicon glyphicon-ok" style="font-size:14pt;color:green;visibility:hidden"></i>   --><!-- <input  id="antw4" style="width: 70pt; font-size: 14pt;"> F/R<br /> --><!-- g.<br /><i id="vrg5" class="glyphicon glyphicon-ok" style="font-size:14pt;color:green;visibility:hidden"></i>   --><!-- <input  id="antw5" style="width: 70pt; font-size: 14pt;"> R/S<br /> --><!-- <!--<br /><i id="vrg6" class="glyphicon glyphicon-ok" style="font-size:14pt;c
- --><!--<hint1 id="hint" >Let op: H2 is in ondermaar (begrenzende stof); de conversie moet je daarom baseren op H2.<br />
-Voor deze reactie geldt X = S = R
-</hint1> 
-<br />
-<button id="hint1" type='button' class="checkin hint" onclick="hint(hint1.id)" >Begin Hint</button>--> </span><br><span style="font-size: medium;"><button type="button" class="checkin checkin" onclick="checkv2([92.6,76.2,70.6])">Check</button> (Je kunt wetenschappelijke notatie zoals 3·10<sup>-4</sup> invullen als 3e-4)</span><br><br><span style="font-size: medium;"> <button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">Hint Rendement</button></span></p>
+<p><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> X (%) </span><br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> S (%) </span><br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> R (%) </span><br><span style="font-size: medium;">  </span><br><span style="font-size: medium;"><button type="button" class="checkin checkin" onclick="checkv2([92.6,76.2,70.6])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3\cdot 10^{-4}\) invullen als 3e-4)</span><br><br><span style="font-size: medium;"> <button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">Hint Rendement</button></span></p>
 <div id="deelhint1" class="panel">
-<p><span style="font-size: medium;">Kijk naar de gemaakte CO. Hoeveel CH<sub>4</sub> kan er omgezet worden met vergelijking (1) met deze hoeveelheid CO en hoeveel H<sub>2</sub> kan er dan gemaakt worden.&nbsp;</span></p>
+<p><span style="font-size: medium;">Kijk naar de gemaakte CO. Hoeveel \(\ce{CH4}\) kan er omgezet worden met vergelijking (1) met deze hoeveelheid CO en hoeveel \(\ce{H2}\) kan er dan gemaakt worden.&nbsp;</span></p>
 </div>
-<p><span style="font-size: medium;"> <!--<button type='button' class="deelhint" onclick="antwoordzien(deelhint5.id)" >Blokschema</button>
-<div id="deelhint5" class="panel">
- <br />
-<p>Lopsem...</p>
-
-</div>--> <button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">Antwoord Rendement</button></span></p>
+<p><span style="font-size: medium;"> 
+<button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">Antwoord Rendement</button></span></p>
 <div id="panel1" class="panel">
 <div id="drag1" class="draggable">
 <div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
@@ -55,32 +102,36 @@ Voor deze reactie geldt X = S = R
 <tbody>
 <tr>
 <td><span style="font-size: medium;">Reactie:</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">6000 kmol&nbsp;CO&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; 18000 kmol&nbsp;H<sub>2</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">6000 kmol CO</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">18000 kmol \(\ce{H2}\)</span></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; &nbsp; 6000 kmol&nbsp;CH<sub>4</sub></span></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">6000 kmol \(\ce{CH4}\)</span></td>
 </tr>
 <tr>
 <td><span style="font-size: medium;">Nevenractie:</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">gevormd 25500&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">-</span></td>
-<td><span style="font-size: medium;">&nbsp; 18000 = 7500 kmol&nbsp;H<sub>2</sub></span></td>
+<td style="text-align: right;"><span style="font-size: medium;">gevormd 25500</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
+<td><span style="font-size: medium;">18000 = 7500 kmol \(\ce{H2}\)</span></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">7500 kmol&nbsp;H<sub>2</sub>&nbsp;&nbsp;</span></td>
-<td style="text-align: center;"><span style="font-size: medium;">=</span></td>
-<td><span style="font-size: medium;">&nbsp; ¼ × 7500 = 1875 kmol&nbsp;CH<sub>4</sub> omgezet</span></td>
+<td style="text-align: right;"><span style="font-size: medium;">7500 kmol \(\ce{H2}\)</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(¼\cdot 7500\) = 1875 kmol \(\ce{CH4}\) omgezet</span></td>
 </tr>
 </tbody>
 </table>
-<br>
-<p><img src="/content/enforced/14647-sils.ctvt.2410.k02-2425-ctv1-proces1/csfiles\home_dir/courses\sils.ctvt.2410.k02-2425-ctv1-proces1\Opgave51Conversie.svg.svg" width="410" height="100"></p>
+<span style="font-size: medium;">
+$$\begin{aligned}
+X &= \dfrac{\ce{CH4}\ omgezet}{\ce{CH4}\ gevoed} \cdot 100\% = \dfrac{\Delta n_{\ce{CH4}}}{n_\ce{CH4}} \cdot 100\% = \\
+X &= \dfrac{6000 + 1875}{8500} \cdot 100\% = 92.6\%\\
+\end{aligned}$$
+</span>
 </div>
 <p><span style="font-size: medium;"><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">Hint Selectiviteit</button></span></p>
 <div id="deelhint2" class="panel">
@@ -88,14 +139,20 @@ Voor deze reactie geldt X = S = R
 </div>
 <p><span style="font-size: medium;"><button type="button" class="accordionantwoord" onclick="antwoordzien(panel4.id)">Antwoord Selectiviteit</button></span></p>
 <div id="panel4" class="panel">
-<p><span style="font-size: medium;"><img src="/content/enforced/14647-sils.ctvt.2410.k02-2425-ctv1-proces1/csfiles\home_dir/courses\sils.ctvt.2410.k02-2425-ctv1-proces1\Opgave51Selectiviteit.svg.svg" width="410" height="60"></span></p>
+<p><span style="font-size: medium;">
+$$ S = \dfrac{\Delta n_{\ce{CH4}\rightarrow CO}}{n_{\ce{CH4},tot}} \cdot 100\% = \dfrac{6000}{6000 + 1875} \cdot 100\% = 76.2\% $$
+</span></p>
 </div>
 <p><span style="font-size: medium;"><button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">Hint Rendement </button></span></p>
 <div id="deelhint3" class="panel">
 <p><span style="font-size: medium;">Het rendement is over alles wat de reactie is ingegaan.</span></p>
 </div>
 <p><span style="font-size: medium;"><button type="button" class="accordionantwoord" onclick="antwoordzien(panel5.id)">Antwoord Rendement</button></span></p>
-<div id="panel5" class="panel"><img src="/content/enforced/14647-sils.ctvt.2410.k02-2425-ctv1-proces1/csfiles\home_dir/courses\sils.ctvt.2410.k02-2425-ctv1-proces1\Opgave51Rendement.svg.svg" width="410" height="86"></div>
+<div id="panel5" class="panel"><span style="font-size: medium;">
+$$ R = \dfrac{\Delta n_\ce{CH4 -> CO}}{n_{\ce{CH4},tot}} \cdot 100\% = \dfrac{6000}{8500} \cdot 100\% = 70.6\% \\ 
+(controle\, R=S \cdot X = 0.762 \cdot 0.926 = 0.706)
+$$</span>
+</div>
 <p><span style="font-size: medium;">
-<script type="text/javascript" src="/content/enforced/14647-sils.ctvt.2410.k02-2425-ctv1-proces1/csfiles\home_dir/courses\sils.ctvt.2410.k02-2425-ctv1-proces1\JS\Antwoordvraag.JS"></script>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
 </span></p></body></html>
