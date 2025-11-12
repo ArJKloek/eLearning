@@ -3,6 +3,7 @@
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <link rel="stylesheet" href="/eLearning/CSS/LocalOverrides.CSS"> 
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
   <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
@@ -18,59 +19,8 @@
       trust:true,
       preProcess: katexPreProcess
     });"></script>
- <style>
-        :root { --body-text-color: #494c4e; }
-                body {
-                color: var(--body-text-color);
-            font-family: 'Lato', sans-serif;
-            font-size: 0.95rem;
-            font-weight: normal;
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            margin: 0;
-            padding: 0.4rem 0.75rem !important;
-        }
-        table {
-            font-family: 'Lato', sans-serif;
-            font-size: inherit;
-        }
-        .katex-display {
-            text-align: left !important;
-        }
-        .katex {
-            font-family: 'Lato', sans-serif !important;
-            font-size: 1em;
-        }
-        /* Container for side-by-side layout */
-        .side-by-side {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            margin: 1em 0;
-        }
-        .side-by-side img {
-            flex-shrink: 0;
-        }
-        .side-by-side .latex-table {
-            flex-grow: 1;
-        }
-        /* Compact table styling */
-        .side-by-side .latex-table .katex-display {
-            margin: 0 !important;
-            font-size: 1em;
-        }
-        .side-by-side .latex-table .katex {
-            font-size: 1em;
-        }
-        li {
-            margin-top: 1em;
-        }
-        img {
-            max-width: 75%;
-            height: auto;
-        }
-        </style>
-            <link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+
+    <link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
 <!-- Set global KaTeX array row spacing for aligned/array environments -->
 <span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
 <!-- Macro: red cancel stroke, body text color via HTML color -->
@@ -114,8 +64,8 @@ Om stof B te scheiden van P wordt er 3 keer met 500 ml ethanol (95%) gespoeld. S
 \begin{aligned}
 Correct:& \\
 2\,mol \cdot 32\, \dfrac{g}{mol} &= 64\, \dfrac{g\cdot\rcancel{mol}}{\rcancel{mol}} = 64\, gram\, P \\[0.25em]
-\text{Fout:}& \\
-\dfrac{2\, \text{mol}}{32\, \dfrac{\text{g}}{\text{mol}}} &= \dfrac{1\, \text{mol}}{16\, \dfrac{\text{g}}{\text{mol}}} = \dfrac{1\, \text{mol}}{16\, \text{g}} \cdot \text{mol}\ \color{red}{\xcancel{= \dfrac{1}{16}\dfrac{\text{mol}^2}{\text{g}}}} \\
+Fout:& \\
+\dfrac{2\, mol}{32\, \frac{g}{mol}} &= \dfrac{1\, mol}{16\, \frac{g}{mol}} = \dfrac{1\, mol}{16\, g} \cdot mol\ \color{red}{\xcancel{= \dfrac{1}{16}\dfrac{\text{mol}^2}{\text{g}}}} \\
 \end{aligned}
 \)
 </span>
@@ -135,10 +85,10 @@ Correct:& \\
 <span style="font-size: medium;">   
 \(
 \begin{aligned}
-(3\cdot500)\cdot0.95&=1425\ \text{ml ethanol} \\ 
-\dfrac{0.1\ \text{g}}{100\ \text{ml}}&=1\cdot10^{-3}\ \text{g/ml} \\
-1\cdot10^{-3}\ \dfrac{\text{g}}{\text{ml}} \cdot 1425\ \text{ml} &= 1.425\ \dfrac{\text{g}\cdot \rcancel{\text{ml}}}{\rcancel{\text{ml}}} \\
-&= 1.425\ \text{gram P opgelost in ethanol} \\
+(3\cdot500)\cdot0.95&=1425\ ml\ ethanol \\ 
+\dfrac{0.1\ g}{100\ ml}&=1\cdot10^{-3}\ g/ml \\
+1\cdot10^{-3}\ \dfrac{g}{ml} \cdot 1425\ ml &= 1.425\ g \\
+&= 1.425\ gram\ P\ opgelost\ in\ ethanol \\
 \end{aligned}
 \)
 </span>
@@ -158,9 +108,9 @@ Correct:& \\
 <span style="font-size: medium;">
 \(
 \begin{aligned}
-64 - 1.425 &= 62.575\ \text{gram maximaal P na spoelen} \\
-62.575 - 61.5 &= 1.075\ \text{gram B geproduceerd} \\
-\text{S}_\text{p}&=\dfrac{\text{P}_\text{uit}-\text{P}_\text{in}}{\text{A}_\text{in}-\text{A}_\text{uit}}=\dfrac{61.5/32-0}{2-0}=0.96 \\
+64 - 1.425 &= 62.575\ gram\ maximaal\ P\ na\ spoelen \\
+62.575 - 61.5 &= 1.075\ gram\ B\ geproduceerd \\
+S_p&=\dfrac{P_uit - P_in}{A_in - A_uit}=\dfrac{61.5/32-0}{2-0}=0.96 \\
 \end{aligned}
 \)
 
