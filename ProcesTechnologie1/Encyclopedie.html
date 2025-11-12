@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="nl"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Encyclopedia — Proces Technologie</title>
+  <link rel="stylesheet" href="https://arjkloek.github.io/eLearning/CSS/encyclopedie.css">
+  <!-- KaTeX for rendering LaTeX formulas -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true}]});"></script>
+</head><body><div class="container">
+<aside class="sidebar">
+<h1>Encyclopedie</h1>
+<input id="search" type="search" placeholder="Zoek term..." aria-label="Zoek term">
+<div class="index-group" id="group-terms">
+<h3>Terms</h3>
+<nav class="index" aria-label="Index van termen">
+<ul>
+<li><a href="#absorption" data-term="Absorption">Absorption</a></li>
+<li><a href="#adsorption" data-term="Adsorption">Adsorption</a></li>
+<li><a href="#bezinking" data-term="Bezinking">Bezinking</a></li>
+<li><a href="#bottle-necks" data-term="Bottlenecks">Bottlenecks</a></li>
+<li><a href="#bulkproducten" data-term="Bulkproducten">Bulkproducten</a></li>
+<li><a href="#centrifuge" data-term="Centrifuge">Centrifuge</a></li>
+<li><a href="#charge" data-term="Charge (Batch)">Charge (Batch)</a></li>
+<li><a href="#chemische-energie" data-term="Chemische Energie">Chemische Energie</a></li>
+<li><a href="#continu-reactor" data-term="Continu Reactor">Continu Reactor</a></li>
+<li><a href="#continu-fase" data-term="Continu Fase">Continu Fase</a></li>
+<li><a href="#cyclone" data-term="Cycloon">Cycloon</a></li>
+<li><a href="#deflegmatie" data-term="Deflegmatie">Deflegmatie</a></li>
+<li><a href="#demister" data-term="Demister">Demister</a></li>
+<li><a href="#destillatie" data-term="Destillatie">Destillatie</a></li>
+<li><a href="#discontinue_fase" data-term="Discontinue Fase">Discontinue Fase</a></li>
+<li><a href="#disperse" data-term="Disperse Fase">Disperse Fase</a></li>
+<li><a href="#drijvende_kracht" data-term="Drijvende kracht">Drijvende kracht</a></li>
+<li><a href="#drogen" data-term="Drogen">Drogen</a></li>
+<li><a href="#eenheidsbewerkingen" data-term="Eenheidsbewerkingen (Unit operations)">Eenheidsbewerkingen (Unit operations)</a></li>
+<li><a href="#extract" data-term="Extract">Extract</a></li>
+<li><a href="#extractie" data-term="Extractie">Extractie</a></li>
+<li><a href="#faseoverdrachtsproces" data-term="Faseoverdrachtsproces">Faseoverdrachtsproces</a></li>
+<li><a href="#fasescheidingsprocessen" data-term="Fasescheidingsprocessen">Fasescheidingsprocessen</a></li>
+<li><a href="#feed" data-term="Feed (Voeding)">Feed (Voeding)</a></li>
+<li><a href="#fysische_scheidingsmethoden" data-term="Fysische Scheidingsmethoden">Fysische Scheidingsmethoden</a></li>
+<li><a href="#gasabsorptie" data-term="Gasabsorptie">Gasabsorptie</a></li>
+<li><a href="#half_continue" data-term="Half-continue">Half-continue</a></li>
+<li><a href="#kinetiek" data-term="kinetiek">Kinetiek</a></li>
+<li><a href="#kristallisatie" data-term="Kristallisatie">Kristallisatie</a></li>
+<li><a href="#ladingsgewijs" data-term="Ladingsgewijs">Ladingsgewijs</a></li>
+<li><a href="#mechanische_scheidingsmethoden" data-term="Mechanische Scheidingsmethoden">Mechanische Scheidingsmethoden</a></li>
+<li><a href="#nevenproducten" data-term="Nevenproducten">Nevenproducten</a></li>
+<li><a href="#omzettingsgraad" data-term="Omzettingsgraad (Conversie)">Omzettingsgraad (Conversie)</a></li>
+<li><a href="#piping_and_instrumentation_diagrams" data-term="Piping and Instrumentation Diagrams (P&amp;ID)">Piping and Instrumentation Diagrams (P&amp;ID)</a></li>
+<li><a href="#proces" data-term="Proces">Proces</a></li>
+<li><a href="#procesflowdiagram" data-term="Procesflowdiagram (PFD)">Procesflowdiagram (PFD)</a></li>
+<li><a href="#procesindustrie" data-term="Procesindustrie">Procesindustrie</a></li>
+<li><a href="#productie" data-term="Productie">Productie</a></li>
+<li><a href="#raffinaat" data-term="Raffinaat">Raffinaat</a></li>
+<li><a href="#reactieenthalpie" data-term="Reactie-enthalpie">Reactie-enthalpie</a></li>
+<li><a href="#rectifier" data-term="Rectifier">Rectifier</a></li>
+<li><a href="#recycle" data-term="Recycle">Recycle</a></li>
+<li><a href="#recyclestroom" data-term="Recyclestroom">Recyclestroom</a></li>
+<li><a href="#scaling_up" data-term="Scaling-up">Scaling-up</a></li>
+<li><a href="#scheiding_van_heterogene_stelsels" data-term="Scheiding van heterogene stelsels">Scheiding van heterogene stelsels</a></li>
+<li><a href="#scheiding_van_homogene_stelsels" data-term="Scheiding van homogene stelsels">Scheiding van homogene stelsels</a></li>
+<li><a href="#selectiviteit" data-term="Selectiviteit">Selectiviteit</a></li>
+<li><a href="#solvent" data-term="Solvent">Solvent</a></li>
+<li><a href="#spui" data-term="Spui (Bleed)">Spui (Bleed)</a></li>
+<li><a href="#stationair" data-term="Stationair (Steady State)">Stationair (Steady State)</a></li>
+<li><a href="#stoechiometrisch" data-term="Stoechiometrisch (Stoichiometric)">Stoechiometrisch (Stoichiometric)</a></li>
+<li><a href="#stofoverdracht" data-term="Stofoverdracht (Mass Transfer)">Stofoverdracht (Mass Transfer)</a></li>
+<li><a href="#stripper" data-term="Stripper">Stripper</a></li>
+<li><a href="#synthese_gas" data-term="Synthese-gas">Synthese-gas</a></li>
+<li><a href="#technologie" data-term="Technologie">Technologie</a></li>
+<li><a href="#tegenstroom_principe" data-term="Tegenstroom Principe">Tegenstroom Principe</a></li>
+<li><a href="#uitlogen" data-term="Uitlogen (Leaching)">Uitlogen (Leaching)</a></li>
+<li><a href="#unit_operations" data-term="Unit Operations">Unit Operations</a></li>
+<li><a href="#vaste_bed" data-term="Vaste Bed (Fixed Bed)">Vaste Bed (Fixed Bed)</a></li>
+<li><a href="#vloeistof_vloeistof_scheiding" data-term="Vloeistof - Vloeistof scheiding (Liquid-Liquid Separation)">Vloeistof - Vloeistof scheiding (Liquid-Liquid Separation)</a></li>
+<li><a href="#vloeistof_vloeistof_extractie" data-term="Vloeistof - Vloeistof extractie (Liquid-Liquid Extraction)">Vloeistof - Vloeistof extractie (Liquid-Liquid Extraction)</a></li>
+<li><a href="#vol_continue" data-term="Vol-Continue">Vol-Continue</a></li>
+<li><a href="#vormingsenthalpie" data-term="Vormingsenthalpie">Vormingsenthalpie</a></li>
+<li><a href="#wet_van_behoud_van_energie" data-term="Wet van behoud van energie">Wet van behoud van energie</a></li>
+<li><a href="#wet_van_hess" data-term="Wet van Hess">Wet van Hess</a></li>
+<li><a href="#wet_van_vant_Hoff" data-term="Wet van Van't Hoff en Le Chatelier">Wet van Van't Hoff en Le Chatelier</a></li>
+<li><a href="#zeven" data-term="Zeven">Zeven</a></li>
+<li><a href="#zuiveringssectie" data-term="Zuiveringssectie">Zuiveringssectie</a></li>
+</ul>
+</nav></div>
+</aside>
+<section class="content" id="content" role="main" tabindex="0">
+<article id="absorption" class="entry" aria-labelledby="absorption-title">
+<h2 id="absorption-title">Absorption</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is het opnemen van een gas naar een vloeistof toe gebaseerd op een verschil in oplosbaarheid, bijvoorbeeld het absorberen van NH₃ uit lucht met behulp van water.</p>
+</div>
+</article>
+<article id="adsorption" class="entry" aria-labelledby="adsorption-title">
+<h2 id="adsorption-title">Adsorption</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij adsorptie wordt een gedeelte van oorspronkelijke gasvormige of vloeibare fase overgebracht naar een vaste fase. Bijvoorbeeld; het drogen van vochtige lucht met silicagel of calciumchloride, het opzuiveren van een vloeistofdoormiddel van actieve kool.</p>
+</div>
+</article>
+<article class="entry" id="bezinking" aria-labelledby="bezinking-title">
+<h2 id="bezinking-title">Bezinking</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een vloeistof - vast scheiding (Liquid - Solid seperation) ook wel genoemd sedimentatie. Deze scheiding berust op het verschil in grootte van de vaste stof - vloeistofdeeltjes (filtratie). <br><br>Bezinking kan ook worden versneld door het vergrootten van de gravitatiekracht (g -force) doormiddel van een <a href="#centrifuge">centrifuge</a>.</p>
+</div>
+</article>
+<article id="bottle-necks" class="entry" aria-labelledby="bottle-necks-title">
+<h2 id="bottle-necks-title">Bottlenecks</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit zijn problemen (knelpunten) die in het het proces aanwezig zijn waardoor er minder snel product gemaakt kan worden.</p>
+</div>
+</article>
+<article id="bulkproducten" class="entry" aria-labelledby="bulkproducten-title">
+<h2 id="bulkproducten-title">Bulkproducten</h2>
+<div class="colorbox colorbox--grey">
+<p>Bulkproducten zijn producten die in grote hoeveelheden worden geproduceerd en verkocht, vaak met een lage toegevoegde waarde per eenheid. Voorbeelden van bulkproducten zijn grondstoffen zoals zand, grind, cement, olie, graan en chemicaliën zoals zwavelzuur en natriumhydroxide. Deze producten worden meestal gebruikt als basisgrondstoffen voor verdere verwerking in de industrie.</p>
+</div>
+</article>
+<article id="centrifuge" class="entry" aria-labelledby="centrifuge-title">
+<h2 id="centrifuge-title">Centrifuge</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een mechanische scheidingsapparaat die door verhoging van gravitatiekrachten (doormiddel van centrifugale krachten) een versnelling kan geven aan het scheiden van een L-S (Liquid-Solid) of een L-L (Liquid-Liquid) mengsel.</p>
+<div style="margin-top: 15px; word-wrap: break-word;"><a target="_blank" lb:options="{'contents':{'id':'myYouTubecd7534a3f8314f9bbd7445a4436017d3','stripComments':true},'closeOnBodyClick':false}" class="lb" style="text-align: center; text-decoration: none; color: #333; float: left; width: 150px; background: #000; border: 1px solid #bbb; display: block;" href="http://www.youtube.com/watch?v=DrrjwwA5O3E" title="Purification animation of an Alfa Laval self-cleaning centrifuge (total discharge)" rel="noopener"> <img src="http://i.ytimg.com/vi/DrrjwwA5O3E/1.jpg" alt="" width="120"> <span style="background-image: url('/images/ci/ng/rumble_button_back.gif'); padding: 2px; color: #333333; text-align: center; display: block; word-wrap: break-word;"> Watch Video </span> </a>
+<div style="margin-left: 160px; font-size: 15px; font-weight: bold; margin-bottom: 5px;">Purification animation of an Alfa Laval self-cleaning centrifuge (total discharge)</div>
+<div id="thumbnail-metadata" style="margin-left: 160px; font-size: 11px; margin-bottom: 5px;"><strong>Duration:</strong> 1:16 <br><strong>User:</strong> n/a - <strong>Added:</strong> 6/7/17</div>
+<div id="myYouTubecd7534a3f8314f9bbd7445a4436017d3" style="display: none;"><!--<div style="margin: 10px;"><div class="u_controlsWrapper"><a href="#" class="button-4" id="openYtControlscd7534a3f8314f9bbd7445a4436017d3">display.playerControls</a></div><div id="controlscd7534a3f8314f9bbd7445a4436017d3" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoPlayerControls: Purification animation of an Alfa Laval self-cleaning centrifuge (total discharge)</h2><a aria-live="off" id="playVideocd7534a3f8314f9bbd7445a4436017d3" href="#" class="button-4">display.play</a><a id="stopVideocd7534a3f8314f9bbd7445a4436017d3" href="#" class="button-4">display.stop</a><a id="volUpcd7534a3f8314f9bbd7445a4436017d3" href="#" class="button-4">display.volumeUp</a><a id="volDowncd7534a3f8314f9bbd7445a4436017d3" href="#" class="button-4">display.volumeDown</a><a aria-live="off" id="mutecd7534a3f8314f9bbd7445a4436017d3" href="#" class="button-4">display.mute</a><a href="#" class="close" id="closeYtControlscd7534a3f8314f9bbd7445a4436017d3"><img src="/images/ci/ng/close_mini.gif" alt="display.closePlayerControls"/></a></div><h2 class="hideoff">Embedded Video Player: Purification animation of an Alfa Laval self-cleaning centrifuge (total discharge)</h2><div style="word-wrap: break-word;"><div class="previewDiv ytIframeClass" style="height:344px;width:425px" id="ytEmbedcd7534a3f8314f9bbd7445a4436017d3"><iframe id="ytObjectcd7534a3f8314f9bbd7445a4436017d3" width="425" height="344" src="http://www.youtube.com/embed/DrrjwwA5O3E?modestbranding=1&fs=1&rel=0&enablejsapi=1&menu=disable&playerapiid=ytEmbedcd7534a3f8314f9bbd7445a4436017d3" title="Purification animation of an Alfa Laval self-cleaning centrifuge (total discharge)"></iframe><a href="#close" onclick="lightbox.closeCurrentLightbox(); return false;" class="hideoff">Close</a></div><div id="stripcd7534a3f8314f9bbd7445a4436017d3" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoStatus: Purification animation of an Alfa Laval self-cleaning centrifuge (total discharge)</h2><span aria-live="off" id="currentStatuscd7534a3f8314f9bbd7445a4436017d3"></span> <strong>Purification animation of an Alfa Laval self-cleaning centrifuge (total discharge)</strong> (<strong aria-live="off" id="currentTimecd7534a3f8314f9bbd7445a4436017d3"></strong> display.of <strong>1:16</strong>)</div></div></div>-->&nbsp;</div>
+</div>
+<br><br></div>
+</article>
+<article id="charge" class="entry" aria-labelledby="charge-title">
+<h2 id="charge-title">Charge (Batch)</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij een kleinschalige proces installatie wordt er meestal gewerkt met batch reactoren. Dit zijn reactoren waarbij de productie van intermitterende karakter zijn.<br><br>De reactor wordt geladen met een nieuwe lading (batch), waarna een behandeling plaatsvindt (verhitting, roeren, etc.. ) Als de behandeling klaar is wordt de reactor geleegd, schoongemaakt en een nieuwe lading wordt er ingeladen. <br><br>Denk dus bij een batch reactor aan een synthese op het lab. Alleen gaat het in de fabriek om veel grotere hoeveelheden. <br><br><a href="https://en.wikipedia.org/wiki/Batch_reactor">Wiki Batch Reactor</a></p>
+</div>
+</article>
+<article id="chemische-energie" class="entry" aria-labelledby="chemische-energie-title">
+<h2 id="chemische-energie-title">Chemische Energie</h2>
+<div class="colorbox colorbox--grey">
+<p>Chemische energie is de energie die is opgeslagen in de chemische bindingen van de moleculen. Deze verandert dus als er een reactie plaats vindt waarbij er energie nodig is of afgestaan wordt. <br><br>Denk bijvoorbeeld aan het neutraliseren van een zuur met een base: <br><br>H₃O<sup>+</sup> + OH<sup>-</sup> → 2 H₂O, hier komt warmte bij vrij van +58 kJ/mol, dus is er een verandering van chemische energie van -58 kJ/mol.</p>
+</div>
+</article>
+<article id="continu-reactor" class="entry" aria-labelledby="continu-reactor-title">
+<h2 id="continu-reactor-title">Continu Reactor</h2>
+<div class="colorbox colorbox--grey">
+<p>Een continu reactor is een reactor waar er continue een toevoer is van product en een continue afvoer van de productstroom. <br><br>Een continu reactor die geroerd wordt noemen we ook wel een Continuous Stirred Tank Reactor (CSTR) een buisreactor heet ook wel een Plug Flow Reactor (PFR).</p>
+<a href="https://en.wikipedia.org/wiki/Continuous_stirred-tank_reactor">Wiki CSTR</a> <br><br><a href="https://en.wikipedia.org/wiki/Plug_flow_reactor">Wiki PFR</a></div>
+</article>
+<article id="continu-fase" class="entry" aria-labelledby="continu-fase-title">
+<h2 id="continu-fase-title">Continu Fase</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Vloeistof - Vloeistof scheider</p>
+</div>
+</article>
+<article id="cyclone" class="entry" aria-labelledby="cyclone-title">
+<h2 id="cyclone-title">Cycloon</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een scheider die een gas - vast (G - S) mengsel kan scheiden. Het gas wordt in een snel ronddraaiende beweging gebracht waardoor het vaste stof door centrifugale krachten naar buiten wordt geslagen.</p>
+<a target="_blank" href="https://energyeducation.ca/encyclopedia/Cyclone_separator" rel="noreferrer noopener"><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/GasCyclone.png" alt="Cyclone separator diagram" style="width: 75%; height: 75%;"></a> <br><a href="https://energyeducation.ca/encyclopedia/Cyclone_separator">Cyclone separator</a></div>
+</article>
+<article id="deflegmatie" class="entry" aria-labelledby="deflegmatie-title">
+<h2 id="deflegmatie-title">Deflegmatie</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij deflegmatie wordt een <b><u>gedeelte</u></b> van de oorspronkelijke gasfase door koeling omgezet naar een vloeibare fase. We noemen dit dus ook wel gefractioneerde condensatie.</p>
+</div>
+</article>
+<article id="demister" class="entry" aria-labelledby="demister-title">
+<h2 id="demister-title">Demister</h2>
+<div class="colorbox colorbox--grey">
+<p>Een demister is een apparaat dat wordt gebruikt om vloeistofdruppels uit een gasstroom te verwijderen. Denk aan kleine water druppels in een gasfase. (Afzuigkap in de keuken). <br><br>Dit is belangrijk in processen waar gas en vloeistof samenkomen, zoals in scheidingsprocessen of bij het koelen van gassen. <br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Demister.svg" alt="Demister diagram" style="width: 55%; height: 55%;"></p>
+</div>
+</article>
+<article id="destillatie" class="entry" aria-labelledby="destillatie-title">
+<h2 id="destillatie-title">Destillatie</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een scheider die een homogene stelsel kan scheiden op basis van vluchtigheid. <br><br>Een destillatiekolom bestaat uit twee delen: de stripper en de rectifier. De (voorverwarmde) voeding komt doorgaans halverwege, tussen de stripper en rectifier, op kooktemperatuur de kolom binnen. Bovenin de kolom wordt de damp gecondenseerd (C) en gedeeltelijk afgevoerd (de destillaatstroom D = productstroom) en gedeeltelijk weer terug de kolom ingevoerd (refluxstroom). Onderin de kolom wordt de vloeistofstroom gedeeltelijk afgevoerd (bodemstroom B of de waste W) en gedeeltelijk via de kookpot K (of reboiler) als damp weer de kolom ingeleid.</p>
+<div><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Destillation.png" alt="Destillation diagram" style="width: 45%; height: 45%;"> <img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Destillatie_groot.png" alt="Destillation diagram" style="width: 45%; height: 45%;"></div>
+</div>
+</article>
+<article id="discontinue_fase" class="entry" aria-labelledby="discontinue_fase-title">
+<h2 id="discontinue_fase-title">Discontinue fase</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Vloeistof - Vloeistof scheider</p>
+</div>
+</article>
+<article id="disperse" class="entry" aria-labelledby="disperse-title">
+<h2 id="disperse-title">Disperse fase</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Vloeistof - Vloeistof scheider</p>
+</div>
+</article>
+<article id="drijvende_kracht" class="entry" aria-labelledby="drijvende_kracht-title">
+<h2 id="drijvende_kracht-title">Drijvende kracht</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij niet-evenwichtprocessen is de snelheid waarmee de processen verlopen evenredig met de afwijking uit de evenwichtstoestand. De drijvende kracht van het proces is het verschil tussen de actuele toestand en de evenwichtstoestand.</p>
+</div>
+</article>
+<article id="drogen" class="entry" aria-labelledby="drogen-title">
+<h2 id="drogen-title">Drogen</h2>
+<div class="colorbox colorbox--grey">
+<p>Met drogen in de chemische industrie kunnen twee dingen bedoelt worden: <br><br>Het drogen van een organische vloeistof waar nog een vervuiling van water in zit en watervrij moet zijn (chemische drogen). <br><br>Het drogen van een vloeistof van een vaste stof waarbij doormiddel van het verschil in fysische eigenschappen (namelijk het verschil in dampspanning van de vaste fase en de vloeibare fase). De scheiding gebeurt door de vloeibare fase om te zetten in de gasfase (= de hulpfase)</p>
+</div>
+</article>
+<article id="eenheidsbewerkingen" class="entry" aria-labelledby="eenheidsbewerkingen-title">
+<h2 id="eenheidsbewerkingen-title">Eenheidsbewerkingen <br>(Unit operations)</h2>
+<div class="colorbox colorbox--grey">De volgende bewerkingen zijn aanwezig in de procesindustrie:
+<ol>
+<li>Opslag</li>
+<li>Transport</li>
+<li>Mengen en scheiden</li>
+<li>Warmte overdracht</li>
+<li>Chemische omzettingen</li>
+<li>Verkleinen en vergroten</li>
+<li>Bevochtigen</li>
+<li>Drogen</li>
+</ol>
+Elke eenheidsbewerking kan worden geanalyseerd en geoptimaliseerd om de efficiëntie van het proces te verbeteren.
+<p></p>
+</div>
+</article>
+<article id="extract" class="entry" aria-labelledby="extract-title">
+<h2 id="extract-title">Extract</h2>
+<div class="colorbox colorbox--grey">
+<p>Extract is de benaming voor de vloeistof of extractiemiddel waar het gewenste product in zit na extractie met een oplosmiddel/extractiemiddel. <br><br>Bijvoorbeeld het verwijderen van fenol uit water, waarbij butylacetaat gebruikt wordt als extractiemiddel. Aan het einde van de extractie bevat de butylacetaat het opgeloste fenol. <br><br>Zie ook Vloeistof - Vloeistof scheider</p>
+</div>
+</article>
+<article id="extractie" class="entry" aria-labelledby="extractie-title">
+<h2 id="extractie-title">Extractie</h2>
+<div class="colorbox colorbox--grey">
+<p>Extractie is het verwijderen van één of meerdere componenten uit een vloeistofmengsel met behulp van een andere vloeistof, het extractiemiddel. Het extractiemiddel waarin deze componenten in kunnen oplossen, moet met de oorspronkelijke vloeistof een ontmenging tonen. <br><br>Bijvoorbeeld het verwijderen van fenol uit water, waarbij butylacetaat gebruikt wordt als extractiemiddel. Aan het einde van de extractie bevat de butylacetaat het opgeloste fenol. <br><br>Zie ook Vloeistof - Vloeistof scheider</p>
+</div>
+</article>
+<article id="faseoverdrachtsproces" class="entry" aria-labelledby="faseoverdrachtsproces-title">
+<h2 id="faseoverdrachtsproces-title">Faseoverdrachtsproces</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij de scheiding van een homogeen stelsel wordt altijd gebruik gemaakt van een zogenaamde hulpfase, d.w.z. het te scheiden mengsel wordt in contact gebracht met een tweede fase. Deze hulpfase kan van "buiten" worden aangevoerd (bijvoorbeeld bij vloeistof-vloeistof extractie en bij gasabsorptie) of uit de oorspronkelijke fase ontstaan (bijvoorbeeld bij destillatie en deflegmatie). Door gebruik te maken van het verschil in fysische eigenschappen (bijvoorbeeld dampspanning, oplosbaarheid enz.) van de componenten van het te scheiden mengsel, wordt een gedeeltelijke overgang van de te scheiden componenten in de hulpfase bewerkstelligd. Met andere woorden: er is sprake van stofoverdracht tussen de fasen (faseoverdrachtproces).</p>
+</div>
+</article>
+<article id="fasescheidingsprocessen" class="entry" aria-labelledby="fasescheidingsprocessen-title">
+<h2 id="fasescheidingsprocessen-title">Fasescheidingsprocessen</h2>
+<div class="colorbox colorbox--grey">
+<p>Onder een heterogeen stelsel wordt verstaan een stelsel, bestaande uit twee of meer fasen. De scheidingsmethoden berusten op verschillen in mechanische eigenschappen van de componenten of fasen waaruit het stelsel bestaat. De fasen worden van elkaar gescheiden, bijvoorbeeld vast van een gas zonder dat daarbij stofuitwisseling tussen de fasen plaatsvindt, met andere woorden er is sprake van fasescheidingsprocessen.</p>
+</div>
+</article>
+<article id="feed" class="entry" aria-labelledby="feed-title">
+<h2 id="feed-title">Feed (Voeding)</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is het begin materiaal die gaat naar een bewerkingseenheid gaat, <br><br>Als voorbeeld kun je nemen een water stroom die verontreinigd is met fenol die als voeding dient voor een vloeistof - vloeistof extractie, waar de fenol verwijdert wordt.</p>
+</div>
+</article>
+<article id="fysische_scheidingsmethoden" class="entry" aria-labelledby="fysische_scheidingsmethoden-title">
+<h2 id="fysische_scheidingsmethoden-title">Fysische Scheidingsmethoden</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij deze scheidingsmethode brengt stofoverdracht tussen de fasen een verrijking of verarming aan één of meer componenten in de fasen teweeg. <br><br>Deze scheidingsmethoden vinden plaats in een homogene stelsel en berusten op verschillen in fysische eigenschappen van de samenstellende componenten: <br><br>Deze eigenschappen kunnen o.a. zijn:</p>
+<ul>
+<li>Vluchtigheid (drogen, destilleren)</li>
+<li>Oplosbaarheid( extraheren, absorberen)</li>
+<li>Kristallisatie temperatuur (kristalliseren)</li>
+</ul>
+<p></p>
+</div>
+</article>
+<article id="gasabsorptie" class="entry" aria-labelledby="gasabsorptie-title">
+<h2 id="gasabsorptie-title">Gasabsorptie</h2>
+<div class="colorbox colorbox--grey">
+<p>Een component uit een gasfase wordt verwijderd doormiddel van een vloeistoffase. Een voorbeeld hiervan is het verwijderen van CO₂ in rookgas. Waarbij de CO₂ wordt weggereageerd doormiddel van natronloog onder vorming van Na₂CO₃.</p>
+</div>
+</article>
+<article id="half_continue" class="entry" aria-labelledby="half_continue-title">
+<h2 id="half_continue-title">Half-continue</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een term voor het niet volledig continue draaien van een proces/fabriek. Meestal wordt hiermee bedoeld dat er een dienst gedraaid wordt van 5 dagen/week en 24 uren/dag. Dus dan staat de fabriek stil in het weekend. Dit komt vaak voor meestal bij een proces die werkt doormiddel van batches.</p>
+</div>
+</article>
+<article id="kinetiek" class="entry" aria-labelledby="kinetiek-title">
+<h2 id="kinetiek-title">Kinetiek</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is de snelheid van de chemische reactie. De kinetiek van een reactie is belangrijk voor de grootte van het proces.</p>
+</div>
+</article>
+<article id="kristallisatie" class="entry" aria-labelledby="kristallisatie-title">
+<h2 id="kristallisatie-title">Kristallisatie</h2>
+<div class="colorbox colorbox--grey">
+<p>Kristallisatie is een zuiveringsmethode waarbij een te zuiveren stof opgelost wordt in een hete vloeistof (een hogere temperatuur zal de oplosbaarheid verhogen van de te zuiveren stof) en door koeling van de vloeistof de stof laat uitkristalliseren. Hiermee worden meestal onzuiverheden verwijderd en hou je een veel pure stof over.</p>
+<div style="margin-top: 15px; word-wrap: break-word;"><a target="_blank" lb:options="{'contents':{'id':'myYouTube9b84287a1ec64fec93ecf171c7058a6f','stripComments':true},'closeOnBodyClick':false}" class="lb" style="text-align: center; text-decoration: none; color: #333; float: left; width: 150px; background: #000; border: 1px solid #bbb; display: block;" href="http://www.youtube.com/watch?v=VpOU0Fo7QfU" title="Rock Candy Recipe - Crystallization of Sugar - The Sci Guys: Science at Home" rel="noopener"> <img src="http://i.ytimg.com/vi/VpOU0Fo7QfU/1.jpg" alt="" width="120"> <span style="background-image: url('/images/ci/ng/rumble_button_back.gif'); padding: 2px; color: #333333; text-align: center; display: block; word-wrap: break-word;"> Watch Video </span> </a>
+<div style="margin-left: 160px; font-size: 15px; font-weight: bold; margin-bottom: 5px;">Rock Candy Recipe - Crystallization of Sugar - The Sci Guys: Science at Home</div>
+<div id="thumbnail-metadata" style="margin-left: 160px; font-size: 11px; margin-bottom: 5px;"><strong>Duration:</strong> 6:38 <br><strong>User:</strong> n/a - <strong>Added:</strong> 2/9/16</div>
+<div id="myYouTube9b84287a1ec64fec93ecf171c7058a6f" style="display: none;"><!--<div style="margin: 10px;"><div class="u_controlsWrapper"><a href="#" class="button-4" id="openYtControls9b84287a1ec64fec93ecf171c7058a6f">display.playerControls</a></div><div id="controls9b84287a1ec64fec93ecf171c7058a6f" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoPlayerControls: Rock Candy Recipe - Crystallization of Sugar - The Sci Guys: Science at Home</h2><a aria-live="off" id="playVideo9b84287a1ec64fec93ecf171c7058a6f" href="#" class="button-4">display.play</a><a id="stopVideo9b84287a1ec64fec93ecf171c7058a6f" href="#" class="button-4">display.stop</a><a id="volUp9b84287a1ec64fec93ecf171c7058a6f" href="#" class="button-4">display.volumeUp</a><a id="volDown9b84287a1ec64fec93ecf171c7058a6f" href="#" class="button-4">display.volumeDown</a><a aria-live="off" id="mute9b84287a1ec64fec93ecf171c7058a6f" href="#" class="button-4">display.mute</a><a href="#" class="close" id="closeYtControls9b84287a1ec64fec93ecf171c7058a6f"><img src="/images/ci/ng/close_mini.gif" alt="display.closePlayerControls"/></a></div><h2 class="hideoff">Embedded Video Player: Rock Candy Recipe - Crystallization of Sugar - The Sci Guys: Science at Home</h2><div style="word-wrap: break-word;"><div class="previewDiv ytIframeClass" style="height:344px;width:425px" id="ytEmbed9b84287a1ec64fec93ecf171c7058a6f"><iframe id="ytObject9b84287a1ec64fec93ecf171c7058a6f" width="425" height="344" src="http://www.youtube.com/embed/VpOU0Fo7QfU?modestbranding=1&fs=1&rel=0&enablejsapi=1&menu=disable&playerapiid=ytEmbed9b84287a1ec64fec93ecf171c7058a6f" title="Rock Candy Recipe - Crystallization of Sugar - The Sci Guys: Science at Home"></iframe><a href="#close" onclick="lightbox.closeCurrentLightbox(); return false;" class="hideoff">Close</a></div><div id="strip9b84287a1ec64fec93ecf171c7058a6f" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoStatus: Rock Candy Recipe - Crystallization of Sugar - The Sci Guys: Science at Home</h2><span aria-live="off" id="currentStatus9b84287a1ec64fec93ecf171c7058a6f"></span> <strong>Rock Candy Recipe - Crystallization of Sugar - The Sci Guys: Science at Home</strong> (<strong aria-live="off" id="currentTime9b84287a1ec64fec93ecf171c7058a6f"></strong> display.of <strong>6:38</strong>)</div></div></div>-->&nbsp;</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</article>
+<article id="ladingsgewijs" class="entry" aria-labelledby="ladingsgewijs-title">
+<h2 id="ladingsgewijs-title">Ladingsgewijs</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Charge (batch)</p>
+</div>
+</article>
+<article id="mechanische_scheidingsmethoden" class="entry" aria-labelledby="mechanische_scheidingsmethoden-title">
+<h2 id="mechanische_scheidingsmethoden-title">Mechanische Scheidingsmethoden</h2>
+<div class="colorbox colorbox--grey">
+<p>Deze scheidingsmethoden zijn bedoeld voor heterogene stelsels, dus voor systemen die bestaan uit meer dan één fase. Tot deze scheidingsmethoden horen bijvoorbeeld:</p>
+<ul>
+<li>filtratie</li>
+<li>sedimentatie</li>
+<li>flotatie</li>
+<li>centrifugeren</li>
+</ul>
+Bij deze processen worden de fasen van elkaar gescheiden, bijvoorbeeld vast van gas van vloeistof, zonder dat daarbij stofuitwisseling tussen de fasen plaatsvindt. De samenstelling van een fase ondergaat tijdens het proces geen verandering. <br><br>Voorbeelden van heterogene mengsels: <br><br>Suspensies: fijn verdeelde vaste stof zwevend in een vloeistof <br><br>Emulsies: fijn verdeelde vloeistof (L₁) zwevend in een andere vloeistof (L₂), waarbij L₁ en L₂ dus twee niet-mengbare vloeistoffen zijn.
+<p></p>
+</div>
+</article>
+<article id="nevenproducten" class="entry" aria-labelledby="nevenproducten-title">
+<h2 id="nevenproducten-title">Nevenproducten</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit zijn ongewenste bijproducten die kunnen onstaan tijdens de reactie van een proces. <br><br>Bijvoorbeeld de vorming van ethanol en hogere alcoholen in plaats van methanol in de methanol synthese reactie.</p>
+</div>
+</article>
+<article id="omzettingsgraad" class="entry" aria-labelledby="omzettingsgraad-title">
+<h2 id="omzettingsgraad-title">Omzettingsgraad (Conversie)</h2>
+<div class="colorbox colorbox--grey">
+<p>We nemen een reactie van A → B + C, waarbij B het gewenste product is, aan. <br><br>Bij deze reactie wordt 100 mol A omgezet naar 72 mol B, 18 mol C en er blijft 10 mol A over. Dan is de omzetting (conversie) X, de fractie omgezet reactant, dat is A hier. $$ \begin{aligned} X_{A} &amp;= \dfrac{A_{\text{in}} - A_{\text{uit}}}{A_{\text{in}}} = 1 - \dfrac{A_{\text{uit}}}{A_{\text{in}}} \\ X_{A} &amp;= \dfrac{100 - 10}{100} = 1 - \dfrac{10}{100} = 0.90 = 90\% \end{aligned} $$ Hier is de omzetting van A dus dan 90%. <br><br>De selectiviteit (S) hier van B is de heoeveelheid gemaakte mol B per omgezette hoeveelheid A. Hetzelfde ook voor C. $$ \begin{aligned} S_{B} &amp;= \dfrac{B_{\text{in}} - B_{\text{uit}}}{A_{\text{in}} - A_{\text{uit}}} = \dfrac{0 - 72}{100-10} = 0.8 = 80\% \\ S_{C} &amp;= \dfrac{C_{\text{in}} - C_{\text{uit}}}{A_{\text{in}} - A_{\text{uit}}} = \dfrac{0 - 18}{100-10} = 0.2 = 20\% \end{aligned} $$ De yield van een product zegt dus meer over de hoeveelheid uiteindelijke product die je gemaakt hebt, terwijl de selecitiviteit meer iets zegt over hoe goed je het gewenste product gemaakt hebt. <br><br>Stel bij de volgende reactie van 100 mol D → E, dat er 5 mol E is gemaakt en er is 5 mol D omgezet. Dan is de conversie maar 5%, maar je selectiviteit van je stof D is 100%!, maar je yield is maar 5%. Hier heb je dus een hele zuivere omzetting naar E, maar een hele lage yield van je gewenste stof. <br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Conversion.svg" alt="Conversie diagram" style="width: 70%; height: 70%;"></p>
+</div>
+</article>
+<article id="piping_and_instrumentation_diagrams" class="entry" aria-labelledby="piping_and_instrumentation_diagrams-title">
+<h2 id="piping_and_instrumentation_diagrams-title">Piping and Instrumentation Diagrams (P&amp;ID)</h2>
+<div class="colorbox colorbox--grey">
+<p>Piping and Instrumentation Diagrams (P&amp;ID) zijn gedetailleerde technische tekeningen die de pijpleidingen, apparatuur, instrumentatie en controlesystemen van een procesinstallatie weergeven. <br><br>Deze diagrammen zijn cruciaal voor het ontwerp, de constructie en het onderhoud van procesinstallaties, omdat ze een duidelijk overzicht bieden van de processtromen en de bijbehorende apparatuur.</p>
+<img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/PID.png" alt="P&amp;ID diagram" style="width: 70%; height: 70%;"></div>
+</article>
+<article id="proces" class="entry" aria-labelledby="proces-title">
+<h2 id="proces-title">Proces</h2>
+<div class="colorbox colorbox--grey">
+<p>Een proces is een behandeling van een grondstof naar een eind(tussen) product doormiddel van eenheidsbewerkingen.</p>
+</div>
+</article>
+<article id="procesflowdiagram" class="entry" aria-labelledby="procesflowdiagram-title">
+<h2 id="procesflowdiagram-title">Procesflowdiagram</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een schematische tekening waarop de de verschillende apparaten en stofstromen getekend zijn van het proces.</p>
+<br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/RefineryFlow.png" alt="PFD diagram" style="width: 70%; height: 70%;"></div>
+</article>
+<article id="procesindustrie" class="entry" aria-labelledby="procesindustrie-title">
+<h2 id="procesindustrie-title">Procesindustrie</h2>
+<div class="colorbox colorbox--grey">
+<p>Tot de procesindustrie rekent men gewoonlijk die bedrijven, die door middel van chemische, fysische en mechanische bewerkingen en processen op economisch verantwoorde wijze ruwe bulkmaterialen en energie omvormen tot bruikbare (bulk)producten. (Het gaat dus om bulkgoederen zoals benzine, en niet om stukgoederen zoals automotoren) <br><br>Voorbeelden zijn: de chemische, petrochemische en biochemische industrie, de keramische industrie, papier–en kartonindustrie, de voedingsmiddelenindustrie en ook de energievoorziening.</p>
+</div>
+</article>
+<article id="procestechnologie" class="entry" aria-labelledby="procestechnologie-title">
+<h2 id="procestechnologie-title">Procestechnologie</h2>
+<div class="colorbox colorbox--grey">
+<p>De wetenschap die zich bezig houdt met de geïntegreerde vorm van chemische, fysische en mechanische bewerkingen, noemt men de procestechnologie. Het verschil tussen de termen procestechnologie en chemische technologie kan echter (helaas) niet duidelijk worden geformuleerd. De Amerikanen leveren ook nog een aardige bijdrage tot de verwarring over de betekenis van deze begrippen: in de USA noemt men de procestechnologie, chemical engineering.</p>
+</div>
+</article>
+<article id="productie" class="entry" aria-labelledby="productie-title">
+<h2 id="productie-title">Productie</h2>
+<div class="colorbox colorbox--grey">
+<p>Het aanpassen van een product of beginstof tot een ander product of eindproduct.</p>
+</div>
+</article>
+<article id="raffinaat" class="entry" aria-labelledby="raffinaat-title">
+<h2 id="raffinaat-title">Raffinaat</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is de stofstroom uit een proces waarbij een component of componenten zijn verwijderd.</p>
+</div>
+</article>
+<article id="reactieenthalpie" class="entry" aria-labelledby="reactieenthalpie-title">
+<h2 id="reactieenthalpie-title">Reactie-enthalpie</h2>
+<div class="colorbox colorbox--grey">
+<p>Onder de enthalpieverandering (reactie-enthalpie ΔH<sub>reactie</sub>) van een reactie wordt verstaan de verandering van chemische energie, gemeten via de reactiewarmte. Deze reactiewarmte is bepaald bij constante druk (p = p<sub>0</sub>) en wijkt dus meestal iets af van de verandering van chemische energie (hooguit enige procenten). <br><br>Omdat bij reacties uitsluitend enthalpieveranderingen optreden, wordt de reactie-enthalpie altijd aangegeven met ΔH. Zowel de uitgangsstoffen als reactieproducten hebben immers een zekere enthalpiewaarde (‘enthalpie-inhoud’). De enthalpieveranderingen worden achter de reactievergelijking gezet, bijvoorbeeld: $$ \begin{aligned} \ce{H3O+(aq) + OH-(aq) &amp;-&gt; 2H2O(l) } \\ &amp;\Delta H_{\text{reactie}} = -58 \text{ kJ/mol} \\ \\ \ce{CH4(g) + 2O2(g) &amp;-&gt; CO2(g) + 2H2O(l) } \\ &amp;\Delta H_{\text{reactie}} = -890 \text{ kJ/mol} \end{aligned} $$ Bij exotherme reacties daalt het enthalpieniveau van de stoffen (ΔH &lt; 0). Bij endotherme reacties stijgt het enthalpieniveau (ΔH &gt; 0).</p>
+</div>
+</article>
+<article id="rectifier" class="entry" aria-labelledby="rectifier-title">
+<h2 id="rectifier-title">Rectifier</h2>
+<div class="colorbox colorbox--grey">
+<p>Een destillatiekolom bestaat uit twee delen: de stripper en de rectifier. De (voorverwarmde) voeding komt doorgaans halverwege, tussen de stripper en rectifier, op kooktemperatuur de kolom binnen. Bovenin de kolom wordt de damp gecondenseerd (C) en gedeeltelijk afgevoerd (de destillaatstroom D = productstroom) en gedeeltelijk weer terug de kolom ingevoerd (refluxstroom). Onderin de kolom wordt de vloeistofstroom gedeeltelijk afgevoerd (bodemstroom B of de waste W) en gedeeltelijk via de kookpot K (of reboiler) als damp weer de kolom ingeleid. <br><br>De functie van de dampstroom G<sub>S</sub> in de stripper, het onderste gedeelte van de kolom, is de vloeistofstroom L<sub>S</sub> te ontdoen van de ‘lichte’ component (= component met het laagste kookpunt). <br><br>De functie van de vloeistofstroom L<sub>R</sub> in de rectifier is de dampstroom G<sub>R</sub> te ontdoen van de zware component (= component met het hoogste kookpunt).</p>
+<br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Destillatieschema.svg" alt="Destillatie diagram" style="width: 50%; height: 50%;"></div>
+</article>
+<article id="recycle" class="entry" aria-labelledby="recycle-title">
+<h2 id="recycle-title">Recycle</h2>
+<div class="colorbox colorbox--grey">
+<p>Er zijn processen waarin slechts enkele procenten van de uitgangsstoffen in één doorgang door de reactor worden omgezet, bijvoorbeeld in de methanolbereiding. Het onomgezette materiaal wordt van het product afgescheiden en gerecirculeerd (gerecycled). Het komt ook voor dat de recyclestroom geheel ontbreekt, omdat de omzetting in de reactor volledig is of omdat de omdat de onomgezette stoffen niet op een praktische manier zijn af te scheiden.</p>
+</div>
+</article>
+<article id="recyclestroom" class="entry" aria-labelledby="recyclestroom-title">
+<h2 id="recyclestroom-title">Recyclestroom</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Recycle</p>
+</div>
+</article>
+<article id="scaling_up" class="entry" aria-labelledby="scaling_up-title">
+<h2 id="scaling_up-title">Scaling-up</h2>
+<div class="colorbox colorbox--grey">
+<p>Als op grond van eerdere gedaane researchresultaten op kleine labschaal een proces ontwerp er economisch aantrekkelijk uitziet, wordt in het laboratorium verder gewerkt, maar nu op grotere schaal. Men gebruikt dan heel groot glaswerk of – vaker - metalen reactoren en buizen. Je kunt spreken van een installatie op semi-technische schaal (in het Engels pilot plant). In een dergelijke installatie onderzoekt men wat de effecten zijn van variatie in de (vele) reactiecondities. Vaak treden onvoorziene problemen op, bijvoorbeeld een daling van de opbrengst door een toename van een nevenreactie. Al deze problemen moeten worden opgelost.</p>
+<br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Lab_scale.jpg" alt="Scale up picture" style="width: 50%; height: 50%;">
+<p>Zeton b.v. Lab scale setup</p>
+</div>
+</article>
+<article id="scheiding_van_heterogene_stelsels" class="entry" aria-labelledby="scheiding_van_heterogene_stelsels-title">
+<h2 id="scheiding_van_heterogene_stelsels-title">Scheiding van heterogene stelsels</h2>
+<div class="colorbox colorbox--grey">
+<p>Heterogene stelsels bestaan uit meer dan één fase; de scheiding van heterogene stelsels berust die op verschillen in mechanische eigenschappen van de bestanddelen (componenten). <br><br>Deze methoden worden daarom wel mechanische scheidingsmethoden genoemd. Tot deze groep behoren onder meer filtratie, sedimentatie, flotatie en centrifugeren. Bij deze processen worden de fasen van elkaar gescheiden, bijvoorbeeld vast van gas van vloeistof, zonder dat daarbij stofuitwisseling tussen de fasen plaatsvindt of althans deze uitwisseling essentieel is. De samenstelling van een fase ondergaat tijdens het proces geen verandering. <br><br>Voorbeelden van heterogene mengsels: <br><br>Suspensie  : fijn verdeelde vaste stof zwevend in een vloeistof; <br>Emulsie*  &nbsp;&nbsp;: fijn verdeelde vloeistof (L₁) zwevend in een ander vloeistof (L₂) <br>*L₁ en L₂ zijn dus twee niet-mengbare vloeistoffen.</p>
+</div>
+</article>
+<article id="scheiding_van_homogene_stelsels" class="entry" aria-labelledby="scheiding_van_homogene_stelsels-title">
+<h2 id="scheiding_van_homogene_stelsels-title">Scheiding van homogene stelsels</h2>
+<div class="colorbox colorbox--grey">
+<p>Homogene stelsels bestaan uit één fase; de scheiding van homogene stelsels berust op verschillen in fysische eigenschappen van de componenten van het stelsel. Deze methoden worden daarom wel fysische scheidingsmethoden genoemd. Bij deze scheidingsmethoden brengt stofoverdracht tussen de fasen een verrijking of verarming aan één of meer componenten in de fasen teweeg. <br><br>De fysische scheiding van de componenten berust op de verschillen in fysische eigenschappen van de samenstellende componenten. <br><br>Deze eigenschappen kunnen o.a. zijn:</p>
+<ul>
+<li>Vluchtigheid (drogen, destilleren);</li>
+<li>Oplosbaarheid (extraheren, absorberen);</li>
+<li>Kristallisatietemperatuur (kristalliseren).</li>
+</ul>
+Voorbeelden van homogene mengsels zijn: oplossingen (vloeistof/vast; vloeistof/ vloeistof; vloeistof/gas), in oplossingen zijn de verschillende stoffen moleculair verdeeld.
+<p></p>
+</div>
+</article>
+<article id="selectiviteit" class="entry" aria-labelledby="selectiviteit-title">
+<h2 id="selectiviteit-title">Selectiviteit</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Omzettingsgraad (Conversie)</p>
+</div>
+</article>
+<article id="solvent" class="entry" aria-labelledby="solvent-title">
+<h2 id="solvent-title">Solvent</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een oplosmiddel of extractiemiddel, zie vloeistof - vloeistof extractie</p>
+</div>
+</article>
+<article id="spui" class="entry" aria-labelledby="spui-title">
+<h2 id="spui-title">Spui (Bleed)</h2>
+<div class="colorbox colorbox--grey">
+<p>Het komt ook voor dat een nevenproduct zich moeilijk laat afscheiden en in de recycle naar de ingang van het proces wordt teruggevoerd. Hierdoor kan deze stof zich in het proces ophopen. In een dergelijk geval is het noodzakelijk slechts een deel van het onomgezette materiaal te recirculeren. Het andere deel wordt continu verwijderd. Deze stroom noemt men de spui van het proces (Engels: bleed). In de stationaire toestand voert de spui per tijdseenheid eenzelfde hoeveelheid van dat nevenproduct af als er in de reactor wordt gevormd.</p>
+</div>
+</article>
+<article id="stationair" class="entry" aria-labelledby="stationair-title">
+<h2 id="stationair-title">Stationair (Steady State)</h2>
+<div class="colorbox colorbox--grey">
+<p>Als er sprake is van een proces stationair is (steady state) dan betekent dat de groottes en samenstellingen van de proces stromen niet meer veranderen in de tijd.</p>
+</div>
+</article>
+<article id="stoechiometrisch" class="entry" aria-labelledby="stoechiometrisch-title">
+<h2 id="stoechiometrisch-title">Stoechiometrisch (Stoichiometric)</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is de verhouding waarin de chemische verbindingen met elkaar reageren en de verhouding tussen de reactanten en producten van een chemische reactie. Bijvoorbeeld de verbranding van methaan met zuurstof heeft de volgende stoechiometrische resultaat: $$\ce{CH4(g) + 2O2(g) → CO2(g) + 2H2O(g)}$$ Bij een chemische reactie is meestal een van de begin stoffen in overmaat. Bijvoorbeeld bij de verbranding van methaan zal waarschijnlijk de zuurstof in overmaat zijn.</p>
+</div>
+</article>
+<article id="stofoverdracht" class="entry" aria-labelledby="stofoverdracht-title">
+<h2 id="stofoverdracht-title">Stofoverdracht (Mass transfer)</h2>
+<div class="colorbox colorbox--grey">
+<p>Het overbrengen van een stof van een fase naar een andere fase. Bijvoorbeeld de extractie van fenol uit water naar butylacetaat. Hier vindt er stofoverdracht plaats van de fenol in water naar de butylacetaat toe. <br><br>Een stof die omgezet wordt op een vast katalysator deeltje heeft dan ook een stofoverdracht nodig van de vloeistof/gas fase naar het vaste katalysator.</p>
+</div>
+</article>
+<article id="stripper" class="entry" aria-labelledby="stripper-title">
+<h2 id="stripper-title">Stripper</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Rectifier</p>
+</div>
+</article>
+<article id="synthese_gas" class="entry" aria-labelledby="synthese_gas-title">
+<h2 id="synthese_gas-title">Synthese Gas</h2>
+<div class="colorbox colorbox--grey">
+<p>Synthese gas is een mengsel van koolmonoxide (CO) en waterstof (H₂). Dit gas wordt primair gebruikt als tussenproduct bij de productie van methanol en ammoniak. <br><br>Vorming van methanol: $$ \begin{aligned} &amp;\ce{CO(g) + 2H2(g) &lt;--&gt; CH3OH(g)} \end{aligned} $$ Vorming van ammoniak: $$ \begin{aligned} &amp;\ce{N2(g) + 3H2(g) &lt;--&gt; 2NH3(g)} \end{aligned} $$</p>
+</div>
+</article>
+<article id="technologie" class="entry" aria-labelledby="technologie-title">
+<h2 id="technologie-title">Technologie</h2>
+<div class="colorbox colorbox--grey">
+<p>Onder technologie wordt de wetenschap verstaan die zich bezig houdt met de ontwikkeling en de toepassing van productieprocessen. Technologie is dus de kennis van de wetenschap achter de techniek.</p>
+</div>
+</article>
+<article id="tegenstroom_principe" class="entry" aria-labelledby="tegenstroom_principe-title">
+<h2 id="tegenstroom_principe-title">Tegenstroom Principe</h2>
+<div class="colorbox colorbox--grey">
+<p>Hier wordt mee bedoeld dat twee vloeistof stromen tegen elkaar in stromen. Bij een vloeistof-vloeistof extractie wordt de lichte vloeistof (met laagste soortelijke massa) onderin de reactor toegevoegd en boven afgevoerd, terwijl de zwaardere vloeistof (met hoogste soortelijke massa) zich van boven naar beneden beweegt.</p>
+<img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Example_tegenstroom.png" alt="Tegenstroom" style="width: 50%; height: 50%;">
+<div style="margin-top: 15px; word-wrap: break-word;"><a target="_blank" lb:options="{'contents':{'id':'myYouTubef27dc6350a8448c28fd077215dceb6f8','stripComments':true},'closeOnBodyClick':false}" class="lb" style="text-align: center; text-decoration: none; color: #333; float: left; width: 150px; background: #000; border: 1px solid #bbb; display: block;" href="http://www.youtube.com/watch?v=TlJaSK6YEp4" title="Liquid-Liquid Extraction Column Demonstration: KARR Columns by Koch Modular" rel="noopener"> <img src="http://i.ytimg.com/vi/TlJaSK6YEp4/1.jpg" alt="" width="120"> <span style="background-image: url('/images/ci/ng/rumble_button_back.gif'); padding: 2px; color: #333333; text-align: center; display: block; word-wrap: break-word;"> Watch Video </span> </a>
+<div style="margin-left: 160px; font-size: 15px; font-weight: bold; margin-bottom: 5px;">Liquid-Liquid Extraction Column Demonstration: KARR Columns by Koch Modular</div>
+<div id="thumbnail-metadata" style="margin-left: 160px; font-size: 11px; margin-bottom: 5px;"><strong>Duration:</strong> 9:51 <br><strong>User:</strong> n/a - <strong>Added:</strong> 2/25/15</div>
+<div id="myYouTubef27dc6350a8448c28fd077215dceb6f8" style="display: none;"><!--<div style="margin: 10px;"><div class="u_controlsWrapper"><a href="#" class="button-4" id="openYtControlsf27dc6350a8448c28fd077215dceb6f8">display.playerControls</a></div><div id="controlsf27dc6350a8448c28fd077215dceb6f8" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoPlayerControls: Liquid-Liquid Extraction Column Demonstration: KARR Columns by Koch Modular</h2><a aria-live="off" id="playVideof27dc6350a8448c28fd077215dceb6f8" href="#" class="button-4">display.play</a><a id="stopVideof27dc6350a8448c28fd077215dceb6f8" href="#" class="button-4">display.stop</a><a id="volUpf27dc6350a8448c28fd077215dceb6f8" href="#" class="button-4">display.volumeUp</a><a id="volDownf27dc6350a8448c28fd077215dceb6f8" href="#" class="button-4">display.volumeDown</a><a aria-live="off" id="mutef27dc6350a8448c28fd077215dceb6f8" href="#" class="button-4">display.mute</a><a href="#" class="close" id="closeYtControlsf27dc6350a8448c28fd077215dceb6f8"><img src="/images/ci/ng/close_mini.gif" alt="display.closePlayerControls"/></a></div><h2 class="hideoff">Embedded Video Player: Liquid-Liquid Extraction Column Demonstration: KARR Columns by Koch Modular</h2><div style="word-wrap: break-word;"><div class="previewDiv ytIframeClass" style="height:344px;width:425px" id="ytEmbedf27dc6350a8448c28fd077215dceb6f8"><iframe id="ytObjectf27dc6350a8448c28fd077215dceb6f8" width="425" height="344" src="http://www.youtube.com/embed/TlJaSK6YEp4?modestbranding=1&fs=1&rel=0&enablejsapi=1&menu=disable&playerapiid=ytEmbedf27dc6350a8448c28fd077215dceb6f8" title="Liquid-Liquid Extraction Column Demonstration: KARR Columns by Koch Modular"></iframe><a href="#close" onclick="lightbox.closeCurrentLightbox(); return false;" class="hideoff">Close</a></div><div id="stripf27dc6350a8448c28fd077215dceb6f8" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoStatus: Liquid-Liquid Extraction Column Demonstration: KARR Columns by Koch Modular</h2><span aria-live="off" id="currentStatusf27dc6350a8448c28fd077215dceb6f8"></span> <strong>Liquid-Liquid Extraction Column Demonstration: KARR Columns by Koch Modular</strong> (<strong aria-live="off" id="currentTimef27dc6350a8448c28fd077215dceb6f8"></strong> display.of <strong>9:51</strong>)</div></div></div>-->&nbsp;</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</article>
+<article id="uitlogen" class="entry" aria-labelledby="uitlogen-title">
+<h2 id="uitlogen-title">Uitlogen (Leaching)</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij uitlogen zijn de oorspronkelijke fasen een som van een aantal vaste fasen (bijvoorbeeld mengsel van zand + suiker, metaalertsen) en dus eigenlijk géén homogene fase. De scheiding berust echter op het verschil in oplosbaarheid in een vloeistof (= de hulpfase) hetgeen een fysische eigenschap is. Een andere, meer bekende benaming van uitlogen is extractie van een vaste stof (extractie van gemalen koffiebonen levert koffie-extract, extractie van eetbare oliën uit zaden). In de Angelsaksische literatuur staat het uitlogen bekend onder de benaming Leaching.</p>
+</div>
+</article>
+<article id="unit_operations" class="entry" aria-labelledby="unit_operations-title">
+<h2 id="unit_operations-title">Unit Operations</h2>
+<div class="colorbox colorbox--grey">
+<p>Zie Eenheidsbewerkingen.</p>
+</div>
+</article>
+<article id="vaste_bed" class="entry" aria-labelledby="vaste_bed-title">
+<h2 id="vaste_bed-title">Vaste Bed (Fixed Bed)</h2>
+<div class="colorbox colorbox--grey">
+<p>Continue gas-vast reactoren waarin de vaste fase de katalysator is, komen in de chemische industrie heel veel voor. De meest simpelste vorm is de vast bed (fixed bed) reactor, d.i. een kolom gevuld met op een zeefplaat rustende vaste katalysatordeeltjes. <br><br>Dit type reactor wordt bijvoorbeeld toegepast in het proces van de oxidatie van SO₂ tot SO₃ met behulp van luchtzuurstof in het contactproces voor de zwavelzuurbereiding. <br><br>De afmetingen van de vast bed reactoren lopen sterk uiteen: lengten van 15 meter en diameters tot 6 meter komen voor.</p>
+<img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/fixed_bed.svg" alt="Vaste bed" style="width: 75%; height: 75%;"></div>
+</article>
+<article id="vloeistof_vloeistof_scheiding" class="entry" aria-labelledby="vloeistof_vloeistof_scheiding-title">
+<h2 id="vloeistof_vloeistof_scheiding-title">Vloeistof-Vloeistof Scheiding (Liquid-Liquid Separation)</h2>
+<div class="colorbox colorbox--grey">
+<p>Vloeistof - vloeistof scheiding berust op een verschil in soortelijke massa (of dichtheid). De scheiding wordt bewerkstelligd door de gravitatiekracht (zie figuur beneden) en kan dus versneld worden door vergroting van die kracht, zie de Laval-centrifuge bij centrifuge. <br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Oliewaterscheider.svg" alt="Oliewaterscheider" style="width: 35%; height: 35%;"> <br><br>Voor het verkrijgen van een goede scheiding kan men het best het mengsel op de plaats van de neutrale laag (= scheidingsvlak tussen de twee lagen) in voeren. De plaats van de neutrale laag tijdens een scheiding hangt af van het verschil in dichtheid ρ van de vloeistoffen. De verschillende vloeistoffen hoeven dan niet door elkaar te dringen. Het figuur hier boven geeft hiervan een eenvoudig voorbeeld. Wordt een mengsel van olie en water bij A in het vat gevoerd, dan stellen het olie- en waterniveau zich in op de hoogten h₁ en h₂. In een draaiende centrifuge krijgen we een soortgelijk evenwicht.</p>
+</div>
+</article>
+<article id="vloeistof_vloeistof_extractie" class="entry" aria-labelledby="vloeistof_vloeistof_extractie-title">
+<h2 id="vloeistof_vloeistof_extractie-title">Vloeistof-Vloeistof Extractie (Liquid-Liquid Extraction)</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij deze methode wordt er een stof geëxtraheerd uit een vloeibare fase doormiddel van een tweede niet-mengbare vloeibare fase. Als voorbeeld kunnen we de extractie van fenol uit water, doormiddel van butylacetaat nemen. <br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/tegenstroomextractiefenol.svg" alt="Tegenstroomextratie" style="width: 20%; height: 20%;"> <br><br>De stromen S, F, R en E stellen achtereenvolgens voor: <br><br>S: Solvent (oplosmiddel of extractiemiddel) L₂; hier: butylacetaat (apolair) (lichte fase: kleinste dichtheid) <br><br>F: Feed (voeding) L₁; hier: water verontreinigd met opgelost fenol (zware fase: grootste dichtheid) <br><br>R: Raffinaat; hier waterstroom ontdaan van fenol <br><br>E: Extract; hier het oplosmiddel met opgelost fenol <br><br>Water en butylacetaat zijn twee niet-mengbare vloeistoffen L₁ en L₂ in de kolom ontstaat een verdeling van kleine butylacetaatdruppels (2) in de waterfase (1). <br><br>Via het contactoppervlak (grensvlak) tussen deze twee fasen vindt stofoverdracht plaats: het vrij apolaire fenol gaat over van water naar butylacetaat. (→, 3) <br><br>Onder en boven in de kolom dienen de twee fasen weer te ontmengen alvorens ze als raffinaat, respectievelijk extract de kolom verlaten. <br><br>De butylacetaat fase (druppeltjes) wordt ook wel de disperse fase of de discontinue fase genoemd. Water wordt de continue fase genoemd, wat wil zeggen dat een “waarnemer” die zich binnen die fase kan verplaatsen overal die fase tegenkomt zonder die fase te hoeven verlaten. <br><br>Een ander voorbeeld: <br><br>Als je een flesje koolzuurhoudend mineraalwater opent dan zie je een disperse gasfase ontsnappen uit een continue waterfase.</p>
+</div>
+</article>
+<article id="vol_continue" class="entry" aria-labelledby="vol_continue-title">
+<h2 id="vol_continue-title">Vol-Continue</h2>
+<div class="colorbox colorbox--grey">
+<p>Bij een continue productie in een fabriek draait de werkdienst meestal vol-continue. De fabriek draait dan 7 dagen per week en 24 uren per dag.</p>
+</div>
+</article>
+<article id="vormingsenthalpie" class="entry" aria-labelledby="vormingsenthalpie-title">
+<h2 id="vormingsenthalpie-title">Vormingsenthalpie (Enthalpy of Formation)</h2>
+<div class="colorbox colorbox--grey">
+<p>Hoe groot is de enthalpiewaarde van één mol methaan? <br><br>In de chemie laat men methaan altijd ontstaan uit andere stoffen. Deze stoffen hebben natuurlijk ook een enthalpiewaarde. Dat betekent dat de absolute waarde van de enthalpie van methaan niet kan worden bepaald, maar alleen een relatieve waarde. Bij het bepalen van relatieve enthalpiewaarden is het noodzakelijk om een nulpunt voor enthalpie te kiezen. Men heeft afgesproken de enthalpiewaarden van de elementen, zoals ze onder standaardomstandigheden voorkomen (T= 298 K; p = p₀), op nul te stellen. Ten opzichte van de elementen hebben dan alle stoffen (verbindingen) een zekere enthalpiewaarde, die de vormingsenthalpie wordt genoemd</p>
+</div>
+</article>
+<article id="wet_van_behoud_van_energie" class="entry" aria-labelledby="wet_van_behoud_van_energie-title">
+<h2 id="wet_van_behoud_van_energie-title">Wet van Behoud van Energie (Law of Conservation of Energy)</h2>
+<div class="colorbox colorbox--grey">
+<p>Vele experimenten hebben bewezen dat energie niet verloren kan gaan en niet uit het niets kan ontstaan: <br><br>Bij omzettingen van de ene energievorm in de andere blijft de totale hoeveelheid energie constant. Dit wordt ook wel de Wet van Behoud van Energie genoemd. <br><br>Deze wet kan ook als volgt geformuleerd worden: in een geïsoleerd systeem verandert de totale hoeveelheid energie niet. Men onderscheidt het systeem (waarin het eigenlijke proces zich afspeelt) van de omgeving (= in principe alles buiten het systeem). Tussen het systeem en de omgeving bevindt zich een (vaak denkbeeldige) grens). <br><br>Een systeem kan van alles zijn: een reactievat, een stoommachine, een menselijk wezen of de aarde. Al naar gelang wat er tussen systeem en omgeving wordt uitgewisseld, onderscheidt men de systemen die vermeld staan in de onderstaande tabel.</p>
+<table>
+<tbody>
+<tr>
+<th>Systeem</th>
+<th>Uitwisseling tussen systeem en omgeving</th>
+</tr>
+<tr>
+<td>Geïsoleerd</td>
+<td>Niets (geen warmte, arbeid en stoffen)</td>
+</tr>
+<tr>
+<td>Gesloten</td>
+<td>Warmte en /of arbeid</td>
+</tr>
+<tr>
+<td>Open</td>
+<td>Warmte en /of arbeid en stoffen</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+<article id="wet_van_hess" class="entry" aria-labelledby="wet_van_hess-title">
+<h2 id="wet_van_hess-title">Wet van Hess (Hess's Law)</h2>
+<div class="colorbox colorbox--grey">
+<p>De wet van Hess is een thermochemische wetmatigheid geformuleerd door Germain Henri Hess (1802 - 1850). Deze wet legt vast dat de enthalpie voor een reactie kan worden berekend via het verschil tussen de vormingsenthalpie van de producten en die van de reagentia:</p>
+$$ \Delta H_{\text{reactie}} = \sum \Delta H_{\text{producten}} - \sum \Delta H_{\text{reagentia}} $$</div>
+</article>
+<article id="wet_van_vant_Hoff" class="entry" aria-labelledby="wet_van_vant_Hoff-title">
+<h2 id="wet_van_vant_Hoff-title">Wet van Van 't Hoff en Le Chatelier</h2>
+<div class="colorbox colorbox--grey">
+<p>Het principe van Le Chatelier is het principe van de kleinste dwang. Met dit principe kun je voorspellen hoe een chemisch evenwicht van een bepaalde reactie verschuift als één of meerdere reactiecondities veranderen.</p>
+<blockquote>Als in een chemisch systeem een verandering optreedt in concentratie, temperatuur, volume of totale druk, met andere woorden, een evenwichtsverstoring, dan zal het evenwicht zodanig verschuiven dat die verandering tegengegaan wordt. Uiteindelijk evolueert het systeem naar een nieuw evenwicht.</blockquote>
+<p></p>
+<h4>Concentratie</h4>
+<p></p>
+Bij een concentratie verandering zal het evenwicht zich verschuiven naar de kant toe die de verandering kan tegenwerken. <br><br>Laten we bijvoorbeeld de reactie nemen van methanol: $$ \ce{CO(g) + 2H2(g) &lt;--&gt; CH3OH(g)} $$ Als we de concentratie van CO verhogen dan zal het evenwicht zich hier verschuiven naar rechts en wordt er meer methanol gevormd. Verlagen we de concentratie CO dan zal het evenwicht zich naar links verschuiven,waardoor de concentratie methanol zal verminderen.
+<h4>Temperatuur</h4>
+<p>Het verhogen of verlagen van de temperatuur kan een enorme invloed hebben op het chemisch evenwicht.</p>
+<p>Laten we hier opnieuw het voorbeeld nemen van de vorming van methanol:</p>
+$$ \ce{CO(g) + 2H2(g) &lt;--&gt; CH3OH(g)} \quad \Delta H = -90.6 kJ/mol $$ De ΔH van de vorming van methanol is negatief (-) dus dat betekent dat de reactie naar rechts exotherm is. Doordat de reactie naar rechts exotherm is zal de reactie naar links endotherm zijn (+). <br><br>Als we de temperatuur verhogen van een evenwichtsreactie dan zal het evenwicht zich verschuiven naar de endotherme kant. Verlagen we de temperatuur dan zal het evenwicht zich verschuiven naar de exotherme kant. <br><br>Omdat de reactie voor het vormen van methanol exotherm is, zal bij een verhoging van de temperatuur het evenwicht zich verschuiven naar links (endotherme kant) en bij een verlaging van de temperatuur verschuiven naar rechts (exotherme kant). <br><br>Een lage temperatuur zal er dus voor zorgen dat er meer methanol gevormd wordt, maar een te lage temperatuur kan er voor zorgen dat de reactie te langzaam zal lopen. Er is dus bij een exotherm proces een balans nodig van een temperatuur die hoog genoeg is om de reactie snel genoeg te laten verlopen en laag genoeg voor een goede verschuiving van het evenwicht.
+<p></p>
+<h4>Druk</h4>
+Bij een gasreactie heeft een druk- dan wel volumeverandering effect op het evenwicht. <br><br>We nemen weer onze mooie methanol reactie als voorbeeld: $$ \ce{CO(g) + 2H2(g) &lt;--&gt; CH3OH(g)} $$ Bij een verhoging van de druk zal het evenwicht zich verschuiven naar de zijde van het aantal kleinste deeltjes. Bij een druk verhoging is er namelijk een volume vermindering voor de deeltjes, Er is minder ruimte beschikbaar waardoor de reactie verschuift naar een toestand waar er minder deeltjes aanwezig zijn. Bij een drukverhoging voor de methanol synthese zal hierdoor dus meer methanol gevormd worden. <br><br>Het omgekeerde is ook aanwezig. Bij een druk verlaging heeft het systeem meer ruimte voor de deeltjes en zal het systeem verschuiven naar de kant toe van het grootst aantal deeltjes.
+<p></p>
+<div style="margin-top: 15px; word-wrap: break-word;"><a target="_blank" lb:options="{'contents':{'id':'myYouTube30ec135af6ea40b890b8f178036ddb26','stripComments':true},'closeOnBodyClick':false}" class="lb" style="text-align: center; text-decoration: none; color: #333; float: left; width: 150px; background: #000; border: 1px solid #bbb; display: block;" href="http://www.youtube.com/watch?v=7zuUV455zFs" title="Le Chatelier's Principle Part 1 | Reactions | Chemistry | FuseSchool" rel="noopener"> <img src="http://i.ytimg.com/vi/7zuUV455zFs/1.jpg" alt="" width="120"> <span style="background-image: url('/images/ci/ng/rumble_button_back.gif'); padding: 2px; color: #333333; text-align: center; display: block; word-wrap: break-word;"> Watch Video </span> </a>
+<div style="margin-left: 160px; font-size: 15px; font-weight: bold; margin-bottom: 5px;">Le Chatelier's Principle Part 1 | Reactions | Chemistry | FuseSchool</div>
+<div id="thumbnail-metadata" style="margin-left: 160px; font-size: 11px; margin-bottom: 5px;"><strong>Duration:</strong> 4:15 <br><strong>User:</strong> n/a - <strong>Added:</strong> 6/3/13</div>
+<div id="myYouTube30ec135af6ea40b890b8f178036ddb26" style="display: none;"><!--<div style="margin: 10px;"><div class="u_controlsWrapper"><a href="#" class="button-4" id="openYtControls30ec135af6ea40b890b8f178036ddb26">display.playerControls</a></div><div id="controls30ec135af6ea40b890b8f178036ddb26" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoPlayerControls: Le Chatelier&#039;s Principle Part 1 | Reactions | Chemistry | FuseSchool</h2><a aria-live="off" id="playVideo30ec135af6ea40b890b8f178036ddb26" href="#" class="button-4">display.play</a><a id="stopVideo30ec135af6ea40b890b8f178036ddb26" href="#" class="button-4">display.stop</a><a id="volUp30ec135af6ea40b890b8f178036ddb26" href="#" class="button-4">display.volumeUp</a><a id="volDown30ec135af6ea40b890b8f178036ddb26" href="#" class="button-4">display.volumeDown</a><a aria-live="off" id="mute30ec135af6ea40b890b8f178036ddb26" href="#" class="button-4">display.mute</a><a href="#" class="close" id="closeYtControls30ec135af6ea40b890b8f178036ddb26"><img src="/images/ci/ng/close_mini.gif" alt="display.closePlayerControls"/></a></div><h2 class="hideoff">Embedded Video Player: Le Chatelier&#039;s Principle Part 1 | Reactions | Chemistry | FuseSchool</h2><div style="word-wrap: break-word;"><div class="previewDiv ytIframeClass" style="height:344px;width:425px" id="ytEmbed30ec135af6ea40b890b8f178036ddb26"><iframe id="ytObject30ec135af6ea40b890b8f178036ddb26" width="425" height="344" src="http://www.youtube.com/embed/7zuUV455zFs?modestbranding=1&fs=1&rel=0&enablejsapi=1&menu=disable&playerapiid=ytEmbed30ec135af6ea40b890b8f178036ddb26" title="Le Chatelier&#39;s Principle Part 1 | Reactions | Chemistry | FuseSchool"></iframe><a href="#close" onclick="lightbox.closeCurrentLightbox(); return false;" class="hideoff">Close</a></div><div id="strip30ec135af6ea40b890b8f178036ddb26" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoStatus: Le Chatelier&#039;s Principle Part 1 | Reactions | Chemistry | FuseSchool</h2><span aria-live="off" id="currentStatus30ec135af6ea40b890b8f178036ddb26"></span> <strong>Le Chatelier&#039;s Principle Part 1 | Reactions | Chemistry | FuseSchool</strong> (<strong aria-live="off" id="currentTime30ec135af6ea40b890b8f178036ddb26"></strong> display.of <strong>4:15</strong>)</div></div></div>-->&nbsp;</div>
+<div style="clear: both;"></div>
+</div>
+<div style="margin-top: 15px; word-wrap: break-word;"><a target="_blank" lb:options="{'contents':{'id':'myYouTubef05e85c23efa477bbde1e13f69a8e181','stripComments':true},'closeOnBodyClick':false}" class="lb" style="text-align: center; text-decoration: none; color: #333; float: left; width: 150px; background: #000; border: 1px solid #bbb; display: block;" href="http://www.youtube.com/watch?v=XhQ02egUs5Y" title="Le Chatelier's Principle: Part 2  | Reactions | Chemistry | FuseSchool" rel="noopener"> <img src="http://i.ytimg.com/vi/XhQ02egUs5Y/1.jpg" alt="" width="120"> <span style="background-image: url('/images/ci/ng/rumble_button_back.gif'); padding: 2px; color: #333333; text-align: center; display: block; word-wrap: break-word;"> Watch Video </span> </a>
+<div style="margin-left: 160px; font-size: 15px; font-weight: bold; margin-bottom: 5px;">Le Chatelier's Principle: Part 2 | Reactions | Chemistry | FuseSchool</div>
+<div id="thumbnail-metadata" style="margin-left: 160px; font-size: 11px; margin-bottom: 5px;"><strong>Duration:</strong> 3:23 <br><strong>User:</strong> n/a - <strong>Added:</strong> 6/27/13</div>
+<div id="myYouTubef05e85c23efa477bbde1e13f69a8e181" style="display: none;"><!--<div style="margin: 10px;"><div class="u_controlsWrapper"><a href="#" class="button-4" id="openYtControlsf05e85c23efa477bbde1e13f69a8e181">display.playerControls</a></div><div id="controlsf05e85c23efa477bbde1e13f69a8e181" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoPlayerControls: Le Chatelier&#039;s Principle: Part 2  | Reactions | Chemistry | FuseSchool</h2><a aria-live="off" id="playVideof05e85c23efa477bbde1e13f69a8e181" href="#" class="button-4">display.play</a><a id="stopVideof05e85c23efa477bbde1e13f69a8e181" href="#" class="button-4">display.stop</a><a id="volUpf05e85c23efa477bbde1e13f69a8e181" href="#" class="button-4">display.volumeUp</a><a id="volDownf05e85c23efa477bbde1e13f69a8e181" href="#" class="button-4">display.volumeDown</a><a aria-live="off" id="mutef05e85c23efa477bbde1e13f69a8e181" href="#" class="button-4">display.mute</a><a href="#" class="close" id="closeYtControlsf05e85c23efa477bbde1e13f69a8e181"><img src="/images/ci/ng/close_mini.gif" alt="display.closePlayerControls"/></a></div><h2 class="hideoff">Embedded Video Player: Le Chatelier&#039;s Principle: Part 2  | Reactions | Chemistry | FuseSchool</h2><div style="word-wrap: break-word;"><div class="previewDiv ytIframeClass" style="height:344px;width:425px" id="ytEmbedf05e85c23efa477bbde1e13f69a8e181"><iframe id="ytObjectf05e85c23efa477bbde1e13f69a8e181" width="425" height="344" src="http://www.youtube.com/embed/XhQ02egUs5Y?modestbranding=1&fs=1&rel=0&enablejsapi=1&menu=disable&playerapiid=ytEmbedf05e85c23efa477bbde1e13f69a8e181" title="Le Chatelier&#39;s Principle: Part 2  | Reactions | Chemistry | FuseSchool"></iframe><a href="#close" onclick="lightbox.closeCurrentLightbox(); return false;" class="hideoff">Close</a></div><div id="stripf05e85c23efa477bbde1e13f69a8e181" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoStatus: Le Chatelier&#039;s Principle: Part 2  | Reactions | Chemistry | FuseSchool</h2><span aria-live="off" id="currentStatusf05e85c23efa477bbde1e13f69a8e181"></span> <strong>Le Chatelier&#039;s Principle: Part 2  | Reactions | Chemistry | FuseSchool</strong> (<strong aria-live="off" id="currentTimef05e85c23efa477bbde1e13f69a8e181"></strong> display.of <strong>3:23</strong>)</div></div></div>-->&nbsp;</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</article>
+<article id="zeven" class="entry" aria-labelledby="zeven-title">
+<h2 id="zeven-title">Zeven</h2>
+<div class="colorbox colorbox--grey">
+<p>Dit is een vast - vast scheiding doormiddel van verschil in grootte van de deeltjes. <br><br>Als voorbeeld van een zeef kun je nemen een trommelzeef: <br><br><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/Trommelzeef.svg" alt="Trommelzeef" style="width: 70%; height: 70%;"> <br><br>Bij een trommelzeef maakt de zeefbodem een draaiende beweging. De zeef is uitgevoerd als een ronde of zeszijdige trommel van gaas en is hellend opgesteld (ongeveer 1 op 20). De trommel kan men om zijn as laten draaien. Hier beneden is een tekening van een dergelijke zeef.</p>
+<div style="margin-top: 15px; word-wrap: break-word;"><span style="font-size: medium;"><a target="_blank" lb:options="{'contents':{'id':'myYouTube010941d4cb774c3d977ed2ba91907f6b','stripComments':true},'closeOnBodyClick':false}" class="lb" style="text-align: center; text-decoration: none; color: #333; float: left; width: 150px; background: #000; border: 1px solid #bbb; display: block;" href="http://www.youtube.com/watch?v=KRstcAzdka4" title="Trommelzeef Vandaele konstructie" rel="noopener"> <img src="http://i.ytimg.com/vi/KRstcAzdka4/1.jpg" alt="" width="120"> <span style="background-image: url('/images/ci/ng/rumble_button_back.gif'); padding: 2px; color: #333333; text-align: center; display: block; word-wrap: break-word;"> Watch Video </span> </a></span>
+<div style="margin-left: 160px; font-size: 15px; font-weight: bold; margin-bottom: 5px;"><span style="font-size: medium;">Trommelzeef Vandaele konstructie</span></div>
+<div id="thumbnail-metadata" style="margin-left: 160px; font-size: 11px; margin-bottom: 5px;"><span style="font-size: medium;"><strong>Duration:</strong> 3:22 </span> <br><span style="font-size: medium;"> <strong>User:</strong> n/a - <strong>Added:</strong> 4/10/16</span></div>
+<div id="myYouTube010941d4cb774c3d977ed2ba91907f6b" style="display: none;"><span style="font-size: medium;"> <!--<div style="margin: 10px;"><div class="u_controlsWrapper"><a href="#" class="button-4" id="openYtControls010941d4cb774c3d977ed2ba91907f6b">display.playerControls</a></div><div id="controls010941d4cb774c3d977ed2ba91907f6b" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoPlayerControls: Trommelzeef Vandaele konstructie</h2><a aria-live="off" id="playVideo010941d4cb774c3d977ed2ba91907f6b" href="#" class="button-4">display.play</a><a id="stopVideo010941d4cb774c3d977ed2ba91907f6b" href="#" class="button-4">display.stop</a><a id="volUp010941d4cb774c3d977ed2ba91907f6b" href="#" class="button-4">display.volumeUp</a><a id="volDown010941d4cb774c3d977ed2ba91907f6b" href="#" class="button-4">display.volumeDown</a><a aria-live="off" id="mute010941d4cb774c3d977ed2ba91907f6b" href="#" class="button-4">display.mute</a><a href="#" class="close" id="closeYtControls010941d4cb774c3d977ed2ba91907f6b"><img src="/images/ci/ng/close_mini.gif" alt="display.closePlayerControls"/></a></div><h2 class="hideoff">Embedded Video Player: Trommelzeef Vandaele konstructie</h2><div style="word-wrap: break-word;"><div class="previewDiv ytIframeClass" style="height:344px;width:425px" id="ytEmbed010941d4cb774c3d977ed2ba91907f6b"><iframe id="ytObject010941d4cb774c3d977ed2ba91907f6b" width="425" height="344" src="http://www.youtube.com/embed/KRstcAzdka4?modestbranding=1&fs=1&rel=0&enablejsapi=1&menu=disable&playerapiid=ytEmbed010941d4cb774c3d977ed2ba91907f6b" title="Trommelzeef Vandaele konstructie"></iframe><a href="#close" onclick="lightbox.closeCurrentLightbox(); return false;" class="hideoff">Close</a></div><div id="strip010941d4cb774c3d977ed2ba91907f6b" class="liveArea-slim playerControls" style="display:none"><h2 class="hideoff">display.videoStatus: Trommelzeef Vandaele konstructie</h2><span aria-live="off" id="currentStatus010941d4cb774c3d977ed2ba91907f6b"></span> <strong>Trommelzeef Vandaele konstructie</strong> (<strong aria-live="off" id="currentTime010941d4cb774c3d977ed2ba91907f6b"></strong> display.of <strong>3:22</strong>)</div></div></div>-->&nbsp;</span></div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</article>
+<article id="zuiveringssectie" class="entry" aria-labelledby="zuiveringssectie">
+<h2 id="zuiveringssectie">Zuiveringssectie</h2>
+<div class="colorbox colorbox--grey">
+<p>In de reactor wordt vrijwel nooit alle uitgangsstof omgezet en bovendien ontstaat zelden alleen het gewenste product; er worden ook nevenproducten gevormd. Nadat het omgezette materiaal de reactor heeft verlaten moet het daarom veelal een zuivering onder- gaan. Deze vindt plaats in de zuiveringssectie van het proces. Hierin wordt het gewenste product in min of meer zuivere vorm (afhankelijk van de productspecificaties) van de rest van de productstroom afgescheiden. In deze rest bevinden zich de nevenproducten en niet omgezet uitgangsmateriaal. Dit laatste scheidt men af om het weer terug te voeren naar de ingang van de voedingvoorbereidingssectie, waar het met de verse voeding wordt opgemengd. De teruggevoerde stroom noemt men recycle in het proces. <br><br>Denk bij een zuiveringssectie aan: <br><br>Vloeistof - vloeistof extracties <br><br>Destillatie <br><br>Kristallisatie <br><br>etc... <br><br>Dus allemaal stappen die gedaan kunnen worden om de gewenste product op te zuiveren.</p>
+</div>
+</article>
+</section>
+</div>
+<p>
+<script src="https://arjkloek.github.io/eLearning/JS/encyclopedie.js"></script>
+</p>
+<!-- KaTeX auto-render initialized when the auto-render script loads --></body></html>
