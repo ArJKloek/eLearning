@@ -87,24 +87,26 @@ function antwoordzien(ID){
 
 if (document.getElementById(ID).style.display === "block") {
       document.getElementById(ID).style.display = "none";
-	  var draggableElements = document.getElementsByClassName("draggable");
+      var draggableElements = document.getElementsByClassName("draggable");
    for(var i = 0; i < draggableElements.length; i++){
      dragElement(draggableElements[i]);  };
-		} else {
+        } else {
 
 
      document.getElementById(ID).style.display = "block";
-	 var thenum = ID.match(/\d+/)[0]; // "Find number of ID";
-	//alert(thenum);
-	var draggableElements = document.getElementById("drag"+thenum);
-		//alert(draggableElements);
+     var thenum = ID.match(/\d+/)[0]; // "Find number of ID";
+    //alert(thenum);
+    var draggableElements = document.getElementById("drag"+thenum);
+        //alert(draggableElements);
 //for(var i = 0; i < draggableElements.length; i++){
    dragElement(draggableElements);
+   // call the automatic slide-down animation for this draggable (separate command)
+   myMove(draggableElements);
  // return ID;
-   	  var draggableElements = document.getElementsByClassName("draggable");
+         var draggableElements = document.getElementsByClassName("draggable");
    for(var i = 0; i < draggableElements.length; i++){
      dragElement(draggableElements[i]);  };
-	//}
+    //}
    }
 }
 
@@ -126,7 +128,7 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-		var content = this.nextElementSibling;
+        var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
     } else {
@@ -178,7 +180,7 @@ document.getElementById("drag"+thenum).style.top = document.getElementById("pane
 
     } else {
     /* otherwise, move the DIV from anywhere inside the DIV:*/
-    	elmnt.ontouchstart = dragMouseDown;
+        elmnt.ontouchstart = dragMouseDown;
 elmnt.onmousedown = dragMouseDown;
 
   }
@@ -203,7 +205,7 @@ else{
     document.onmouseup = closeDragElement;
     // call a function whenever the cursor moves:
     document.onmousemove = elementDrag;
-	}
+    }
   }
 
   function elementDrag(e) {
@@ -221,15 +223,15 @@ else{
 
   }else{
   //mouse event
-	pos1 = pos3 - e.clientX;
+    pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
     pos3 = e.clientX;
     pos4 = e.clientY;
     }
-	// set the element's new position:
-	 var thenum = elmnt.id.match(/\d+/)[0]; // "Find number of ID";
+    // set the element's new position:
+     var thenum = elmnt.id.match(/\d+/)[0]; // "Find number of ID";
 
-	elmnt.style.top = (elmnt.offsetTop - pos2) + "px"; //Moves the top of the element
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px"; //Moves the top of the element
 
  var hgt = document.getElementById("panel"+thenum).clientHeight; //finds height of the panel
  var Paneltop = document.getElementById("panel"+thenum).offsetTop;
@@ -259,4 +261,39 @@ else{
     document.ontouchend = null;
     document.ontouchmove = null;
   }
+}
+
+// --------------------
+// Automatic slide animation (separate command)
+// --------------------
+function myMove(elem) {
+  if (!elem) return;
+  // accept either element or id
+  if (typeof elem === 'string') elem = document.getElementById(elem);
+  if (!elem || !elem.id) return;
+  var thenum = (elem.id.match(/\d+/) || [])[0];
+  if (!thenum) return;
+  var panel = document.getElementById('panel' + thenum);
+  if (!panel) return;
+
+  // starting and target positions
+  var startTop = elem.offsetTop;
+  // target: move down by roughly half the panel height but limit to 250px
+  var moveBy = Math.min(250, Math.max(20, Math.round(panel.clientHeight / 2)));
+  var targetTop = startTop + moveBy;
+
+  var duration = 300; // ms
+  var startTime = null;
+
+  function step(ts) {
+    if (!startTime) startTime = ts;
+    var progress = Math.min(1, (ts - startTime) / duration);
+    var current = Math.round(startTop + (targetTop - startTop) * progress);
+    elem.style.top = current + 'px';
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    }
+  }
+
+  requestAnimationFrame(step);
 }
