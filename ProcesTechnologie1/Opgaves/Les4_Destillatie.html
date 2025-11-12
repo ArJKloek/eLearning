@@ -35,8 +35,8 @@
 <p><span style="font-size: medium;">Bij deze opgave (massa balans over een systeem) is het handiger om in massa eenheden (gewichts-fracties, kg/s) te rekenen dan in molstromen (mol fracties) omdat in dit systeem geen chemische omzetting plaats vindt. &nbsp;Er geldt massa in = &nbsp;massa uit . Dit geldt voor de totale stromen als voor de afzonderlijke componenten.</span></p>
 <p></p>
 <p><span style="font-size: medium;">Additionele gegeven:</span></p>
-<p><span style="font-size: medium;">M<sub>water</sub>&nbsp;= 18 g/mol&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; T<sub>kpt</sub>&nbsp;= 100°C (1 atm)</span></p>
-<p><span style="font-size: medium;">M<sub>methanol</sub>&nbsp;= 32 g/mol&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;T<sub>kpt</sub>&nbsp;= 65°C (1 atm)</span></p>
+<p><span style="font-size: medium;">\(M_{water} = 18\ g/mol \qquad T_{kpt} = 100\, \degree C\ (1 atm)\)</span></p>
+<p><span style="font-size: medium;">\(M_{methanol} = 32\ g/mol \qquad T_{kpt} = 65\, \degree C\ (1 atm)\)</span></p>
 <p></p>
 <p><span style="font-size: medium;">Vragen:</span></p>
 <p style="margin-left: 30px;"><span style="font-size: medium;">a.&nbsp; Bereken hoeveel 50 t/h methanol in kg/s en Mton per jaar is?&nbsp; </span></p>
@@ -56,9 +56,9 @@
 <p><span style="font-size: medium;">d.</span><br><i id="vrg9" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw9" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> t/h Water </span> <br><i id="vrg10" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw10" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">t/h Methanol </span></p>
 <p><span style="font-size: medium;">e.</span><br><i id="vrg11" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw11" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> wt% Water </span> <br><i id="vrg12" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw12" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> wt% methanol</span></p>
 <p><span style="font-size: medium;">f.</span><br><i id="vrg13" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw13" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> kW </span></p>
-<p><br><button type="button" class="checkin checkin" onclick="checkv2([13.89,0.435,16.67,83.33,0.154,0.434,26.23,73.77,'top',0.5,49.5,95,5,25000])">Check</button> (Je kunt wetenschappelijke notatie zoals 3·10-4 invullen als 3e-4)<br><br><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
+<p><br><button type="button" class="checkin checkin" onclick="checkv2([13.89,0.435,16.67,83.33,0.154,0.434,26.23,73.77,'top',0.5,49.5,95,5,25000])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3 \cdot 10^{-4}\) invullen als 3e-4)<br><br><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
 <div id="deelhint1" class="panel">
-<p><span style="font-size: medium;">giga = 10<sup>9</sup>, mega = 10<sup>6</sup>, kilo = 10<sup>3</sup>, hoeveel is een ton in kg?&nbsp;</span></p>
+<p><span style="font-size: medium;">\(giga = 10^{9},\ mega = 10^{6},\ kilo = 10^{3},\ hoeveel\ is\ een\ ton\ in\ kg?\)</span></p>
 <p><span style="font-size: medium;">Hoeveel secondes in een jaar? 60 sec per min, 60 min per uur, 24 uur per dag, ~365 dagen per jaar.</span></p>
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord</button></p>
@@ -69,10 +69,22 @@
 </div>
 <div id="txt1"></div>
 </div>
-<span style="font-size: medium;">50 ton/uur,&nbsp; → kg/s,</span> <br><span style="font-size: medium;">1 ton = 1000 kg&nbsp;→&nbsp;&nbsp; 50000 kg/uur</span> <span style="font-size: medium;">1 uur = 3600 s&nbsp; &nbsp;→&nbsp;&nbsp; 50000/3600 = 13.88 kg/s</span> <br><span style="font-size: medium;"><br>50 ton/uur,&nbsp; → Mt/y, </span> <br><span style="font-size: medium;">50 ton = 50·10<sup>-6</sup>&nbsp;Mton/uur,&nbsp;</span> <span style="font-size: medium;">1 uur = 1/24*365 jaar = 1/8760 jaar</span> <span style="font-size: medium;">→</span> <span style="font-size: medium;">50·10<sup>-6</sup>&nbsp;/ (1/8760) =&nbsp; 50·10<sup>-6</sup>&nbsp;× 8760 = 0.438 Mton/y</span></div>
+<span style="font-size: medium;">
+$$
+\begin{aligned}
+50\ \text{ton/uur} &\longrightarrow \text{kg/s}\\
+1\ \text{ton} &= 1000\ \text{kg} \longrightarrow 50000\ \text{kg/uur},\quad 1\ \text{uur}=3600\ \text{s}
+\longrightarrow \dfrac{50000}{3600}=13.88\ \text{kg/s}\\[0.8em]
+50\ \text{ton/uur} &\longrightarrow \text{Mton/jaar}\\
+50\ \text{ton} &= 50\cdot 10^{-6}\ \text{Mton/uur},\quad 1\ \text{uur}=\dfrac{1}{8760}\ \text{jaar}
+\longrightarrow 50\cdot 10^{-6}\times 8760 = 0.438\ \text{Mton/jaar}
+\end{aligned}
+$$
+</span>
+</div>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Hint</button></p>
 <div id="deelhint2" class="panel">
-<p><span style="font-size: medium;">Het molgewicht&nbsp;in g/mol is hetzelfde als kg/kmol<br></span></p>
+<p><span style="font-size: medium;">Het molgewicht in g/mol is hetzelfde als kg/kmol<br></span></p>
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel2.id)">b. Antwoord</button></p>
 <div id="panel2" class="panel">
