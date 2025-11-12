@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html><head>
-				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Standard.CSS">
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
-	<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true}],fleqn:true,globalGroup:true});"></script>
- <style>
-				body {
-			color: #494c4e;
-			font-family: 'Lato', sans-serif;
-			font-size: 0.95rem;
-			font-weight: normal;
-			letter-spacing: 0.01rem;
-			line-height: 1.4rem;
-			margin: 0;
-			padding: 0.4rem 0.75rem !important;
-		}
-		table {
-			font-family: 'Lato', sans-serif;
-			font-size: inherit;
-		}
-		.katex-display {
-			text-align: left !important;
-		}
-		.katex {
-			font-family: 'Lato', sans-serif !important;
-			font-size: 1em;
-		}
-
-				</style>
-			<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess
+    });"></script>
+<link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/LocalOverrides.CSS">
+<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
 <!-- Set global KaTeX array row spacing for aligned/array environments -->
-<span style="display:none">\(\gdef\arraystretch{1.6}\)</span>
-</head><body><p>&nbsp; <span style="font-size: medium;">In het nieuwe bedrijf Bio-MCN te Delfzijl wil men naast ‘grijze’methanol (grondstof aardgas) ook ‘groene’ methanol (grondstof glycerol) maken.<br>Glycerol, \(\ce{C3H5(OH)3}\) , is een restproduct bij de zogeheten ‘omestering’ van koolzaadolie tot ‘biodiesel’.<br>Na zuivering wordt de glycerine verdampt en vervolgens gekraakt tot <em>syngas</em> (CO en \(\ce{H2}\)), waaruit met behulp van <strong>extra</strong> waterstof <em>bio-methanol</em> wordt geproduceerd. Bron voor de extra waterstof is de reformer (voor aardgas) die<strong> te veel</strong> waterstof produceert. </span></p>
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
+<!-- Macro: red cancel stroke, body text color via HTML color -->
+<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+
+</head><body>
+  <h2>Bio-MCN</h2>
+  <span style="font-size: medium;">In het nieuwe bedrijf Bio-MCN te Delfzijl wil men naast ‘grijze’methanol (grondstof aardgas) ook ‘groene’ methanol (grondstof glycerol) maken.<br>Glycerol, \(\ce{C3H5(OH)3}\) , is een restproduct bij de zogeheten ‘omestering’ van koolzaadolie tot ‘biodiesel’.<br>Na zuivering wordt de glycerine verdampt en vervolgens gekraakt tot <em>syngas</em> (CO en \(\ce{H2}\)), waaruit met behulp van <strong>extra</strong> waterstof <em>bio-methanol</em> wordt geproduceerd. Bron voor de extra waterstof is de reformer (voor aardgas) die<strong> te veel</strong> waterstof produceert. </span></p>
 <ol style="list-style-type: lower-alpha;">
 <li style="font-size: medium;" class="_mce_tagged_br"><span style="font-size: medium;">Ga na hoeveel mol \(\ce{H2}\) het kraken van 1 mol glycerol te weinig levert om methanol te maken volgens: $$\ce{CO(g) + 2H2(g) -> CH3OH(g)}$$</li>
 <li style="font-size: medium;"><span style="font-size: medium;">Zoals je weet levert de reactie in de reformer, 1 mol \(\ce{H2}\) te veel per mol omgezet \(\ce{CH4}\). <br>Bereken nu in welke molverhouding de twee grondstoffen \(\ce{CH4}\) en glycerol moeten worden gebruikt voor een optimale productie van groene methanol.</span></li>
@@ -80,16 +74,16 @@ $$
 <span style="font-size: medium;">
 $$
 \begin{aligned}
-\text{Kijk naar CO}\\
+Kijk\ naar\ CO\\
 \ce{CO(g) + 2H2(g) <-->}\ &\ce{CH3OH(g)}\\
 \ce{CH4(g) + H2O(g)}\,\ce{->}\ &\ce{CO(g) + 3H2(g)}\\
  &\ce{CO(g) + 2H2(g)}\ &&(\ce{+1H2})\\
 \ce{C3H5(OH)3 ->}\ &\ce{3CO(g) + 4H2(g)}\\
 &\ce{3CO(g) + 6H2(g)}\ &&(\ce{-2H2})\\
-\text{Verhouding}\ \ce{CO}:\ce{H2} =\ &1:2 \text{ voor}\ \ce{CH3OH}\\[0.5em]
+Verhouding\ \ce{CO}:\ce{H2} =\ &1:2\ voor\ \ce{CH3OH}\\[0.5em]
 \ce{2CH4(g) + 2H2O(g) ->}\ &\ce{2CO(g) + 6H2(g)}\\
-\ce{C3H5(OH)3 ->}\ &\ce{3CO(g) + 4H2(g)}\\
-\rule{4cm}{0.4pt} &\rule{4cm}{0.4pt} +\\
+\ce{C3H5(OH)3 ->}\ &\underline{\ce{3CO(g) + 4H2(g)}}\ +\\
+
 \ce{2CH4(g) + 2H2O(g) + C3H5(OH)3 <=>}\ &\ce{5CO(g) + 10H2(g)}\\[0.5em]
 \ce{5CO(g) + 10H2(g) ->}\ &\ce{5CH3OH(g)}\\
 \end{aligned}
@@ -98,5 +92,5 @@ $$
 </div>
 <p></p>
 <p>
-<script type="text/javascript" src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Antwoord.JS"></script>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
 </p></body></html>
