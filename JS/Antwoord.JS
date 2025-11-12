@@ -98,10 +98,12 @@ function antwoordzien(ID){
   } else {
     panel.style.display = "block";
     if (dragEl) {
-      // position the draggable to the panel and then animate only this one
+      // position the draggable to the panel
       dragElement(dragEl);
-      // small delay to ensure layout/offsets are settled
-      setTimeout(function(){ myMove(dragEl); }, 60);
+      // animate ONLY if the panel explicitly requests it via data-animate="true"
+      if (panel.dataset && panel.dataset.animate === "true") {
+        setTimeout(function(){ myMove(dragEl); }, 60);
+      }
     }
   }
 }
