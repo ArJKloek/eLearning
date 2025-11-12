@@ -115,29 +115,8 @@
 .deelhint:hover {
   background-color: #1f8adf;
 }
-.panel {
-  box-sizing: border-box;
-  width: 75%;           /* 75% of parent/container */
-  max-width: 900px;
-  min-width: 300px;
-  height: auto;         /* grow with content */
-  max-height: 70vh;     /* limit by viewport height */
-  overflow: auto;
-  margin: 0 auto;       /* center horizontally */
-  padding: 1rem;
-}
-hint{
+
+.hint{
 display:none;
 
-}
-.panel,
-.panel .panel-body,
-.panel .panel-content {
-  box-sizing: border-box;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-wrap: break-word;
-  word-break: break-word;
-  hyphens: auto;
-  /* Make text wrap to the panel width for all panels */
 }
