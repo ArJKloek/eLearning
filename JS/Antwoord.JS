@@ -84,30 +84,26 @@ function checkv2(answers) {
 }
 
 function antwoordzien(ID){
+  var panel = document.getElementById(ID);
+  if (!panel) return;
 
-if (document.getElementById(ID).style.display === "block") {
-      document.getElementById(ID).style.display = "none";
-      var draggableElements = document.getElementsByClassName("draggable");
-   for(var i = 0; i < draggableElements.length; i++){
-     dragElement(draggableElements[i]);  };
-        } else {
+  // find the corresponding draggable element (dragN for panelN)
+  var thenum = (ID.match(/\d+/) || [])[0];
+  var dragEl = document.getElementById("drag" + thenum);
 
-
-     document.getElementById(ID).style.display = "block";
-     var thenum = ID.match(/\d+/)[0]; // "Find number of ID";
-    //alert(thenum);
-    var draggableElements = document.getElementById("drag"+thenum);
-        //alert(draggableElements);
-//for(var i = 0; i < draggableElements.length; i++){
-   dragElement(draggableElements);
-   // call the automatic slide-down animation for this draggable (separate command)
-   myMove(draggableElements);
- // return ID;
-         var draggableElements = document.getElementsByClassName("draggable");
-   for(var i = 0; i < draggableElements.length; i++){
-     dragElement(draggableElements[i]);  };
-    //}
-   }
+  // Toggle panel visibility and only update / move the related draggable
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+    if (dragEl) dragElement(dragEl);
+  } else {
+    panel.style.display = "block";
+    if (dragEl) {
+      // position the draggable to the panel and then animate only this one
+      dragElement(dragEl);
+      // small delay to ensure layout/offsets are settled
+      setTimeout(function(){ myMove(dragEl); }, 60);
+    }
+  }
 }
 
 
