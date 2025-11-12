@@ -87,25 +87,26 @@ function antwoordzien(ID){
   var panel = document.getElementById(ID);
   if (!panel) return;
 
-  // find the corresponding draggable element (dragN for panelN)
+  // corresponding draggable element (dragN for panelN)
   var thenum = (ID.match(/\d+/) || [])[0];
   var dragEl = document.getElementById("drag" + thenum);
 
-  // Toggle panel visibility and only update / move the related draggable
+  // Toggle panel visibility
   if (panel.style.display === "block") {
     panel.style.display = "none";
     if (dragEl) dragElement(dragEl);
-  } else {
-    panel.style.display = "block";
-    if (dragEl) {
-      // always position the draggable to the panel
-      dragElement(dragEl);
-      // animate ONLY if the panel explicitly has data-animate="true"
-      var animateAttr = panel.getAttribute('data-animate');
-      if (animateAttr === 'true') {
-        setTimeout(function(){ myMove(dragEl); }, 60);
-      }
-    }
+    return;
+  }
+
+  // show panel and position draggable
+  panel.style.display = "block";
+  if (dragEl) dragElement(dragEl);
+
+  // Only animate when data-animate attribute is explicitly "true"
+  var animateAttr = panel.getAttribute('data-animate');
+  if (animateAttr === 'true' && dragEl) {
+    // small delay for layout to settle
+    setTimeout(function(){ myMove(dragEl); }, 60);
   }
 }
 
