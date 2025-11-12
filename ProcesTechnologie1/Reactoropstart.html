@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head>
+				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+				<link rel="stylesheet" type="text/css" href="https://s.brightspace.com/lib/fonts/0.5.0/fonts.css/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true}]});"></script>
+				<style>
+				body {
+			color: #494c4e;
+			font-family: 'Lato', sans-serif;
+			font-size: 0.95rem;
+			font-weight: normal;
+			letter-spacing: 0.01rem;
+			line-height: 1.4rem;
+			margin: 0;
+			padding: 0.4rem 0.75rem !important;
+		}
+        .katex {
+			font-family: 'Lato', sans-serif !important;
+			font-size: 1em;
+			user-select: text !important;
+			-webkit-user-select: text !important;
+		}
+		table {
+			font-family: 'Lato', sans-serif;
+			font-size: inherit;
+		}
+				</style>
+						</head><body><p></p>
+<!-- Fixed page-level formula in the upper-right -->
+<div id="pageFormula" pointer-events:="" none;="" padding:="" 2px="" 6px;="" border-radius:="" 4px;"="">\(\large \ce{\color{RoyalBlue}{CO} + \color{orange}{2H2} -&gt; \color{green}{CH3OH}}\)</div>
+<div id="reactorLayout" style="display: flex; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
+<div id="canvasWrap" style="position: relative; display: inline-block;"><canvas id="myCanvas" width="800" height="333" style="border: 1px solid #c3c3c3;" class="Reactor"> Your browser does not support the canvas element. </canvas></div>
+<div id="controls" style="display: flex; flex-direction: column; gap: 6px; min-width: 200px;"><button id="changer" type="button" class="checkin checkin" onclick="call_flip()">Formules</button> <label>Cycle # <input id="Cycle" class="step" type="NUMBER" min="0" max="100" step="1" value="0" size="5" onclick="call()"> </label> <label>CO <input id="CO" class="step" type="NUMBER" min="0.1" max="10" step="0.1" value="1" size="5" onclick="call()"> </label> <label>H<sub>2</sub> <input id="H2" class="step" type="NUMBER" min="0.1" max="10" step="0.1" value="3" size="5" onclick="call()"> </label> <label>conversie <input id="conv" class="step" type="NUMBER" min="0.0" max="1" step="0.1" value="0.5" size="5" onclick="call()"> </label> <label>spui <input id="spui" class="step" type="NUMBER" min="0.0" max="1" step="0.1" value="0" size="5" onclick="call()"> </label> <label><input type="checkbox" id="Axis" name="Axis" value="1" onclick="call()"> H<sub>2</sub> axis</label></div>
+</div>
+<p id="GraphID" class="Graph"></p>
+<p>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/reactoropstart.js"></script>
+</p></body></html>
