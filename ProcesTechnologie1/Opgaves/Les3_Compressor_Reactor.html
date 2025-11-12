@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html><head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess
+    });"></script>
+<link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/LocalOverrides.CSS">
+<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+<!-- Set global KaTeX array row spacing for aligned/array environments -->
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
+<!-- Macro: red cancel stroke, body text color via HTML color -->
+<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+			</head><body><p></p>
+<p></p>
+<p></p>
+<h2>Synthesereactor Methanolfabriek en compressoren</h2>
+<p><span style="font-size: medium;">In de synthesereactor&nbsp;wordt het synthesegas&nbsp;omgezet in methanol:</span></p>
+<p><span style="font-size: medium;">$$\ce{CO(g) + 2H2(g) -> CH3OH(g)}$$ </span></p>
+<p><span style="font-size: medium;">Om de reactiesnelheid te verhogen gebruiken we hier ook een katalysator, maar die is natuurlijk een andere dan we in de reformer hebben gebruikt. De vorming van methanol uit synthesegas is exotherm: de reactie-enthalpie (bij 298K) bedraagt -90.6 kJ per mol methanol.<br></span></p>
+<p style="margin-left: 30px;"><span style="font-size: medium;">a. Leg uit of we voor de productie van methanol een zo hoog mogelijke temperatuur of een zo laag mogelijke temperatuur moeten hanteren. Hetzelfde voor de druk.<br><br></span><span style="font-size: medium;">b. De voeding van de synthesereactor moet op een hoge druk (10 MPa) worden ingevoerd. Dat gebeurt met een centrifugaal compressor. In de compressor draaien rotoren met een zeer hoog toerental. Aan de omtrek is de snelheid 300 tot 400 m/s.&nbsp;<br></span><span style="font-size: medium;">Bereken hoeveel rotoren zijn er nodig om de druk van 1op 10 MPa te brengen?&nbsp;<br></span><span style="font-size: medium;">Door elke rotor wordt de druk 1.4 maal verhoogd. Stel hierbij eerst een formule op!<br><br></span>
+<p></p>
+<p><span style="font-size: medium;">Antwoorden:</span></p>
+<p><span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw0" style="width: 70pt; font-size: 14pt;" type="text">
+<option value="">...</option>
+<option value="hoog">Hoog</option>
+<option value="laag">Laag</option>
+</select><span style="font-size: medium;"> Temperature</span><br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw1" style="width: 70pt; font-size: 14pt;" type="text">
+<option value="">...</option>
+<option value="hoog">Hoog</option>
+<option value="laag">Laag</option>
+</select><span style="font-size: medium;"> Druk</span></p>
+<p><span style="font-size: medium;">b.</span><br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">Rotoren</span></p>
+
+<p><br><button type="button" class="checkin checkin" onclick="checkv2(['laag','hoog',7])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3 \cdot 10^{-4}\) invullen als 3e-4)<br><br><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
+<div id="deelhint1" class="panel">
+<p><span style="font-size: medium;">Is de reactie endotherm of exotherm?</span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord</button></p>
+<div id="panel1" class="panel">
+<div id="drag1" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt1"></div>
+</div>
+<p><span style="font-size: medium;">De vorming van \(\ce{CH3OH}\) is exotherm \((-90.6\ \text{kJ/mol})\).&nbsp;<br>Bij ΔT hoog verschuift het evenwicht naar links. Dus naar de kant van de grondstoffen.<br>T moet zo laag mogelijk, maar weer niet te laag dat de reactie niet verloopt.&nbsp;&nbsp;</span></p>
+</div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Hint</button></p>
+<div id="deelhint2" class="panel">
+<p><span style="font-size: medium;">Je hebt hier te maken met een macht formule.<br></span></p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel2.id)">b. Antwoord</button></p>
+<div id="panel2" class="panel">
+<div id="drag2" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt2"></div>
+</div>
+<span style="font-size: medium;">
+\(
+\begin{aligned}
+P_0 & = 1\ MPa\\
+P_1&=1.4\times P_0\\
+P_{\color{Red} 2}&=1.4\times P_1 = 1.4\times (1.4\times P_0)=(1.4)^{\color{Red} 2} P_0\\
+P_{\color{Red} n}&=(1.4)^{\color{Red} n}P_0 \quad\quad\quad n=\ aantal\ rotors\\
+10\ MPa &=(1.4)^{\text{n}}\times 1\ MPa\\
+a^x&= b \rightarrow \log a^x=\log b\\
+\log_{10} 10&=\log_{10}[(1.4)^{\text{n}}\cdot 1]\\
+1&=\log_{10}(1.4)^{n}+\log_{10}\ 1\\
+1&=n\ \log_{10} 1.4+0\\
+n&=\frac{1}{\log_{10} 1.4}=\frac{1}{0.146}=6.8\rightarrow\ minimaal\ 7\ rotoren
+\end{aligned}
+\)
+</span>
+</div>
+<p>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
+</p></body></html>
