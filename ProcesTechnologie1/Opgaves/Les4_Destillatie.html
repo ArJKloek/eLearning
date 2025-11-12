@@ -1,39 +1,27 @@
 <!DOCTYPE html>
 <html><head>
-				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Standard.CSS">
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
-	<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body,{delimiters:[{left:'\\(',right:'\\)',display:false},{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true}],fleqn:true,globalGroup:true,trust:true});"></script>
- <style>
-				:root { --body-text-color: #494c4e; }
-				body {
-				color: var(--body-text-color);
-			font-family: 'Lato', sans-serif;
-			font-size: 0.95rem;
-			font-weight: normal;
-			letter-spacing: 0.01rem;
-			line-height: 1.4rem;
-			margin: 0;
-			padding: 0.4rem 0.75rem !important;
-		}
-		table {
-			font-family: 'Lato', sans-serif;
-			font-size: inherit;
-		}
-		.katex-display {
-			text-align: left !important;
-		}
-		.katex {
-			font-family: 'Lato', sans-serif !important;
-			font-size: 1em;
-		}
-
-				</style>
-			<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess
+    });"></script>
+<link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/LocalOverrides.CSS">
+<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
 <!-- Set global KaTeX array row spacing for aligned/array environments -->
-<span style="display:none">\(\gdef\arraystretch{1.6}\)</span>
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
 <!-- Macro: red cancel stroke, body text color via HTML color -->
 <span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
 			</head><body><p></p>
@@ -96,18 +84,18 @@
 <span style="font-size: medium;">   
 $$
 \begin{aligned}
-\text{Feed}(\text{F}) &= \text{Methanol}(\ce{CH3OH}) + \text{Water}(\ce{H2O})\\
-\text{F} &= 50 + 10 = 60\,\text{t/h} \\
-\text{wt.\%}\ \ce{H2O} &= \dfrac{10}{60}\times 100\% = 16.7 \\
-\text{wt.\%}\ \ce{CH3OH} &= \dfrac{50}{60}\times 100\% = 83.3\\
-50\,\text{t/h} &= 50000/3600 = 13.889\,\text{kg/s}\ \ce{CH3OH}\\
-10\,\text{t/h} &= 10000/3600 = 2.778\,\text{kg/s}\ \ce{H2O}\\
-\text{F} &=16.67\ \text{kg/s},\quad \text{M}_\text{w}=\dfrac{\text{g}}{\text{mol}}=\dfrac{\text{kg}}{\text{kmol}},\ \dfrac{1}{\text{M}_\text{w}}=\dfrac{\text{kmol}}{\text{kg}}\\
-\ce{CH3OH}\rightarrow \ \text{M}_\text{w} &= 32\ \dfrac{\text{kg}}{\text{kmol}}=\dfrac{13.889}{32}\frac{{\rcancel{\text{kg}}}\ \text{kmol}}{\text{s}\ \rcancel{\text{kg}}}= 0.434\ \text{kmol/s}\\
-\ce{H2O}\rightarrow \ \text{M}_\text{w} &= 18\ \dfrac{\text{kg}}{\text{kmol}}=\dfrac{2.778}{18}\frac{{\rcancel{\text{kg}}}\ \text{kmol}}{\text{s}\ \rcancel{\text{kg}}}= 0.154\ \text{kmol/s}\\
-\text{F}(\text{kmol/s})&=0.434+0.154=0.588\ \text{kmol/s}\\
-\text{mol.\%}\ \ce{CH3OH}&=\frac{0.434}{0.588}\times 100\% =73.8\ \text{mol.\%}\\
-\text{mol.\%}\ \ce{H2O}&=\frac{0.154}{0.588}\times 100\% =26.2\ \text{mol.\%}\\
+Feed(F) &= Methanol(\ce{CH3OH}) + Water(\ce{H2O})\\
+F &= 50 + 10 = 60\,t/h \\
+wt.\%\ \ce{H2O} &= \dfrac{10}{60}\times 100\% = 16.7 \\
+wt.\%\ \ce{CH3OH} &= \dfrac{50}{60}\times 100\% = 83.3\\
+50\,t/h &= 50000/3600 = 13.889\,kg/s\ \ce{CH3OH}\\
+10\,t/h &= 10000/3600 = 2.778\,kg/s\ \ce{H2O}\\
+F &=16.67\ kg/s,\quad M_w=\dfrac{g}{mol}=\dfrac{kg}{kmol},\ \dfrac{1}{M_w}=\dfrac{kmol}{kg}\\
+\ce{CH3OH}\rightarrow \ M_w &= 32\ \dfrac{kg}{kmol}=\dfrac{13.889}{32}\frac{{\rcancel{kg}}\ kmol}{s\ \rcancel{kg}}= 0.434\ kmol/s\\
+\ce{H2O}\rightarrow \ M_w &= 18\ \dfrac{kg}{kmol}=\dfrac{2.778}{18}\frac{{\rcancel{kg}}\ kmol}{s\ \rcancel{kg}}= 0.154\ kmol/s\\
+F(kmol/s)&=0.434+0.154=0.588\ kmol/s\\
+mol.\%\ \ce{CH3OH}&=\frac{0.434}{0.588}\times 100\% =73.8\ mol.\%\\
+mol.\%\ \ce{H2O}&=\frac{0.154}{0.588}\times 100\% =26.2\ mol.\%\\
 \end{aligned}
 $$
 </span>
@@ -118,12 +106,6 @@ $$
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel3.id)">c. Antwoord</button></p>
 <div id="panel3" class="panel">
-<div id="drag3" class="draggable">
-<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
-<p>Sleep naar beneden om meer te zien</p>
-</div>
-<div id="txt3"></div>
-</div>
 <span style="font-size: medium;">De top (overhead) stroom is rijker aan methanol, omdat methanol vluchtiger is dan water.</span> <span style="font-size: medium;">&nbsp;</span> <span style="font-size: medium;"> </span></div>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint4.id)">d. Hint</button></p>
 <div id="deelhint4" class="panel">
@@ -153,11 +135,11 @@ $$
 <span style="font-size: medium;">
 $$
 \begin{aligned}
-\text{IN} &= \text{UIT} \\
-\text{Feed}_{\ce{CH3OH}} &= \text{Top}_{\ce{CH3OH}} + \text{Bodem}_{\ce{CH3OH}} \\
-\text{Bodem}_{\ce{CH3OH}} &= \text{Feed}_{\ce{CH3OH}} - \text{Top}_{\ce{CH3OH}} = 50 - 49.5 = 0.5\ \text{t/h Methanol} \\
-\text{Idem voor water,}& \\
-\text{Bodem}_{\ce{H2O}} &= \text{Feed}_{\ce{H2O}} - \text{Top}_{\ce{H2O}} = 10 - 0.5 = 9.5\ \text{t/h Water} \\
+IN &= UIT \\
+Feed_{\ce{CH3OH}} &= Top_{\ce{CH3OH}} + Bodem_{\ce{CH3OH}} \\
+Bodem_{\ce{CH3OH}} &= Feed_{\ce{CH3OH}} - Top_{\ce{CH3OH}} = 50 - 49.5 = 0.5\ t/h Methanol \\
+Idem\ voor\ water,& \\
+Bodem_{\ce{H2O}} &= Feed_{\ce{H2O}} - Top_{\ce{H2O}} = 10 - 0.5 = 9.5\ t/h Water \\
 \end{aligned}
 $$
 </span>
@@ -174,9 +156,9 @@ $$
 </div>
 <div id="txt6"></div>
 </div>
-<p><span style="font-size: medium;">De top stroom is berekend op 50 t/h. De reflux stroom terug naar de destillatie kolom is 40 t/h de totale hoeveelheid dampstroom (gasstroom) die in de condenser wordt gecondenseerd bij stationaire toestand (steady state) = 50 +40 = 90 t/h.</span></p>
+<p><span style="font-size: medium;">De top stroom is berekend op 50 t/h. De reflux stroom terug naar de destillatie kolom is 40 t/h de totale hoeveelheid dampstroom (gasstroom) die in de condenser wordt gecondenseerd bij stationaire toestand (steady state) = 50 + 40 = 90 t/h.</span></p>
 <p><span style="font-size: medium;">Dit komt overeen met 25 kg /s. De verdampingswarmte van deze stroom is 1000 kJ/kg om deze stroom te condenseren (vloeibaar te maken) kost 25 kg/s x 1000 kJ/kg = 25000 kJ/s = 25000 kW aan koelenergie</span>.</p>
 </div>
 <p>
-<script type="text/javascript" src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Antwoord.JS"></script>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
 </p></body></html>
