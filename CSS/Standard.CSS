@@ -7,7 +7,9 @@
   width: 100%;
   display: vissible;
         overflow: hidden;
+
 }
+
 .mydivheader {
   padding: 5px;
   cursor: move;
@@ -21,6 +23,7 @@
 .mydivheader:hover {
   background-color: #1f8adf;   
 }
+
 .checkin {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -30,32 +33,40 @@
   text-decoration: none;
   font-size: 11pt;
   cursor: pointer;
+  
 }
 .checkin:hover {
   background-color: #3e8e41;   
 }
+
 .hint {
   background-color: #2196f3;
   float: left
+    
 }
 .hint:hover {
   background-color: #1f8adf;
 }
+
+
 .accordionantwoord {
    background-color: #4CAF50;
   color: white;
   cursor: pointer;
   padding: 10pt;
-  width: 75%;
+  width: 50%;
   font-size: 11pt;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  
 }
+
 .active, .accordionantwoord:hover {
   background-color: #3e8e41;
 }
+
 .accordionantwoord:after {
   content: '\002B';
   color: white;
@@ -71,6 +82,7 @@
   float: right;
   margin-left: 5px;
 }
+
 .active:after {
   content: "\2212";
 }
@@ -86,6 +98,7 @@
   outline: none;
   transition: 0.4s;
 }
+
 .deelhint:hover {
   background-color: #1f8adf;
 }
@@ -93,5 +106,9 @@
   padding: 0 18px;
   display: none;
   overflow: hidden;
+  
 }
+hint{
+display:none;
 
+}
