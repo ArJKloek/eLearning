@@ -120,7 +120,6 @@ document.getElementById("hint").style.display = "none";
 }
 document.addEventListener('DOMContentLoaded', function () {
   try {
-    // accordionantwoord
     var coll = document.getElementsByClassName('accordionantwoord');
     for (var i = 0; i < coll.length; i++) {
       (function(btn){
@@ -131,17 +130,33 @@ document.addEventListener('DOMContentLoaded', function () {
           this.classList.toggle('active');
           var c = this.nextElementSibling;
           if (!c) return;
+
           if (c.style.maxHeight && c.style.maxHeight !== '0px') {
             c.style.maxHeight = null;
           } else {
             c.style.maxHeight = c.scrollHeight + 'px';
             c.style.overflow = 'hidden';
           }
+
+          // Only move/animate the associated draggable when the panel explicitly requests animation
+          var animate = c.getAttribute && c.getAttribute('data-animate') === 'true';
+          if (animate) {
+            // try to find numeric id suffix on the panel/content to locate drag element
+            var m = (c.id && c.id.match(/\d+/)) || (btn.id && btn.id.match(/\d+/));
+            if (m && m[0]) {
+              var dragEl = document.getElementById('drag' + m[0]);
+              if (dragEl) {
+                // position draggable and trigger the automatic slide
+                try { dragElement(dragEl); } catch (e) { /* ignore */ }
+                setTimeout(function(){ try { myMove(dragEl); } catch(e){/*ignore*/} }, 60);
+              }
+            }
+          }
         });
       })(coll[i]);
     }
 
-    // deelhint (same pattern)
+    // deelhint setup (unchanged)
     var deels = document.getElementsByClassName('deelhint');
     for (var j = 0; j < deels.length; j++) {
       (function(btn){
