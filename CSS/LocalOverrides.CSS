@@ -57,7 +57,7 @@ img.responsive-75 {
   width: 75vw !important;   /* 75% of viewport width (screen) */
   max-width: 75% !important;  /* never exceed container/natural width */
   height: auto;     /* keep aspect ratio */
-  display: block;
+  /* display: block; */
   margin: 0 auto !important;  /* center */
 }
 
