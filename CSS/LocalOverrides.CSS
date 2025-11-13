@@ -58,7 +58,7 @@ img.responsive-75 {
   max-width: 75% !important;  /* never exceed container/natural width */
   height: auto;     /* keep aspect ratio */
   display: block;
-  margin: 0 auto;   /* center */
+  margin: 0 auto !important;  /* center */
 }
 
 /* alternative: apply to all images (use with caution) */
