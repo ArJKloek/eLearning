@@ -13,8 +13,6 @@
 
 
 .mydivheader {
-//border: 0.5px solid white;
-//content: '\u27F1';
   padding: 5px;
   cursor: move;
    background-color: #2196F3;
@@ -58,7 +56,7 @@
   color: white;
   cursor: pointer;
   padding: 10pt;
-  width: 50%;
+  width: 75%;
   font-size: 11pt;
   text-align: left;
   border: none;
