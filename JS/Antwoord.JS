@@ -34,7 +34,6 @@ function checkv2(answers) {
 
     const raw = String(input.value || '').trim();
     if (!raw) {
-      // empty → hide mark
       const icon = document.getElementById(markId);
       if (icon) icon.style.visibility = 'hidden';
       input.style.borderColor = '';
@@ -43,7 +42,6 @@ function checkv2(answers) {
 
     const key = answers[i];
 
-    // --- text answers ---
     if (typeof key === 'string') {
       const ok = raw.toLowerCase() === key.toLowerCase();
       setMark(markId, ok);
@@ -51,7 +49,6 @@ function checkv2(answers) {
       continue;
     }
 
-    // --- numeric answers ---
     const val = parseNum(raw);
     if (isNaN(val)) {
       setMark(markId, false);
@@ -62,107 +59,36 @@ function checkv2(answers) {
     const ok = nearlyEqual(val, Number(key), 0.01, 1e-12);
     setMark(markId, ok);
     input.style.borderColor = ok ? 'green' : 'crimson';
-  // inside checkv2, when empty:
-  
-  
-  if (!raw) {
-  const icon = document.getElementById(markId);
-  if (icon) {
-    icon.style.visibility = 'hidden'; // hidden preserves the width we set
-    icon.textContent = '';            // no symbol
-  }
-  input.style.borderColor = '';
-  continue;
-}
-
-  
-  
-  
-  }
-
-
-}
-
-function antwoordzien(ID){
-  var panel = document.getElementById(ID);
-  if (!panel) return;
-
-  // corresponding draggable element (dragN for panelN)
-  var thenum = (ID.match(/\d+/) || [])[0];
-  var dragEl = document.getElementById("drag" + thenum);
-
-  // Toggle panel visibility
-  if (panel.style.display === "block") {
-    panel.style.display = "none";
-    if (dragEl) dragElement(dragEl);
-    return;
-  }
-
-  // show panel and position draggable
-  panel.style.display = "block";
-  if (dragEl) dragElement(dragEl);
-
-  // Only animate when data-animate attribute is explicitly "true"
-  var animateAttr = panel.getAttribute('data-animate');
-  if (animateAttr === 'true' && dragEl) {
-    // small delay for layout to settle
-    setTimeout(function(){ myMove(dragEl); }, 60);
   }
 }
 
-
-function hint(ID){
-if ("Show Hint" == document.getElementById(ID).innerHTML){
-document.getElementById(ID).innerHTML = "Hide Answer";
-document.getElementById("hint").style.display = "block";
-
-} else{
-document.getElementById(ID).innerHTML = "Show Hint";
-document.getElementById("hint").style.display = "none";
-
-}
-}
-var coll = document.getElementsByClassName("accordionantwoord");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-        var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+// Ensure all accordions are collapsed on load and position draggables
+document.addEventListener('DOMContentLoaded', function () {
+  var acc = document.getElementsByClassName('accordionantwoord');
+  for (var j = 0; j < acc.length; j++) {
+    acc[j].classList.remove('active');
+    var content = acc[j].nextElementSibling;
+    if (content) {
       content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-
+      content.style.overflow = 'hidden';
+      content.style.display = 'block';
     }
-  });
-}
+  }
 
-// Detect whether device supports orientationchange event, otherwise fall back to
-// the resize event.
-window.onorientationchange = function() { var draggableElements = document.getElementsByClassName("draggable");
-
-for(var i = 0; i < draggableElements.length; i++){
-     dragElement(draggableElements[i]);  }};
-
-
-var coll = document.getElementsByClassName("deelhint");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+  var draggableElements = document.getElementsByClassName('draggable');
+  for (var k = 0; k < draggableElements.length; k++) {
+    if (draggableElements[k].id) {
+      try { dragElement(draggableElements[k]); } catch (e) { /* ignore */ }
     }
-  });
-}
+  }
+});
 
+// guard: ensure element has id and numeric suffix
 function dragElement(elmnt) {
- var thenum = elmnt.id.match(/\d+/)[0]; // "3";
+  if (!elmnt || !elmnt.id) return;
+  var m = elmnt.id.match(/\d+/);
+  if (!m) return;
+  var thenum = m[0];
 
  document.getElementById("drag"+thenum).style.left = document.getElementById("panel"+thenum).offsetLeft +"px";
  document.getElementById("drag"+thenum).style.right = document.getElementById("panel"+thenum).offsetWidth+"px";

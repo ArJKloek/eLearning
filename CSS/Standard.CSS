@@ -5,23 +5,18 @@
   text-align: center;
   border: 1px solid #d3d3d3;
   width: 100%;
-  display: vissible;
-        overflow: hidden;
-
+  display: block;        /* fixed typo (was 'vissible') */
+  overflow: visible;     /* allow inner content while dragging */
 }
 
-
-
 .mydivheader {
-  /* border: 0.5px solid white; */
-  /* If you want an icon use .mydivheader::before { content: '\27F1'; } */
   padding: 5px;
-  cursor: move;
+  cursor: move;          /* keep only move */
   background-color: #2196F3;
   font-weight: bold;
   overflow: hidden;
   color: #fff;
- cursor: n-resize;
+  cursor: n-resize;
 }
 .mydivheader:hover {
   background-color: #1f8adf;   
@@ -44,13 +39,11 @@
 
 .hint {
   background-color: #2196f3;
-  float: left
-    
+  float: left;           /* added missing semicolon */
 }
 .hint:hover {
   background-color: #1f8adf;
 }
-
 
 .accordionantwoord {
    background-color: #4CAF50;
@@ -114,9 +107,4 @@
 
 .deelhint:hover {
   background-color: #1f8adf;
-}
-
-hint{
-display:none;
-
 }
