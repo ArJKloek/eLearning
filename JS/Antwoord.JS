@@ -118,21 +118,51 @@ document.getElementById("hint").style.display = "none";
 
 }
 }
-var coll = document.getElementsByClassName("accordionantwoord");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-        var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    // accordionantwoord
+    var coll = document.getElementsByClassName('accordionantwoord');
+    for (var i = 0; i < coll.length; i++) {
+      (function(btn){
+        // ensure content is collapsed initially
+        var content = btn.nextElementSibling;
+        if (content) { content.style.maxHeight = null; content.style.overflow = 'hidden'; }
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          var c = this.nextElementSibling;
+          if (!c) return;
+          if (c.style.maxHeight && c.style.maxHeight !== '0px') {
+            c.style.maxHeight = null;
+          } else {
+            c.style.maxHeight = c.scrollHeight + 'px';
+            c.style.overflow = 'hidden';
+          }
+        });
+      })(coll[i]);
     }
-  });
-}
+
+    // deelhint (same pattern)
+    var deels = document.getElementsByClassName('deelhint');
+    for (var j = 0; j < deels.length; j++) {
+      (function(btn){
+        var content = btn.nextElementSibling;
+        if (content) { content.style.maxHeight = null; content.style.overflow = 'hidden'; }
+        btn.addEventListener('click', function () {
+          this.classList.toggle('active');
+          var c = this.nextElementSibling;
+          if (!c) return;
+          if (c.style.maxHeight && c.style.maxHeight !== '0px') {
+            c.style.maxHeight = null;
+          } else {
+            c.style.maxHeight = c.scrollHeight + 'px';
+          }
+        });
+      })(deels[j]);
+    }
+  } catch (err) {
+    console.error('Accordion init error:', err);
+  }
+});
 
 // Detect whether device supports orientationchange event, otherwise fall back to
 // the resize event.
@@ -141,21 +171,6 @@ window.onorientationchange = function() { var draggableElements = document.getEl
 for(var i = 0; i < draggableElements.length; i++){
      dragElement(draggableElements[i]);  }};
 
-
-var coll = document.getElementsByClassName("deelhint");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
 
 function dragElement(elmnt) {
  var thenum = elmnt.id.match(/\d+/)[0]; // "3";
