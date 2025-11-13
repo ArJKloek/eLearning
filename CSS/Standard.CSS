@@ -5,18 +5,24 @@
   text-align: center;
   border: 1px solid #d3d3d3;
   width: 100%;
-  display: block;        /* fixed typo (was 'vissible') */
-  overflow: visible;     /* allow inner content while dragging */
+  display: vissible;
+        overflow: hidden;
+
 }
 
+
+
 .mydivheader {
+//border: 0.5px solid white;
+//content: '\u27F1';
   padding: 5px;
-  cursor: move;          /* keep only move */
-  background-color: #2196F3;
-  font-weight: bold;
-  overflow: hidden;
+  cursor: move;
+   background-color: #2196F3;
+    font-weight: bold;
+      overflow: hidden;
+
   color: #fff;
-  cursor: n-resize;
+ cursor: n-resize;
 }
 .mydivheader:hover {
   background-color: #1f8adf;   
@@ -39,18 +45,20 @@
 
 .hint {
   background-color: #2196f3;
-  float: left;           /* added missing semicolon */
+  float: left
+    
 }
 .hint:hover {
   background-color: #1f8adf;
 }
+
 
 .accordionantwoord {
    background-color: #4CAF50;
   color: white;
   cursor: pointer;
   padding: 10pt;
-  width: 75%;
+  width: 50%;
   font-size: 11pt;
   text-align: left;
   border: none;
@@ -87,7 +95,7 @@
   color: white;
   cursor: pointer;
   padding: 5pt 10pt;
-  width: 75%;
+  width: 50%;
   font-size: 11pt;
   text-align: left;
   border: none;
@@ -95,16 +103,13 @@
   transition: 0.4s;
 }
 
-.mark {
-  display: inline-block;     /* gives it a box even when empty */
-  width: 1em;              /* reserve space for ✔ / ✖ */
-  text-align: center;
-  font-size: 14pt;
-  line-height: 1;
-  font-style: normal;        /* <i> without italics */
-  margin-right: .1em;
-}
-
 .deelhint:hover {
   background-color: #1f8adf;
 }
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  
+}
+
