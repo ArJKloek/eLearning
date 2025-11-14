@@ -15,12 +15,21 @@ function nearlyEqual(a, b, relTol = 0.01, absTol = 1e-12) {
   return diff <= Math.max(absTol, relTol * Math.abs(b));
 }
 
-// mark ✔ or ✖ directly
+// mark ✔ or ✖ directly (ensure fixed inline width so input doesn't move)
 function setMark(id, ok) {
   const el = document.getElementById(id);
   if (!el) return;
+  // reserve stable space for the icon so layout won't jump
+  el.style.display = 'inline-block';
+  el.style.width = '1.2em';
+  el.style.minWidth = '1.2em';
+  el.style.textAlign = 'center';
+  el.style.verticalAlign = 'middle';
+  el.style.marginLeft = '0.4rem';
+  el.style.boxSizing = 'border-box';
+
   el.style.visibility = 'visible';
-  el.style.fontStyle = 'normal'; // <i> shouldn't be italic
+  el.style.fontStyle = 'normal';
   el.style.color = ok ? 'green' : 'red';
   el.textContent = ok ? '✔' : '✖';
 }
@@ -36,7 +45,11 @@ function checkv2(answers) {
     if (!raw) {
       // empty → hide mark
       const icon = document.getElementById(markId);
-      if (icon) icon.style.visibility = 'hidden';
+      if (icon) {
+        // keep reserved space but hide symbol so input doesn't shift
+        icon.style.visibility = 'hidden';
+        icon.textContent = '\u00A0'; // non-breaking space
+      }
       input.style.borderColor = '';
       continue;
     }
@@ -68,8 +81,9 @@ function checkv2(answers) {
   if (!raw) {
   const icon = document.getElementById(markId);
   if (icon) {
-    icon.style.visibility = 'hidden'; // hidden preserves the width we set
-    icon.textContent = '';            // no symbol
+    // keep reserved space but hide symbol so input doesn't shift
+    icon.style.visibility = 'hidden';
+    icon.textContent = '\u00A0'; // non-breaking space
   }
   input.style.borderColor = '';
   continue;
