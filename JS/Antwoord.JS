@@ -34,6 +34,36 @@ function setMark(id, ok) {
   el.textContent = ok ? '✔' : '✖';
 }
 
+// Ensure there is a fixed-width mark placeholder before each input (antwN)
+function ensureAnswerPlaceholders() {
+  var inputs = document.querySelectorAll('input[id^="antw"]');
+  for (var i = 0; i < inputs.length; i++) {
+    var input = inputs[i];
+    var m = input.id.match(/^antw(\d+)$/);
+    if (!m) continue;
+    var idx = m[1];
+    var markId = 'vrg' + idx;
+    if (document.getElementById(markId)) continue;
+
+    var span = document.createElement('span');
+    span.id = markId;
+    span.className = 'vraagantwoord';
+    span.textContent = '\u00A0'; // placeholder
+
+    // inline styles to reserve space (JS-only solution)
+    span.style.display = 'inline-block';
+    span.style.width = '1.2em';
+    span.style.minWidth = '1.2em';
+    span.style.textAlign = 'center';
+    span.style.verticalAlign = 'middle';
+    span.style.marginRight = '0.4rem';
+    span.style.boxSizing = 'border-box';
+    span.style.visibility = 'hidden';
+
+    input.parentNode.insertBefore(span, input);
+  }
+}
+
 // ---------- Checker ----------
 function checkv2(answers) {
   for (let i = 0; i < answers.length; i++) {
@@ -137,6 +167,9 @@ document.getElementById("hint").style.display = "none";
 }
 document.addEventListener('DOMContentLoaded', function () {
   try {
+    // insert placeholders before other init so layout is stable
+    ensureAnswerPlaceholders();
+
     var coll = document.getElementsByClassName('accordionantwoord');
     for (var i = 0; i < coll.length; i++) {
       (function(btn){
