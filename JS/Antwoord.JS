@@ -26,6 +26,21 @@ function applyMarkStyles(el) {
   el.style.boxSizing = 'border-box';
 }
 
+// Show ✔/✖ without changing layout
+function setMark(id, ok) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  applyMarkStyles(el);
+  if (ok === null) {
+    el.style.visibility = 'hidden';
+    el.textContent = '\u00A0';
+  } else {
+    el.style.visibility = 'visible';
+    el.style.color = ok ? 'green' : 'crimson';
+    el.textContent = ok ? '✔' : '✖';
+  }
+}
+
 // Ensure all mark elements (existing or new) have stable layout before first check
 function ensureAnswerPlaceholders() {
   // include inputs, selects, and textareas
