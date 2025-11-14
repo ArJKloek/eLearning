@@ -26,56 +26,37 @@ function applyMarkStyles(el) {
   el.style.boxSizing = 'border-box';
 }
 
-// mark ✔ or ✖ directly — only change content/visibility, never layout
-function setMark(id, ok) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  
-  // ensure stable layout (idempotent — safe to call multiple times)
-  applyMarkStyles(el);
-
-  // toggle symbol/visibility without changing layout
-  if (ok === null) {
-    el.style.visibility = 'hidden';
-    el.textContent = '\u00A0';
-  } else {
-    el.style.visibility = 'visible';
-    el.style.color = ok ? 'green' : 'crimson';
-    el.textContent = ok ? '✔' : '✖';
-  }
-}
-
 // Ensure all mark elements (existing or new) have stable layout before first check
 function ensureAnswerPlaceholders() {
-  var inputs = document.querySelectorAll('input[id^="antw"]');
-  for (var i = 0; i < inputs.length; i++) {
-    var input = inputs[i];
-    var m = input.id.match(/^antw(\d+)$/);
+  // include inputs, selects, and textareas
+  var controls = document.querySelectorAll('input[id^="antw"], select[id^="antw"], textarea[id^="antw"]');
+  for (var i = 0; i < controls.length; i++) {
+    var ctrl = controls[i];
+    var m = ctrl.id.match(/^antw(\d+)$/);
     if (!m) continue;
     var idx = m[1];
     var markId = 'vrg' + idx;
     var mark = document.getElementById(markId);
 
     if (mark) {
-      // element exists in HTML — ensure it's BEFORE the input (to prevent layout shift)
-      if (mark.nextSibling !== input && mark.parentNode === input.parentNode) {
-        input.parentNode.insertBefore(mark, input);
+      // ensure the mark is immediately before the control
+      if (mark.parentNode === ctrl.parentNode && mark.nextSibling !== ctrl) {
+        ctrl.parentNode.insertBefore(mark, ctrl);
       }
-      // apply stable styles and hide by default
       applyMarkStyles(mark);
       mark.style.visibility = 'hidden';
       if (!mark.textContent || mark.textContent.trim() === '') {
         mark.textContent = '\u00A0';
       }
     } else {
-      // create placeholder span and insert before input
+      // create placeholder if missing
       var span = document.createElement('span');
       span.id = markId;
       span.className = 'vraagantwoord';
       span.textContent = '\u00A0';
       applyMarkStyles(span);
       span.style.visibility = 'hidden';
-      input.parentNode.insertBefore(span, input);
+      ctrl.parentNode.insertBefore(span, ctrl);
     }
   }
 }
