@@ -57,7 +57,11 @@ function ensureAnswerPlaceholders() {
     var mark = document.getElementById(markId);
 
     if (mark) {
-      // element exists in HTML — apply stable styles and hide by default
+      // element exists in HTML — ensure it's BEFORE the input (to prevent layout shift)
+      if (mark.nextSibling !== input && mark.parentNode === input.parentNode) {
+        input.parentNode.insertBefore(mark, input);
+      }
+      // apply stable styles and hide by default
       applyMarkStyles(mark);
       mark.style.visibility = 'hidden';
       if (!mark.textContent || mark.textContent.trim() === '') {
