@@ -15,22 +15,27 @@ function nearlyEqual(a, b, relTol = 0.01, absTol = 1e-12) {
   return diff <= Math.max(absTol, relTol * Math.abs(b));
 }
 
-// mark ✔ or ✖ directly (ensure fixed inline width so input doesn't move)
-function setMark(id, ok) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  // ensure placeholder styles are stable (do not change layout when toggling)
+// Apply stable layout styles to a mark element (whether existing or new)
+function applyMarkStyles(el) {
   el.style.display = 'inline-block';
   el.style.width = '1.2em';
   el.style.minWidth = '1.2em';
   el.style.textAlign = 'center';
   el.style.verticalAlign = 'middle';
-  el.style.marginRight = '0.4rem'; // use right margin consistently (placeholder uses same)
+  el.style.marginRight = '0.4rem';
   el.style.boxSizing = 'border-box';
+}
 
-  // show symbol or keep placeholder space — do NOT change display or width here
+// mark ✔ or ✖ directly — only change content/visibility, never layout
+function setMark(id, ok) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  
+  // ensure stable layout (idempotent — safe to call multiple times)
+  applyMarkStyles(el);
+
+  // toggle symbol/visibility without changing layout
   if (ok === null) {
-    // explicitly hide symbol but keep placeholder width
     el.style.visibility = 'hidden';
     el.textContent = '\u00A0';
   } else {
@@ -40,7 +45,7 @@ function setMark(id, ok) {
   }
 }
 
-// Ensure there is a fixed-width mark placeholder before each input (antwN)
+// Ensure all mark elements (existing or new) have stable layout before first check
 function ensureAnswerPlaceholders() {
   var inputs = document.querySelectorAll('input[id^="antw"]');
   for (var i = 0; i < inputs.length; i++) {
@@ -49,24 +54,25 @@ function ensureAnswerPlaceholders() {
     if (!m) continue;
     var idx = m[1];
     var markId = 'vrg' + idx;
-    if (document.getElementById(markId)) continue;
+    var mark = document.getElementById(markId);
 
-    var span = document.createElement('span');
-    span.id = markId;
-    span.className = 'vraagantwoord';
-    span.textContent = '\u00A0'; // placeholder
-
-    // inline styles to reserve space (JS-only solution) — match setMark margins
-    span.style.display = 'inline-block';
-    span.style.width = '1.2em';
-    span.style.minWidth = '1.2em';
-    span.style.textAlign = 'center';
-    span.style.verticalAlign = 'middle';
-    span.style.marginRight = '0.4rem';
-    span.style.boxSizing = 'border-box';
-    span.style.visibility = 'hidden';
-
-    input.parentNode.insertBefore(span, input);
+    if (mark) {
+      // element exists in HTML — apply stable styles and hide by default
+      applyMarkStyles(mark);
+      mark.style.visibility = 'hidden';
+      if (!mark.textContent || mark.textContent.trim() === '') {
+        mark.textContent = '\u00A0';
+      }
+    } else {
+      // create placeholder span and insert before input
+      var span = document.createElement('span');
+      span.id = markId;
+      span.className = 'vraagantwoord';
+      span.textContent = '\u00A0';
+      applyMarkStyles(span);
+      span.style.visibility = 'hidden';
+      input.parentNode.insertBefore(span, input);
+    }
   }
 }
 
