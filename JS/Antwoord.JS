@@ -19,19 +19,25 @@ function nearlyEqual(a, b, relTol = 0.01, absTol = 1e-12) {
 function setMark(id, ok) {
   const el = document.getElementById(id);
   if (!el) return;
-  // reserve stable space for the icon so layout won't jump
+  // ensure placeholder styles are stable (do not change layout when toggling)
   el.style.display = 'inline-block';
   el.style.width = '1.2em';
   el.style.minWidth = '1.2em';
   el.style.textAlign = 'center';
   el.style.verticalAlign = 'middle';
-  el.style.marginLeft = '0.4rem';
+  el.style.marginRight = '0.4rem'; // use right margin consistently (placeholder uses same)
   el.style.boxSizing = 'border-box';
 
-  el.style.visibility = 'visible';
-  el.style.fontStyle = 'normal';
-  el.style.color = ok ? 'green' : 'red';
-  el.textContent = ok ? '✔' : '✖';
+  // show symbol or keep placeholder space — do NOT change display or width here
+  if (ok === null) {
+    // explicitly hide symbol but keep placeholder width
+    el.style.visibility = 'hidden';
+    el.textContent = '\u00A0';
+  } else {
+    el.style.visibility = 'visible';
+    el.style.color = ok ? 'green' : 'crimson';
+    el.textContent = ok ? '✔' : '✖';
+  }
 }
 
 // Ensure there is a fixed-width mark placeholder before each input (antwN)
@@ -50,7 +56,7 @@ function ensureAnswerPlaceholders() {
     span.className = 'vraagantwoord';
     span.textContent = '\u00A0'; // placeholder
 
-    // inline styles to reserve space (JS-only solution)
+    // inline styles to reserve space (JS-only solution) — match setMark margins
     span.style.display = 'inline-block';
     span.style.width = '1.2em';
     span.style.minWidth = '1.2em';
@@ -72,21 +78,16 @@ function checkv2(answers) {
     if (!input) continue;
 
     const raw = String(input.value || '').trim();
+
+    // empty → keep placeholder visible state hidden (no layout change)
     if (!raw) {
-      // empty → hide mark
-      const icon = document.getElementById(markId);
-      if (icon) {
-        // keep reserved space but hide symbol so input doesn't shift
-        icon.style.visibility = 'hidden';
-        icon.textContent = '\u00A0'; // non-breaking space
-      }
+      setMark(markId, null);
       input.style.borderColor = '';
       continue;
     }
 
     const key = answers[i];
 
-    // --- text answers ---
     if (typeof key === 'string') {
       const ok = raw.toLowerCase() === key.toLowerCase();
       setMark(markId, ok);
@@ -94,7 +95,6 @@ function checkv2(answers) {
       continue;
     }
 
-    // --- numeric answers ---
     const val = parseNum(raw);
     if (isNaN(val)) {
       setMark(markId, false);
@@ -105,26 +105,7 @@ function checkv2(answers) {
     const ok = nearlyEqual(val, Number(key), 0.01, 1e-12);
     setMark(markId, ok);
     input.style.borderColor = ok ? 'green' : 'crimson';
-  // inside checkv2, when empty:
-  
-  
-  if (!raw) {
-  const icon = document.getElementById(markId);
-  if (icon) {
-    // keep reserved space but hide symbol so input doesn't shift
-    icon.style.visibility = 'hidden';
-    icon.textContent = '\u00A0'; // non-breaking space
   }
-  input.style.borderColor = '';
-  continue;
-}
-
-  
-  
-  
-  }
-
-
 }
 
 function antwoordzien(ID){
