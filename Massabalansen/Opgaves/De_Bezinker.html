@@ -26,7 +26,7 @@
 <span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
 			</head><body>
 <p><span style="font-size: medium;">De invoer van een settler (bezinktank) bedraagt 8000 kg/hr (18 massa-% vaste stof S en 82 massa- % water). 
-    In deze settler wordt de vaste stof gedeeltelijk gescheiden van het water. Van de in de invoer F aanwezige hoeveelheid vaste stof komt 95 % onder uit de settler. 
+    In deze settler wordt de vaste stof gedeeltelijk gescheiden van het water. Van de in de invoer F aanwezige hoeveelheid vaste stof komt 90 % onder uit de settler. 
     De samenstelling van de bodemstroom B bevat 95 massa- % vaste stof en 5 massa-% water.</span></p>
 <p><span style="font-size: medium;">De niet afgescheiden vaste stof en het resterende deel van het water komt boven uit de settler (stroom L).</span></p>
 <ul style="list-style-type: lower-alpha; font-size: medium; margin-left: 0;
@@ -37,26 +37,29 @@
 <li>Bereken de samenstelling van stroom L.</li>
 </ul>
 <span style="font-size: medium;"> Antwoord:</span><br><br>
-<span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw0" style="width: 70pt; font-size: 14pt;" type="text">
+<span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw0" style="width: 70pt; font-size: 14pt;" type="text"> 
 <option value="">...</option>
 <option value="GS">G/S</option>
 <option value="LS">L/S</option>
 <option value="LL">L/L</option>
 <option value="SS">S/S</option>
-</select></span> <br>
+</select></span>  Fasescheiding <br>
 <i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw1" style="width: 70pt; font-size: 14pt;" type="text">
 <option value="">...</option>
 <option value="deeltjesgrootte">Deeltjesgrootte</option>
 <option value="dichtheidsverschil">Dichtheidsverschil</option>
 <option value="oplosbaarheid">Oplosbaarheid</option>
-</select></span> <br>
-<span style="font-size: medium;">b.</span> <br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">\(P_\ce{NO}\) (mol/min)</span> <br>
-<span style="font-size: medium;">c.</span><br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">X(o) (%)</span> <br><br>
-<button type="button" class="checkin checkin" onclick="checkv2(['LS','dichtheidsverschil',42.9,100])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3\cdot 10^{-4}\) invullen als 3e-4)<br><br></p>
+</select></span> Principe <br>
+<span style="font-size: medium;">c.</span> <br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">L (kg/hr)</span> <br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">B (kg/hr)</span><br>
+
+<span style="font-size: medium;">d.</span><br><i id="vrg4" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw4" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">\(x_{L,S}\)</span> <br>
+<i id="vrg5" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw5" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">\(x_{L,W}\)</span>
+<br><br>
+<button type="button" class="checkin checkin" onclick="checkv2(['LS','dichtheidsverschil',6560,1440,0.011,0.989])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3\cdot 10^{-4}\) invullen als 3e-4)<br><br></p>
 <!-- a. Hint -->
-<button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
+<button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button>
 <div id="deelhint1" class="panel">
-<p><span style="font-size: medium;"> Het is een scheiding van vaste deeltjes van een vloeistof. Scheiding gebeurt doordat de deeltjes zinken. </span></p>
+<span style="font-size: medium;">Het is een scheiding van vaste deeltjes van een vloeistof. Scheiding gebeurt doordat de deeltjes zinken. </span>
 </div>
 <!-- a. Antwoord -->
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord</button></p>
@@ -68,7 +71,7 @@ Het is een vast / vloeistof (L/S) scheiding op basis van dichtheidsverschil.
 <div id="panel4" class="panel">
 <img src="https://arjkloek.github.io/eLearning/Massabalansen/images/Bezinker_blokschema.svg" alt="Blokschema van de bezinker" class="responsive-75">
 </div>
-<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel5.id)">c. X(o) Antwoord</button></p>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel5.id)">c. L en B Antwoord</button></p>
 <div id="panel5" class="panel">
 <div id="drag5" class="draggable">
 <div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
@@ -76,10 +79,130 @@ Het is een vast / vloeistof (L/S) scheiding op basis van dichtheidsverschil.
 </div>
 <div id="txt5"></div>
 </div>
-$$ \begin{aligned}
-X(o) &= \frac{F_{\ce{NH3}} - P_\ce{NH3}}{F_{\ce{NH3}}} \cdot 100\% \\
-X(o) &= \frac{100 - 0}{100} \cdot 100\% = 100\%
-\end{aligned} $$
+<table>
+<tbody>
+<tr>
+<td><span style="font-size: medium;">Steady State</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td style="font-size: medium; text-align: right;">Accumulatie</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(In-Uit+Productie-Omzetting\)</span></td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">In</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">Uit</span></td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">TM</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td  style="font-size: medium; text-align: right;">F</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">L + B</span></td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">8000</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td ><span style="font-size: medium;">L + B</span></td>
+<td><span style="font-size: medium;">\(\quad\)</span></td>
+<td style="font-size: medium; text-align: right;">L</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td style="font-size: medium; text-align: left;">\(8000 - B\quad (1\prime)\)</td>
+</tr>
+<tr>
+<td colspan="9" style="font-size: medium;">S(olid) in B is 95% van S in feed (F)</td>
+</tr>
+<tr>
+<td><span style="font-size: medium;">\(S\ in\ B\)</span></td>
+<td><span style="font-size: medium;">\(\quad\)</span></td>
+<td  style="font-size: medium; text-align: right;">\(0.95(x_{F,S}\cdot F)\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(x_{B,S}\cdot B\)</span></td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">\(0.95(0.18\cdot 8000)\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(0.95\cdot B\)</span></td>
+</tr>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">1368</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td ><span style="font-size: medium;">\(0.95\cdot B\)</span></td>
+<td><span style="font-size: medium;">\(\quad\)</span></td>
+<td style="font-size: medium; text-align: right;">B</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td style="font-size: medium; text-align: left;">1440 kg/hr</td>
+</tr>
+<tr>
+<td colspan="9" style="font-size: medium; text-align: left;">\(\qquad B\ in\ (1\prime)\)</td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">L</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td><span style="font-size: medium;">\(8000 - 1440\)</span></td>
+<td><span style="font-size: medium;">\(\quad\)</span></td>
+<td style="font-size: medium; text-align: right;">L</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td style="font-size: medium; text-align: left;">6560 kg/hr</td>
+</tr>
+<tr>
+</tbody></table>
 </div>
+
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel6.id)">c. Samenstelling stroom L</button></p>
+<div id="panel6" class="panel">
+<div id="drag6" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt6"></div>
+</div>
+<table>
+<tbody>
+<tr>
+<td><span style="font-size: medium;">\(CM \quad S\)</span></td>
+<td><span style="font-size: medium;">&nbsp;</span></td>
+<td  style="font-size: medium; text-align: right;">\(x_{F,S} \cdot F\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(x_{L,S} \cdot L + x_{B,S} \cdot B\)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="font-size: medium; text-align: right;">\(0.18 \cdot 8000\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(x_{L,S} \cdot 6560 + 0.95 \cdot 1440\)</span></td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">1440</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(x_{L,S} \cdot 6560 + 1368\)</span></td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">72</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(x_{L,S} \cdot 6560\)</span></td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">\(x_{L,S}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">72 / 6560 = 0.011</span></td>
+</tr>
+<tr>
+<td colspan="3" style="font-size: medium; text-align: right;">\(x_{L,W}\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="5"><span style="font-size: medium;">\(1-0.011 = 0.989\)</span></td>
+</tr>
+
+
+
+</tbody></table>
+</div>
+
+
+
+
 <script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
 </body></html>
+

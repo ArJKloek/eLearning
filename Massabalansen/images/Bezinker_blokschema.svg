@@ -2,16 +2,19 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="199.71971mm"
+   width="199.7197mm"
    height="82.776077mm"
-   viewBox="0 0 199.71971 82.776077"
+   viewBox="0 0 199.7197 82.776077"
    version="1.1"
    id="svg1"
+   inkscape:export-filename="Bezinker_blokschema.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
      bordercolor="#000000"
@@ -20,147 +23,106 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm" />
-  <defs
-     id="defs1" />
-  <g
+     inkscape:document-units="mm" /><defs
+     id="defs1" /><g
      inkscape:label="Laag 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-6.0099537,-91.192665)">
-    <rect
-       x="50.724537"
-       y="110.47546"
-       width="72.760414"
-       height="34.395832"
-       stroke="#000000"
-       stroke-width="0.705556"
-       stroke-miterlimit="8"
-       fill="#ffffff"
-       id="rect1" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="6.35px"
-       id="text1"
-       x="76.066856"
-       y="129.65776"
-       style="stroke-width:0.264583">Bezinker</text>
-    <path
-       d="M 6.0099537,127.32069 H 47.790043 v 0.70538 H 6.0099537 Z m 41.4273993,-1.41129 3.52769,1.76398 -3.52769,1.76398 z"
-       id="path1"
-       style="stroke-width:0.264583" />
-    <path
-       d="m 86.884346,110.44874 v -7.7343 h 78.451604 v 0.70538 H 87.237036 l 0.35269,-0.35269 v 7.38161 z m 78.098914,-9.14559 3.52769,1.76398 -3.52769,1.76398 z"
-       id="path2"
-       style="stroke-width:0.264583" />
-    <path
-       d="m 86.884259,144.8713 v 23.50775 h 78.451691 v -0.70556 H 87.237036 l 0.352777,0.35279 V 144.8713 Z m 78.099001,24.91885 3.52769,-1.76387 -3.52769,-1.76389 z"
-       id="path3"
-       style="stroke-width:0.264583" />
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="9.78958px"
-       id="text3"
-       x="22.427879"
-       y="121.98484"
-       style="stroke-width:0.264583">F</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text4"
-       x="8.2901325"
-       y="137.33067"
-       style="stroke-width:0.264583">8000 kg/h</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text5"
-       x="9.8776331"
-       y="145.79733"
-       style="stroke-width:0.264583">S = 18 m%</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text6"
-       x="8.2901325"
-       y="154.26401"
-       style="stroke-width:0.264583">W = 82 m%</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="9.78958px"
-       id="text7"
-       x="136.58606"
-       y="98.43692"
-       style="stroke-width:0.264583">L</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="9.78958px"
-       id="text8"
-       x="145.90125"
-       y="159.55566"
-       style="stroke-width:0.264583">B</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text9"
-       x="173.78859"
-       y="156.90984"
-       style="stroke-width:0.264583">???? kg/h</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text10"
-       x="175.37608"
-       y="165.37651"
-       style="stroke-width:0.264583">S = 95 m%</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text11"
-       x="173.78859"
-       y="173.84317"
-       style="stroke-width:0.264583">W = 5 m%</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text12"
-       x="173.78859"
-       y="96.320259"
-       style="stroke-width:0.264583">???? kg/h</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text13"
-       x="175.37608"
-       y="104.78692"
-       style="stroke-width:0.264583">S = ?? m%</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="7.14375px"
-       id="text14"
-       x="173.78859"
-       y="113.25359"
-       style="stroke-width:0.264583">W = ?? m%</text>
-    <text
-       font-family="Calibri, Calibri_MSFontService, sans-serif"
-       font-weight="400"
-       font-size="6.35px"
-       id="text15"
-       x="57.610054"
-       y="167.75777"
-       style="stroke-width:0.264583">95% S</text>
-  </g>
-</svg>
+     transform="translate(-147.56203,-180.28703)"><g
+       transform="matrix(0.26458333,0,0,0.26458333,-18.86088,83.255165)"
+       id="g20"><g
+         transform="translate(349.5,-23.3799)"
+         id="g16"><rect
+           x="448.5"
+           y="462.5"
+           width="275"
+           height="130"
+           stroke="#000000"
+           stroke-width="2.66667"
+           stroke-miterlimit="8"
+           fill="#ffffff"
+           id="rect1" /><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="24px"
+           transform="translate(539.029,537)"
+           id="text1">Bezinker</text><path
+           d="m 279.5,526.167 h 157.909 v 2.666 H 279.5 Z m 156.576,-5.334 13.333,6.667 -13.333,6.667 z"
+           id="path1" /><path
+           d="m 585.167,462.399 v -29.232 h 296.51 v 2.666 H 586.5 l 1.333,-1.333 v 27.899 z m 295.177,-34.566 13.333,6.667 -13.333,6.667 z"
+           id="path2" /><path
+           d="M 0,-1.33333 H 88.8482 V 295.177 H 86.1815 V 0 l 1.3334,1.33333 H 0 Z M 94.1815,293.844 87.5149,307.177 80.8482,293.844 Z"
+           transform="matrix(0,1,1,0,586.5,592.5)"
+           id="path3" /><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="37px"
+           transform="translate(341.552,508)"
+           id="text3">F</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(288.118,565)"
+           id="text4">8000 kg/h</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(293.285,597)"
+           id="text5">S = 18 m%</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(288.118,629)"
+           id="text6">W = 82 m%</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="37px"
+           transform="translate(773.016,419)"
+           id="text7">L</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="37px"
+           transform="translate(808.223,650)"
+           id="text8">B</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(913.624,639)"
+           id="text9">???? kg/h</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(918.791,671)"
+           id="text10">S = 95 m%</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(913.624,703)"
+           id="text11">W = 5 m%</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(913.624,410)"
+           id="text12">???? kg/h</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(918.791,442)"
+           id="text13">S = ?? m%</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="27px"
+           transform="translate(913.624,474)"
+           id="text14">W = ?? m%</text><path
+           d="m 568.077,680.402 -10.13,4.724 -10.717,3.911 -10.814,3.018 -10.84,2.135 -10.792,1.256 -10.666,0.386 -10.467,-0.48 -10.192,-1.339 -9.84,-2.194 -9.414,-3.043 -8.909,-3.888 -8.329,-4.727 -7.669,-5.562 -6.93,-6.39 -6.101,-7.202 -3.508,-5.158 -3.024,-5.398 -2.539,-5.627 -2.022,-5.782 2.517,-0.88 2.003,5.727 -0.043,-0.108 2.491,5.521 -0.053,-0.104 2.968,5.297 -0.06,-0.098 3.435,5.052 -0.085,-0.112 6.003,7.085 -0.114,-0.118 6.812,6.282 -0.121,-0.099 7.545,5.472 -0.124,-0.08 8.203,4.656 -0.125,-0.063 8.785,3.833 -0.123,-0.046 9.292,3.003 -0.12,-0.032 9.722,2.167 -0.117,-0.021 10.077,1.325 -0.113,-0.01 10.356,0.474 h -0.109 l 10.559,-0.382 -0.106,0.008 10.686,-1.244 -0.103,0.016 10.738,-2.114 -0.101,0.024 10.714,-2.991 -0.099,0.032 10.615,-3.873 -0.107,0.044 10.078,-4.7 z m -4.914,-6.433 14.898,-0.498 -8.54,12.218 z"
+           id="path14" /><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="24px"
+           transform="translate(474.524,681)"
+           id="text15">95</text><text
+           font-family="Lato, Lato_MSFontService, sans-serif"
+           font-weight="400"
+           font-size="24px"
+           transform="translate(502.524,681)"
+           id="text16">% S</text></g></g></g></svg>
