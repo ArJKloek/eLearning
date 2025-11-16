@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210.00002mm"
+   height="297mm"
+   viewBox="0 0 210.00001 297"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-6.0099537,-91.192665)">
+    <rect
+       x="50.724537"
+       y="110.47546"
+       width="72.760414"
+       height="34.395832"
+       stroke="#000000"
+       stroke-width="0.705556"
+       stroke-miterlimit="8"
+       fill="#ffffff"
+       id="rect1" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="6.35px"
+       id="text1"
+       x="76.066856"
+       y="129.65776"
+       style="stroke-width:0.264583">Bezinker</text>
+    <path
+       d="M 6.0099537,127.32069 H 47.790043 v 0.70538 H 6.0099537 Z m 41.4273993,-1.41129 3.52769,1.76398 -3.52769,1.76398 z"
+       id="path1"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 86.884346,110.44874 v -7.7343 h 78.451604 v 0.70538 H 87.237036 l 0.35269,-0.35269 v 7.38161 z m 78.098914,-9.14559 3.52769,1.76398 -3.52769,1.76398 z"
+       id="path2"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 86.884259,144.8713 v 23.50775 h 78.451691 v -0.70556 H 87.237036 l 0.352777,0.35279 V 144.8713 Z m 78.099001,24.91885 3.52769,-1.76387 -3.52769,-1.76389 z"
+       id="path3"
+       style="stroke-width:0.264583" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="9.78958px"
+       id="text3"
+       x="22.427879"
+       y="121.98484"
+       style="stroke-width:0.264583">F</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text4"
+       x="8.2901325"
+       y="137.33067"
+       style="stroke-width:0.264583">8000 kg/h</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text5"
+       x="9.8776331"
+       y="145.79733"
+       style="stroke-width:0.264583">S = 18 m%</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text6"
+       x="8.2901325"
+       y="154.26401"
+       style="stroke-width:0.264583">W = 82 m%</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="9.78958px"
+       id="text7"
+       x="136.58606"
+       y="98.43692"
+       style="stroke-width:0.264583">L</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="9.78958px"
+       id="text8"
+       x="145.90125"
+       y="159.55566"
+       style="stroke-width:0.264583">B</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text9"
+       x="173.78859"
+       y="156.90984"
+       style="stroke-width:0.264583">???? kg/h</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text10"
+       x="175.37608"
+       y="165.37651"
+       style="stroke-width:0.264583">S = 95 m%</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text11"
+       x="173.78859"
+       y="173.84317"
+       style="stroke-width:0.264583">W = 5 m%</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text12"
+       x="173.78859"
+       y="96.320259"
+       style="stroke-width:0.264583">???? kg/h</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text13"
+       x="175.37608"
+       y="104.78692"
+       style="stroke-width:0.264583">S = ?? m%</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="7.14375px"
+       id="text14"
+       x="173.78859"
+       y="113.25359"
+       style="stroke-width:0.264583">W = ?? m%</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="6.35px"
+       id="text15"
+       x="57.610054"
+       y="167.75777"
+       style="stroke-width:0.264583">95% S</text>
+  </g>
+</svg>
