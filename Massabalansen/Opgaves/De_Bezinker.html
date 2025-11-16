@@ -53,157 +53,20 @@
 <span style="font-size: medium;">b.</span> <br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">\(P_\ce{NO}\) (mol/min)</span> <br>
 <span style="font-size: medium;">c.</span><br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">X(o) (%)</span> <br><br>
 <button type="button" class="checkin checkin" onclick="checkv2(['LS','dichtheidsverschil',42.9,100])">Check</button> (Je kunt wetenschappelijke notatie zoals \(3\cdot 10^{-4}\) invullen als 3e-4)<br><br></p>
-<p>
-<button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. \(\ce{NH3}\) Hint</button></p>
+<!-- a. Hint -->
+<button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
 <div id="deelhint1" class="panel">
-<p><span style="font-size: medium;">Het is een continu proces die steady state is.</span><br><span style="font-size: medium;">De molbalansen is ook wat er ingaat moet er weer uit komen.</span></p>
-<p><span style="font-size: medium;">De omzetting is hier 70% van wat er de reactor ingaat \(F_{IN, NH_{3}}\).</span><br><span style="font-size: medium;">\(F_{IN,NH_{3}} = F_{\ce{NH3}} + R\)</span></p>
-<p>Kijk voor de scheider en voor de reactor apart wat de balansen zijn.&nbsp;</p>
+<p><span style="font-size: medium;"> Het is een scheiding van vaste deeltjes van een vloeistof. Scheiding gebeurt doordat de deeltjes zinken. </span></p>
 </div>
-
-<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. TM Antwoord</button></p>
+<!-- a. Antwoord -->
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord</button></p>
 <div id="panel1" class="panel">
-<div id="drag1" class="draggable">
-<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
-<p>Sleep mij naar beneden om meer te zien</p>
+Het is een vast / vloeistof (L/S) scheiding op basis van dichtheidsverschil.
 </div>
-<div id="txt1"></div>
-</div>
-<table>
-<tbody>
-<tr>
-<td colspan="8"><span style="font-size: medium;">Systeem: Scheider</span></td>
-</tr>
-<tr>
-<td><span style="font-size: medium;">&nbsp;&nbsp;</span></td>
-<td colspan="2"><span style="font-size: medium;">Molbalans</span></td>
-<td style="text-align: right;font-size: medium;">Invoer</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">Uitvoer</span></td>
-</tr>
-<tr><td colspan="6">&nbsp;</td>,</tr>
-<tr>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">CM</span></td>
-<td style="text-align: left;font-size: medium;">\(\ce{O2}\)</td>
-<td style="text-align: right;font-size: medium;">\(T_\ce{O2}\)</td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(P_\ce{O2}\)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">\(\ce{NH3}\)</span></td>
-<td style="text-align: right;font-size: medium;">\(T_\ce{NH3}\)</td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(R_\ce{NH3} = R\)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>    
-<td style="font-size: medium;">NO</td>
-<td style="text-align: right;"><span style="font-size: medium;">\(T_\ce{NO}\)</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(P_\ce{NO}\)</span></td>
-</tr>
-<tr>
-<td colspan="8"><span style="font-size: medium;">Systeem: Reactor</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;"> MB </span></td>
-<td>&nbsp;</td>
-<td style="text-align: right;font-size: medium;">Acc.</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(IN - UIT + PROD - OMZ\)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>    
-<td><span style="font-size: medium;">\(\ce{NH3}\)&nbsp; &nbsp;</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">0</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\((F_{\ce{NH3}} + R) - R + 0 - 0.70 \cdot F_{\ce{IN,NH3}}\)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td colspan="2">\(F_{IN,\ce{NH3}}=F_{\ce{NH3}}+R\)</td>
-<td style="text-align: right;"><span style="font-size: medium;">0</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;"> \((100 + R) - R - 0.7(100 + R) \)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td colspan="2"><span style="font-size: medium;">\(+ R - R = 0\)</span></td>
-<td style="text-align: right;font-size: medium;">100</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">0.7(100 + R)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">\(100 - 70 = 30\)</span></td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">30</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">0.7R</span></td>
-</tr>
-<tr>
-<td colspan="4" style="text-align: right;font-size: medium;">R</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">42.90 mol/min</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. NO Hint</button></p>
-<div id="deelhint2" class="panel"><span style="font-size: medium;">Hetzelfde als je voor \(\ce{NH3}\) hebt gedaan kun je nu ook doen voor \(\ce{NO}\).&nbsp; </span> <br><span style="font-size: medium;">Alleen produceer je nu \(\ce{NO}\) uit \(\ce{NH3}\)!&nbsp;</span></div>
-<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel4.id)">b. NO Antwoord</button></p>
+<!-- b. blokschema antwoord -->
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel4.id)">b. Blokschema</button></p>
 <div id="panel4" class="panel">
-<div id="drag4" class="draggable">
-<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
-<p>Sleep mij naar beneden om meer te zien</p>
-</div>
-<div id="txt4"></div>
-</div>
-<br>
-<table>
-<tbody>
-<tr>
-<td colspan="4"><span style="font-size: medium;">Systeem: Reactor</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td colspan="2" style="font-size: medium;">MB</td>
-<td style="text-align: right; font-size: medium;">Acc.</td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(IN - UIT + PROD - OMZ\)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">NO</span></td>
-<td style="text-align: right;font-size: medium;">0</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(0 - P_{NO} + 0.7\cdot F_{IN,\ce{NH3}} - 0\)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">\(P_{NO}\)</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(0.7(100 + 42.90)\)</span></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">\(P_{NO}\)</span></td>
-<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">100 mol/min</span></td>
-</tr>
-</tbody>
-</table>
+<img src="https://arjkloek.github.io/eLearning/Massabalansen/images/Bezinker_blokschema.svg" alt="Blokschema van de bezinker" class="responsive-75">
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel5.id)">c. X(o) Antwoord</button></p>
 <div id="panel5" class="panel">
