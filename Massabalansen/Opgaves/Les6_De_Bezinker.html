@@ -25,6 +25,7 @@
 <!-- Macro: red cancel stroke, body text color via HTML color -->
 <span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
 			</head><body>
+<h2>De bezinker</h2>
 <p><span style="font-size: medium;">De invoer van een settler (bezinktank) bedraagt 8000 kg/hr (18 massa-% vaste stof S en 82 massa- % water). 
     In deze settler wordt de vaste stof gedeeltelijk gescheiden van het water. Van de in de invoer F aanwezige hoeveelheid vaste stof komt 90 % onder uit de settler. 
     De samenstelling van de bodemstroom B bevat 95 massa- % vaste stof en 5 massa-% water.</span></p>
@@ -66,11 +67,22 @@
 <div id="panel1" class="panel">
 Het is een vast / vloeistof (L/S) scheiding op basis van dichtheidsverschil.
 </div>
+<!-- b. Hint -->
+<button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Hint</button>
+<div id="deelhint2" class="panel">
+<span style="font-size: medium;">Lees de tekst goed, denk aan het feit dat 95% van de vaste stof uit de feed in de bodemstroom B aanwezig is.</span>
+</div>
 <!-- b. blokschema antwoord -->
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel4.id)">b. Blokschema</button></p>
 <div id="panel4" class="panel">
 <img src="https://arjkloek.github.io/eLearning/Massabalansen/images/Bezinker_blokschema.svg" alt="Blokschema van de bezinker" class="responsive-75">
 </div>
+<!-- c. Hint L en B berekening -->
+<button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">c. L en B Hint</button>
+<div id="deelhint3" class="panel">
+<span style="font-size: medium;">Denk aan het feit dat 95% van de vaste stof uit de feed in de bodemstroom B aanwezig is. Je kunt dus al aannemen dat 95% van S in F hetzelfde is als de 95% van S in B.</span>
+</div>
+<!-- c. L en B berekening antwoord -->
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel5.id)">c. L en B Antwoord</button></p>
 <div id="panel5" class="panel">
 <div id="drag5" class="draggable">
@@ -149,8 +161,13 @@ Het is een vast / vloeistof (L/S) scheiding op basis van dichtheidsverschil.
 <tr>
 </tbody></table>
 </div>
-
-<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel6.id)">c. Samenstelling stroom L</button></p>
+<!-- d. Hint Samenstelling L -->
+<button type="button" class="deelhint" onclick="antwoordzien(deelhint4.id)">d. Samenstelling L Hint</button>
+<div id="deelhint4" class="panel">
+<span style="font-size: medium;">Je hebt nu L en B je kunt nu de CM van S eerst bepalen.</span>
+</div>
+<!-- d. Samenstelling L -->
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel6.id)">d. Samenstelling stroom L</button></p>
 <div id="panel6" class="panel">
 <div id="drag6" class="draggable">
 <div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
