@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Standard.CSS"></head><body><p><span style="font-size: medium;">&nbsp;Hier vind je de definities opgaves die gegeven zijn in het dictaat massabalansen.&nbsp;</span></p>
+<html><head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS"></head><body><p><span style="font-size: medium;">&nbsp;Hier vind je de definities opgaves die gegeven zijn in het dictaat massabalansen.&nbsp;</span></p>
 <p><span style="font-size: medium;">Voor elke vraag is er een input waar je na op <button type="button" class="checkin checkin">Check</button> kunt drukken om &nbsp;je antwoord te controleren. Bijvoorbeeld bij deze vraag is het antwoord 1.2 kg/hr en hoog:</span></p>
 <p><span style="font-size: medium;">Antwoord:</span></p>
-<p><i id="vrg0" class="glyphicon glyphicon-ok" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text">&nbsp;<span style="font-size: medium;">kg/hr</span> <br><i id="vrg1" class="glyphicon glyphicon-ok" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw1" style="width: 70pt; font-size: 14pt;" type="text">
+<p><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text">&nbsp;<span style="font-size: medium;">kg/hr</span> <br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i><select id="antw1" style="width: 70pt; font-size: 14pt;" type="text">
 <option value="">...</option>
 <option value="hoog">Hoog</option>
 <option value="laag">Laag</option>
 </select></p>
-<p><button type="button" class="checkin checkin" onclick="checkv2([1.2,'hoog'])">Check</button> &nbsp; &nbsp;&nbsp;<i class="glyphicon glyphicon-ok" style="font-size: 14pt; color: green;"></i><span style="font-size: medium;"> dit betekent correct.&nbsp; <i class="glyphicon glyphicon-remove" style="font-size: 14pt; color: red;"></i> dit is incorrect.&nbsp;</span></p>
+<p><button type="button" class="checkin checkin" onclick="checkv2([1.2,'hoog'])">Check</button> &nbsp; &nbsp;&nbsp;<span style="font-size: 14pt; color: green;">✔</span><span style="font-size: medium;"> dit betekent correct.&nbsp; <span style="font-size: 14pt; color: red;">✖</span> dit is incorrect.&nbsp;</span></p>
 <p><span style="font-size: medium;">Let op dat je wel een punt gebruikt voor de decimal&nbsp;punt. Als je een comma&nbsp;gebruikt is het antwoord altijd fout.&nbsp;</span></p>
 <p><span style="font-size: medium;">Voor elk antwoord is er meestal een hint beschikbaar:</span></p>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint0.id)">Hint</button></p>
 <div id="deelhint0" class="panel"><span style="font-size: medium;">In deze hints staat informatie die je een begin geven om de som te kunnen maken.</span></div>
 <p><span style="font-size: medium;">Het antwoord voor een vraag is verborgen onder deze knoppen, dus kijk alleen als je echt niet meer begrijpt wat je moet doen.&nbsp;</span></p>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">Antwoord</button></p>
-<div id="panel1" class="panel">
+<div id="panel1" class="panel" data-animate="true">
 <div id="drag1" class="draggable">
 <div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
 <p>Sleep naar beneden om meer te zien</p>
@@ -51,5 +51,5 @@
 </tr>
 </tbody>
 </table>
-<script type="text/javascript" src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/Uitlegvraag.JS"></script>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
 </div></body></html>
