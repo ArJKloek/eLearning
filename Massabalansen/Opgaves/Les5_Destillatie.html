@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html><head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/Standard.CSS">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.25/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+  <script src="https://arjkloek.github.io/eLearning/JS/katex-preprocess.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body,{
+      delimiters:[
+        {left:'\\(',right:'\\)',display:false},
+        {left:'$$',right:'$$',display:true},
+        {left:'\\[',right:'\\]',display:true}
+      ],
+      fleqn:true,
+      globalGroup:true,
+      trust:true,
+      preProcess: katexPreProcess
+    });"></script>
+<link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/LocalOverrides.CSS">
+<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+<!-- Set global KaTeX array row spacing for aligned/array environments -->
+<span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
+<!-- Macro: red cancel stroke, body text color via HTML color -->
+<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+			</head><body>
+<p><span style="font-size: medium;">Beschouw onderstaand blokschema van een destillatie-opstelling:</span></p>
+<p><img src="https://arjkloek.github.io/eLearning/Massabalansen/images/BlokschemaLes5Destillatie.svg" width="410" height="296"></p>
+<p><span style="font-size: medium;">a.&nbsp; Bereken R, D en B.&nbsp;</span></p>
+<p><span style="font-size: medium;">b.&nbsp; Bereken de refluxverhouding</span><br><br><span style="font-size: medium;"> Antwoord</span>:<br><br><span style="font-size: medium;">a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">R (kg/h)</span> <br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">B (kg/h)</span> <br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">D (kg/h)</span> <br><span style="font-size: medium;">b.</span> <br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">RR (R/D)</span> <br><br><button type="button" class="checkin checkin" onclick="checkv2([294.5,494.5,505.5,0.58])">Check</button><span style="font-size: medium;"> (Je kunt wetenschappelijke notatie zoals \(3\cdot10^{-4}\) invullen als 3e-4)</span><br><br></p>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. TM Hint</button></p>
+<div id="deelhint1" class="panel">
+<p>Begin hier met het opstellen van een TM over het overall systeem.<br>Je krijgt een vergelijking met twee onbekendes. Zou je deze terug kunnen brengen naar 1 onbekende?</p>
+</div>
+
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. TM Antwoord</button></p>
+<div id="panel1" class="panel">
+<div id="drag1" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt1"></div>
+</div>
+<table>
+<tbody>
+<tr>
+<td colspan="8"><span style="font-size: medium;">Overall Systeem</span><span style="font-size: medium;"></span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td colspan="2"><span style="font-size: medium;">TM</span></td>
+<td style="text-align: right;font-size: medium;">F</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">D + B</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right; font-size: medium;">1000</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">D + B</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right; font-size: medium;">B</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="2"><span style="font-size: medium;">\(1000 - D\)</span></td>
+<td>\((1\prime)\) </td>
+</tr>
+<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="font-size: medium;">CM</span></td>
+<td colspan="6"><span style="font-size: medium;">Bz</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">\(x_{F,Bz}·F\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(x_{D,Bz}\cdot D + x_{B,Bz}\cdot B\)</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">\(0.50 \cdot 1000\)</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.95D + 0.04B\)</span></td>
+</tr>
+<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
+
+<tr>
+<td>&nbsp;</td>
+<td colspan="7"><span style="font-size: medium;"> \((1\prime)\) invullen </span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">500</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.95D + 0.04(1000 - D)\)</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">D</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">505.5 kg/h</span></td>
+</tr>
+<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td colspan="7"><span style="font-size: medium;"> D invullen in \((1\prime)\) </span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">B</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(1000 - 505.5\)</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">B</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">494.5 kg/h</span></td>
+</tr>
+<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
+<tr>
+<td colspan="8"><span style="font-size: medium;">Systeem: Verdeelpunt + Condensor </span></td>
+</tr>
+<tr>
+
+<td colspan="2"><span style="font-size: medium;">TM</span></td>
+<td colspan="2" style="text-align: right; font-size: medium;">V</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">R + D</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;"><span style="font-size: medium;">800</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">R + 505.5</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;"><span style="font-size: medium;">R</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">294.5 kg/h</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</div>
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Reflux Hint</button></p>
+<div id="deelhint2" class="panel">
+<p>Je hebt nu een R gevonden. Wat was reflux ook alweer? <br> \(RR = \dfrac{R}{D}\)</p>
+</div>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel3.id)">b. Reflux Antwoord</button></p>
+<div id="panel3" class="panel">
+$$ RR = \dfrac{R}{D} = \dfrac{294.5}{505.5} = 0.58 $$
+</div>
+<p>
+<script type="text/javascript" src="https://arjkloek.github.io/eLearning/JS/Antwoord.JS"></script>
+</p></body></html>
