@@ -71,18 +71,38 @@
 <br><br>
 <button type="button" class="checkin checkin" onclick="checkv2([0.95,0.05,0.95,494.5,505.5,294.5,0.58])">Check</button><span style="font-size: medium;"> (Je kunt wetenschappelijke notatie zoals \(3\cdot10^{-4}\) invullen als 3e-4)</span>
 <br><br>
-<button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. TM Hint</button>
+<button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Samenstelling stromen</button>
 <div id="deelhint1" class="panel">
-<p>Begin hier met het opstellen van een TM over het overall systeem.<br>Je krijgt een vergelijking met twee onbekendes. Zou je deze terug kunnen brengen naar 1 onbekende?</p>
+<p>Er zijn twee stoffen in dit systeem: Benzeen (Bz) en Toluene (Tol).<br> Verder kun je aannemen dat de samenstelling van de stromen V, R en D gelijks zijn aan elkaar. Dit is namelijk door dat de enige bewerking van op de vapor stroom is dat deze gecondenseerd wordt.
 </div>
-
-<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. TM Antwoord</button></p>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Samenstelling Antwoord</button></p>
 <div id="panel1" class="panel">
 <div id="drag1" class="draggable">
 <div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
 <p>Sleep mij naar beneden om meer te zien</p>
 </div>
 <div id="txt1"></div>
+</div>
+Er zijn maar twee stoffen in dit systeem: Benzeen (Bz) en Toluene (Tol).<br>
+We weten dat \(x_{R,Tol} = 0.05\ Tol\) dus \(x_{R,Bz} = 0.95\ Bz\).<br>
+Omdat de samenstelling van de stromen V, R en D gelijk zijn aan elkaar geldt dus ook dat:<br>
+\(x_{D,Tol} = 0.05\ Tol\) en \(x_{D,Bz} = 0.95\ Bz\). <br>
+\(x_{V,Tol} = 0.05\ Tol\) en \(x_{V,Bz} = 0.95\ Bz\). 
+</div>
+
+<button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Hint stromen</button>
+<div id="deelhint2" class="panel">
+<p>Gebruik de massa balans voor het totale systeem en de component massa balans voor benzeen om D en B te bepalen.</p>
+<p>Je hebt hier twee onbekenden: D en B. Je moet dus proberen om dit terug te brengen naar één onbekende.</p> Kijk goed naar de massa balans voor het totale systeem om een vergelijking te maken tussen D en B.
+</div>
+
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel2.id)">b. Stromen antwoord</button></p>
+<div id="panel2" class="panel">
+<div id="drag2" class="draggable">
+<div class="mydivheader" href="#" data-toggle="tooltip" title="Je kunt mij naar beneden slepen om het antwoord te zien">
+<p>Sleep mij naar beneden om meer te zien</p>
+</div>
+<div id="txt2"></div>
 </div>
 <table>
 <tbody>
@@ -102,9 +122,9 @@
 <td colspan="3"><span style="font-size: medium;">D + B</span></td>
 </tr>
 <tr>
-<td colspan="4" style="text-align: right; font-size: medium;">B</td>
+<td colspan="4" style="text-align: right; font-size: medium;">D</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td colspan="2"><span style="font-size: medium;">\(1000 - D\)</span></td>
+<td colspan="2"><span style="font-size: medium;">\(F - B\)</span></td>
 <td>\((1\prime)\) </td>
 </tr>
 <tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
@@ -114,14 +134,14 @@
 <td colspan="6"><span style="font-size: medium;">Bz</span></td>
 </tr>
 <tr>
-<td colspan="4" style="text-align: right;font-size: medium;">\(x_{F,Bz}·F\)</td>
+<td colspan="4" style="text-align: right;font-size: medium;">\(x_{F,Tol}·F\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td colspan="3"><span style="font-size: medium;">\(x_{D,Bz}\cdot D + x_{B,Bz}\cdot B\)</span></td>
+<td colspan="3"><span style="font-size: medium;">\(x_{D,Tol}\cdot D + x_{B,Tol}\cdot B\)</span></td>
 </tr>
 <tr>
 <td colspan="4" style="text-align: right;font-size: medium;">\(0.50 \cdot 1000\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td colspan="3"><span style="font-size: medium;">\(0.95D + 0.04B\)</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.05D + 0.96B\)</span></td>
 </tr>
 <tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
 
@@ -132,27 +152,42 @@
 <tr>
 <td colspan="4" style="text-align: right;font-size: medium;">500</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td colspan="3"><span style="font-size: medium;">\(0.95D + 0.04(1000 - D)\)</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.05(F-B)+0.96B\)</span></td>
 </tr>
 <tr>
-<td colspan="4" style="text-align: right;font-size: medium;">D</td>
+<td colspan="4" style="text-align: right;font-size: medium;">500</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td colspan="3"><span style="font-size: medium;">505.5 kg/h</span></td>
-</tr>
-<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td colspan="7"><span style="font-size: medium;"> D invullen in \((1\prime)\) </span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.05F-0.05B+0.96B\)</span></td>
 </tr>
 <tr>
-<td colspan="4" style="text-align: right;font-size: medium;">B</td>
+<td colspan="4" style="text-align: right;font-size: medium;">500</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td colspan="3"><span style="font-size: medium;">\(1000 - 505.5\)</span></td>
+<td colspan="3"><span style="font-size: medium;">\(50-0.91B\)</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">450</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.91B\)</span></td>
 </tr>
 <tr>
 <td colspan="4" style="text-align: right;font-size: medium;">B</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td colspan="3"><span style="font-size: medium;">494.5 kg/h</span></td>
+</tr>
+<tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td colspan="7"><span style="font-size: medium;"> B invullen in \((1\prime)\) </span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">D</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(1000 - 494.5\)</span></td>
+</tr>
+<tr>
+<td colspan="4" style="text-align: right;font-size: medium;">D</td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">505.5 kg/h</span></td>
 </tr>
 <tr><td colspan="8" style="line-height:0.25em;">&nbsp;</td></tr>
 <tr>
@@ -179,11 +214,11 @@
 </table>
 <p></p>
 </div>
-<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Reflux Hint</button></p>
-<div id="deelhint2" class="panel">
+<p><button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">c. Reflux Hint</button></p>
+<div id="deelhint3" class="panel">
 <p>Je hebt nu een R gevonden. Wat was reflux ook alweer? <br> \(RR = \dfrac{R}{D}\)</p>
 </div>
-<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel3.id)">b. Reflux Antwoord</button></p>
+<p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel3.id)">c. Reflux Antwoord</button></p>
 <div id="panel3" class="panel">
 $$ RR = \dfrac{R}{D} = \dfrac{294.5}{505.5} = 0.58 $$
 </div>
