@@ -25,6 +25,7 @@
 <!-- Macro: red cancel stroke, body text color via HTML color -->
 <span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
 			</head><body>
+        <h2>De absorber en stripper</h2>
 <p><span style="font-size: medium;">Acetondamp moet uit lucht verwijderd worden in een gasabsorber met behulp van water. Het hierbij verkregen water-aceton mengsel wordt gestript. Zie onderstaand blokschema, de samenstelling van zowel de gas- als de vloeistofstromen is weergegeven via massafracties.</span></p>
 <p><img src="https://arjkloek.github.io/eLearning/ProcesTechnologie1/images/BlokschemaOpgave44_MB.svg" width="410" height="363"></p>
 <ul style="list-style-type: lower-alpha; font-size: medium;">
@@ -35,7 +36,7 @@
 <p><span style="font-size: medium;">Antwoord:</span><br><br><span style="font-size: medium;"> a.</span><br><i id="vrg0" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"> </i> <input id="antw0" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">\(x_{F,Aceton}\)</span><br><i id="vrg1" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw1" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">\(x_{F,Water}\)</span><br><span style="font-size: medium;">b.</span><br><i id="vrg2" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw2" style="width: 70pt; font-size: 14pt;" type="text"> <span style="font-size: medium;">S (kg/hr)</span> <br><span style="font-size: medium;">c.</span><br><i id="vrg3" class="mark" style="font-size: 14pt; color: green; visibility: hidden;"></i> <input id="antw3" style="width: 70pt; font-size: 14pt;" type="text"><span style="font-size: medium;"> Aceton (kg/h)</span><br><br><button type="button" class="checkin checkin" onclick="checkv2([0.19,0.81,157.7,34.5])">Check</button> (Je kunt wetenschappelijke notatie zoals \( 3 \cdot 10^{-4}\) invullen als 3e-4)<br><br></p>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint1.id)">a. Hint</button></p>
 <div id="deelhint1" class="panel">
-<p>Hier is de systeem keuze van groot belang. Begin met het opstellen van de MB over de Absorber. <br>Verder weet je ook dat alle acetone die de absorber ingaat (via L) wordt opgenomen door het water en er weer uitgaat bij F.</p>
+<p>Hier is de systeem keuze van groot belang. Begin met het opstellen van de MB over de Absorber.<br>Verder weet je ook dat alle acetone die de absorber ingaat (via G) wordt opgenomen door het water en er weer uitgaat bij F.</p>
 </div>
 
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel1.id)">a. Antwoord</button></p>
@@ -46,7 +47,7 @@
 </div>
 <div id="txt1"></div>
 </div>
-<table style="width: 617px; height: 166px;">
+<table>
 <tbody>
 <tr>
 <td style="text-align: left;"><span style="font-size: medium;">MB</span></td>
@@ -57,9 +58,23 @@
 <td><span style="font-size: medium;">[kg/h]</span></td>
 <td>&nbsp;</td>
 </tr>
+
+
+<tr>
+<td colspan ="3" style="text-align: right;"><span style="font-size: medium;">G + S</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">A + F</span></td>
+</tr>
 <tr><td colspan="7">&nbsp;</td></tr>
 <tr>
-<td><span style="font-size: medium;">CM</span></td>
+
+<tr><td colspan="7">Alle lucht van G uit bij A, daarmee kunnen we A uitrekenen.</td></tr>
+<tr>
+
+<tr><td colspan="7">&nbsp;</td></tr>
+<tr>
+
+  <td><span style="font-size: medium;">CM</span></td>
 <td><span style="font-size: medium;">Lucht (L)</span></td>
 <td style="text-align: right;"><span style="font-size: medium;">\(x_{G,L} \cdot G\)</span></td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
@@ -72,13 +87,22 @@
 <td>&nbsp;</td>
 <td style="text-align: right;"><span style="font-size: medium;">\(0.95 \cdot 1400\)</span></td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(0.995 \cdot A\)</span></td>
-<td><span style="font-size: medium;">\(\rightarrow\)</span></td>
-<td><span style="font-size: medium;">A = 1336.7 kg/h</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.995 \cdot A\)</span></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">A</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">1336.7 kg/h</span></td>
 </tr>
 <tr><td colspan="7">&nbsp;</td></tr>
 <tr>
-<td>&nbsp;</td>
+<tr><td colspan="7">Alle aceton van G uit bij F.</td></tr>
+<tr>
+<tr><td colspan="7">&nbsp;</td></tr>
+<tr>
+<td>CM</td>
 <td><span style="font-size: medium;">Aceton (Ac)</span></td>
 <td style="text-align: right;"><span style="font-size: medium;">\(x_{G,Ac} \cdot G\)</span></td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
@@ -87,29 +111,39 @@
 <td>&nbsp;</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">\(0.03 \cdot 1400\)</span></td>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(0.03 \cdot 1400\)</span></td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(x_{F,Ac} \cdot 221.05\)</span></td>
-<td><span style="font-size: medium;">\(\rightarrow\)</span></td>
-<td><span style="font-size: medium;">\(x_{F,Ac} \cdot 221.05 = 42.0\)</span></td>
+<td colspan="3"><span style="font-size: medium;">\(x_{F,Ac} \cdot 221.05\)</span></td>
+</tr>
+
+<tr>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(x_{F,Ac} \cdot 221.05\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">42</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><span style="font-size: medium;">\(x_{F,W} = 0.81\)</span></td>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(x_{F,Ac}\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">0.19</span></td>
+</tr>
+
+<tr>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(x_{F,W}\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(1-x_{F,Ac}\)</span></td>
+</tr>
+
+<tr>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">\(x_{F,W}\)</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.81\)</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint2.id)">b. Hint</button></p>
-<div id="deelhint2" class="panel"><br>
-<p>Je weet nu de fractie water in F en de fracties in G en A. Stel een CM over water voor de absorber.<br>Er is geen A uit bij L.</p>
+<div id="deelhint2" class="panel">
+<p>Je weet nu de fractie water in F en de fracties in G en A. Stel een CM over water voor de absorber.</p>
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel2.id)">b. Antwoord</button></p>
 <div id="panel2" class="panel">
@@ -119,12 +153,16 @@
 </div>
 <div id="txt2"></div>
 </div>
-<table border="0" style="width: 648px; height: 77px;">
+<table>
 <tbody>
 <tr>
 <td style="text-align: left;"><span style="font-size: medium;">CM</span></td>
-<td><span style="font-size: medium;">Water (W)</span></td>
-<td style="text-align: right;"><span style="font-size: medium;">\(x_{B,W} \cdot G + S\)</span></td>
+<td colspan="6" style="text-align: left;"><span style="font-size: medium;">Water (W)</span></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td colspan ="2" style="text-align: right;"><span style="font-size: medium;">\(x_{B,W} \cdot G + S\)</span></td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
 <td><span style="font-size: medium;">\(x_{F,W} \cdot F + x_{A,W} \cdot A\)</span></td>
 <td>&nbsp;</td>
@@ -132,19 +170,23 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">\(0.02 \cdot 1400 + S\)</span></td>
+<td colspan="2" style="text-align: right;"><span style="font-size: medium;">\(0.02 \cdot 1400 + S\)</span></td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(0.81 \cdot 221.05 + 0.005 \cdot 1336.7\)</span></td>
-<td><span style="font-size: medium;">\(\rightarrow\)</span></td>
-<td><span style="font-size: medium;">S = 157.7 kg/h</span></td>
+<td colspan="3"><span style="font-size: medium;">\(0.81 \cdot 221.05 + 0.005 \cdot 1336.7\)</span></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td  colspan="2"style="text-align: right;"><span style="font-size: medium;">S</span></td>
+<td><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">157.7 kg/h</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p><button type="button" class="deelhint" onclick="antwoordzien(deelhint3.id)">c. Hint</button></p>
-<div id="deelhint3" class="panel"><br>
-<p>Nu moeten we naar de stripper kijken. Je weet wat er bij F in gaat aan Acetone.<br>De rest van de fracties zijn ook gegeven. Het probleem is dat je twee onbekendes hebt.<br>Stel een TM op over de stripper. Kunnen we nu ook van twee naar <span style="color: #333333; font-family: 'Open Sans', sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">é<span style="color: #333333; font-family: 'Open Sans', sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">én</span> </span>onbekende gaan?</p>
+<div id="deelhint3" class="panel">
+<p>Nu moeten we naar de stripper kijken. Je weet wat er bij F in gaat aan Acetone.<br>De rest van de fracties zijn ook gegeven. Het probleem is dat je twee onbekendes hebt.<br>Stel een TM op over de stripper. Kunnen we nu ook van twee naar één onbekende gaan?</p>
 </div>
 <p><button type="button" class="accordionantwoord" onclick="antwoordzien(panel4.id)">c. Antwoord</button></p>
 <div id="panel4" class="panel">
@@ -154,49 +196,44 @@
 </div>
 <div id="txt4"></div>
 </div>
-<table border="0" style="width: 572px; height: 116px;">
+<table>
 <tbody>
 <tr>
-<td><span style="font-size: medium;">MB</span></td>
-<td style="text-align: right;">&nbsp;</td>
+<td colspan="2"><span style="font-size: medium;">MB</span></td>
 <td style="text-align: right;"><span style="font-size: medium;">Stripper</span></td>
 <td style="text-align: center;"><span style="font-size: medium;">&nbsp;+&nbsp;</span></td>
-<td><span style="font-size: medium;">Condensor</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="3"><span style="font-size: medium;">Condensor</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">In</span></td>
+<td colspan ="3"style="text-align: right;"><span style="font-size: medium;">In</span></td>
 <td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">Uit</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="3"><span style="font-size: medium;">Uit</span></td>
 </tr>
 <tr>
-<td><span style="font-size: medium;">TM</span></td>
-<td style="text-align: right;">&nbsp;</td>
+<td colspan="2"><span style="font-size: medium;">TM</span></td>
 <td style="text-align: right;"><span style="font-size: medium;">F</span></td>
 <td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">D + B</span></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td colspan="3"><span style="font-size: medium;">D + B</span></td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td style="text-align: right;">&nbsp;</td>
-<td style="text-align: right;"><span style="font-size: medium;">221.05</span></td>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">221.05</span></td>
 <td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">D + B</span></td>
-<td><span style="font-size: medium;">\(\rightarrow\)</span></td>
-<td><span style="font-size: medium;">\(B = 221.05 - D\)</span></td>
+<td colspan ="3"><span style="font-size: medium;">D + B</span></td>
 </tr>
+
+<tr>
+<td colspan="3" style="text-align: right;"><span style="font-size: medium;">B</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">\(221.05 - D\)</span></td>
+</tr>
+
 <tr><td colspan="7">&nbsp;</td></tr>
 <tr>
+
 <td><span style="font-size: medium;">CM</span></td>
 <td colspan="6" style="text-align: left;"><span style="font-size: medium;">Aceton</span></td>
 </tr>
+
 <tr>
 <td>&nbsp;</td>
 <td style="text-align: right;">&nbsp;</td>
@@ -224,24 +261,43 @@
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
+
 <tr>
 <td>&nbsp;</td>
 <td style="text-align: right;">&nbsp;</td>
 <td style="text-align: right;"><span style="font-size: medium;">\(0.95\,D\)</span></td>
 <td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">33.16</span></td>
-<td><span style="font-size: medium;">\(\rightarrow\)</span></td>
-<td><span style="font-size: medium;">D = 34.9 kg/h</span></td>
+<td colspan="3"><span style="font-size: medium;">33.16</span></td>
 </tr>
+
+
+<tr>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">D</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">34.9 kg/h</span></td>
+</tr>
+
+
 <tr>
 <td>&nbsp;</td>
 <td style="text-align: right;">&nbsp;</td>
 <td style="text-align: right;"><span style="font-size: medium;">\(D_Ac\)</span></td>
 <td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
-<td><span style="font-size: medium;">\(x_{D,Ac} \cdot D = 0.99 \cdot 34.9\)</span></td>
-<td><span style="font-size: medium;">\(\rightarrow\)</span></td>
-<td><span style="font-size: medium;">\(D_{Ac}\) = 34.5 kg/h</span></td>
+<td colspan="3"><span style="font-size: medium;">\(x_{D,Ac} \cdot D = 0.99 \cdot 34.9\)</span></td>
 </tr>
+
+<tr>
+<td>&nbsp;</td>
+<td style="text-align: right;">&nbsp;</td>
+<td style="text-align: right;"><span style="font-size: medium;">\(D_Ac\)</span></td>
+<td style="text-align: center;"><span style="font-size: medium;">&nbsp;=&nbsp;</span></td>
+<td colspan="3"><span style="font-size: medium;">34.5 kg/h</span></td>
+</tr>
+<tr><td colspan="7">&nbsp;</td></tr>
+<tr>
+
 </tbody>
 </table>
 </div>
