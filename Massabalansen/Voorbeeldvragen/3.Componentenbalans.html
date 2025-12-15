@@ -18,65 +18,23 @@
       trust:true,
       preProcess: katexPreProcess
     });"></script>
- <style>
-                :root { --body-text-color: #494c4e; }
-                body {
-                color: var(--body-text-color);
-            font-family: 'Lato', sans-serif;
-            font-size: 0.95rem;
-            font-weight: normal;
-            letter-spacing: 0.01rem;
-            line-height: 1.4rem;
-            margin: 0;
-            padding: 0.4rem 0.75rem !important;
-        }
-        table {
-            font-family: 'Lato', sans-serif;
-            font-size: inherit;
-        }
-        .katex-display {
-            text-align: left !important;
-        }
-        .katex {
-            font-family: 'Lato', sans-serif !important;
-            font-size: 1em;
-        }
-        /* Container for side-by-side layout */
-        .side-by-side {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            margin: 1em 0;
-        }
-        .side-by-side img {
-            flex-shrink: 0;
-        }
-        .side-by-side .latex-table {
-            flex-grow: 1;
-        }
-        /* Compact table styling */
-        .side-by-side .latex-table .katex-display {
-            margin: 0 !important;
-            font-size: 1em;
-        }
-        .side-by-side .latex-table .katex {
-            font-size: 1em;
-        }
-        li {
-            margin-top: 1em;
-        }
-        </style>
-            <link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
+<link rel="stylesheet" type="text/css" href="https://arjkloek.github.io/eLearning/CSS/LocalOverrides.CSS">
+<link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body><p></p>
 <!-- Set global KaTeX array row spacing for aligned/array environments -->
 <span style="display:none">\( \gdef\arraystretch{1.8} \)</span>
 <!-- Macro: red cancel stroke, body text color via HTML color -->
-<span style="display:none">\( \gdef\rcancel#1{\color{red}\cancel{#1}} \)</span>
-</head><body><p></p>
+<span style="display:none">\(\gdef\rcancel#1{\color{red}\cancel{#1}}\)</span>
+</head><body>
+    <h2>Voorbeeldvraag Oven (Reactie)</h2>
+    <p></p>
 <p><span style="font-size: medium;">Een vereenvoudigde weergave van het processchema voor \(\ce{SO3}\) (grondstof voor de productie van zwavelzuur) is te zien in onderstaande figuur. Zwavel wordt verbrand in aanwezigheid van 100 % overmaat lucht in de verbrandingsoven. Voor de reactie:</span></p>
 $$\ce{S + O2 -> SO2}$$
 <p><span style="font-size: medium;">wordt een conversie van 90 % bereikt. In de converter bedraagt de conversie van \(\ce{SO2}\) tot \(\ce{SO3}\) 95%.</span></p>
 <p><span style="font-size: medium;"><img src="https://arjkloek.github.io/eLearning/Massabalansen/Voorbeeldvragen/Voorbeeldvraag3Schema_MB.svg" width="410" height="145"></span></p>
-<p><span style="font-size: medium;">a.&nbsp; Bereken de grootte van de stroom L in kmol/hr.</span><br><span style="font-size: medium;">b.&nbsp; Bereken de grootte van de tussenstroom T.</span><br><span style="font-size: medium;">c.&nbsp; Bereken de grootte en samenstelling van de productstroom P (molfracties).</span></p>
+<p>
+<span style="font-size: medium;">a.&nbsp; Bereken de grootte van de stroom L in kmol/hr.</span><br>
+<span style="font-size: medium;">b.&nbsp; Bereken de grootte van de tussenstroom T.</span><br>
+<span style="font-size: medium;">c.&nbsp; Bereken de grootte en samenstelling van de productstroom P (molfracties).</span></p>
 <p><span style="font-size: medium;"><em>Basisformules</em>: chemische reacties, component-molbalansen</span></p>
 <p><span style="font-size: medium;"><em>Oplossingsplan</em>: systematische aanpak via molbalansen (b + c)</span></p>
 <p><span style="font-size: medium;"><em>Uitwerking</em>:</span><br><br></p>
@@ -90,7 +48,7 @@ $$\ce{S + O2 -> SO2}$$
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td style="text-align: right; font-size: medium;">\(L\ bevat 2 \times 31.2\)</td>
+<td style="text-align: right; font-size: medium;">\(L\ bevat 2 \cdot 31.2\)</td>
 <td><span style="font-size: medium;">&nbsp;=&nbsp; </span></td>
 <td><span style="font-size: medium;">62.4 kmol \(\ce{O2}/h\) (100% overmaat)</span></td>
 </tr>
@@ -98,7 +56,7 @@ $$\ce{S + O2 -> SO2}$$
 <td>&nbsp;</td>
 <td style="text-align: right;"></td>
 <td><span style="font-size: medium;">&nbsp;≡&nbsp;</span></td>
-<td><span style="font-size: medium;">\((79/21) \times 62.4 =\)<button type="button" class="vraagantwoord green">234.7</button> kmol \(\ce{N2}/\text{h}\)</span></td>
+<td><span style="font-size: medium;">\((79/21) \cdot 62.4 =\)<button type="button" class="vraagantwoord green">234.7</button> kmol \(\ce{N2}/\text{h}\)</span></td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -158,7 +116,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(0.90 \times 31.2\)</td>
+<td style="text-align: left; font-size: medium;">\(0.90 \cdot 31.2\)</td>
 </tr>
 <tr>
 <td colspan="10">&nbsp;</td>
@@ -187,7 +145,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">\(T_{\ce{SO2}}\)</td>
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(0.90 \times 31.2\)</td>
+<td style="text-align: left; font-size: medium;">\(0.90 \cdot 31.2\)</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 </tr>
@@ -257,7 +215,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;+&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(0.95 \times 28.08\)</td>
+<td style="text-align: left; font-size: medium;">\(0.95 \cdot 28.08\)</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -286,7 +244,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;\(+\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(½\times 0.95\times 28.08\)</td>
+<td style="text-align: left; font-size: medium;">\(½ \cdot 0.95 \cdot 28.08\)</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -313,7 +271,7 @@ $$\ce{S + O2 -> SO2}$$
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">\(P_{\ce{SO3}}\)</td>
 <td><span style="font-size: medium;">&nbsp;+&nbsp;</span></td>
-<td style="text-align: left; font-size: medium;">\(0.95 \times 28.08\)</td>
+<td style="text-align: left; font-size: medium;">\(0.95 \cdot 28.08\)</td>
 <td><span style="font-size: medium;">&nbsp;\(-\)&nbsp;</span></td>
 <td style="text-align: left; font-size: medium;">0</td>
 <td>&nbsp;</td>
